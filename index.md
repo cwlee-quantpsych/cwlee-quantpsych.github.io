@@ -67,6 +67,4 @@ A complete list of my publications is provided below.
 
 I am also a classically trained pianist who began playing at the age of three. I attended specialized arts middle and high schools in Korea to study piano professionally. While I’m not pursuing music as a career, I continue to enjoy playing in my spare time.
 
-During my teenage years, I won several major national music competitions in Korea, performed on numerous stages, and collaborated with the Seoul Symphony Orchestra in a performance of Grieg’s Piano Concerto in a minor. At the age of 14, I was prestigiously selected as a musical prodigy by Kumho Asiana Group, one of Korea’s leading conglomerates—a recognition that led to my own solo recital. My favorite repertoire includes Bach–Busoni’s *Chaconne*, Mendelssohn’s *Variations sérieuses*, Chopin’s Ballades, and more.
-
-
+During my teenage years, I won several major national music competitions in Korea, performed on numerous stages, and collaborated with the Seoul Symphony Orchestra in a performance of Grieg’s Piano Concerto in a minor. At the age of 14, I was prestigiously selected as a musical prodigy by Kumho Asiana Group, one of Korea’s leading conglomerates—a recognition that led to my own solo recital. My favorite repertoire includes Bach–Busoni’s *Chaconne*, Mendelssohn’s *Variations sérieuses*, Chopin’s Ballades, and more. In addition to solo performance, I have also performed as an accompanist for violinists, cellists, and vocalists across various concert and competition settings. 
