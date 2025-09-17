@@ -63,8 +63,11 @@ A complete list of my publications is provided below.
 
 ---
 
-### Beyond Research
+### Fun & Historical Facts About Me
 
-I am also a classically trained pianist who began playing at the age of three. I attended specialized arts middle and high schools in Korea to study piano professionally. While I’m not pursuing music as a career, I continue to enjoy playing in my spare time.
+**Fact 1. I am a classically trained pianist.**  
+I began playing the piano at the age of three and attended specialized arts middle and high schools in Korea to study it professionally. During my teenage years, I won several major national music competitions, performed on numerous stages, and collaborated with the Seoul Symphony Orchestra in a performance of Grieg’s Piano Concerto in A minor. At the age of 14, I was prestigiously selected as a musical prodigy by the Kumho Asiana Group—one of Korea’s leading conglomerates—which led to my own solo recital. My favorite repertoire includes Bach–Busoni’s *Chaconne*, Mendelssohn’s *Variations sérieuses*, Chopin’s Ballades, and more. In addition to solo performance, I have also performed as an accompanist for violinists, cellists, and vocalists in various concert and competition settings.
 
-During my teenage years, I won several major national music competitions in Korea, performed on numerous stages, and collaborated with the Seoul Symphony Orchestra in a performance of Grieg’s Piano Concerto in a minor. At the age of 14, I was prestigiously selected as a musical prodigy by Kumho Asiana Group, one of Korea’s leading conglomerates—a recognition that led to my own solo recital. My favorite repertoire includes Bach–Busoni’s *Chaconne*, Mendelssohn’s *Variations sérieuses*, Chopin’s Ballades, and more. In addition to solo performance, I have also performed as an accompanist for violinists, cellists, and vocalists across various concert and competition settings. 
+**Fact 2. I used to work as an economist and investment banker.**  
+Before entering academia, I worked at Korea Investment & Securities in Seoul. I first served as a junior investment banker in the Equity Capital Market Department, where I worked on IPOs for KOSPI and KOSDAQ, conducting due diligence, accounting analysis, and preparing listing applications. I later transitioned to the Research Center as a junior economist, where I authored analytical reports on global macroeconomic trends and financial markets, and led forecasting for indicators such as exchange rates, crude oil prices, and international policy rates.
+
