@@ -21,5 +21,5 @@ My work is guided by three grand pillars:
 2. Modeling intraindividual dynamics in psychological processes with greater robustness and precision;
 3. Leveraging statistical frameworks based on fuzzy theory to more effectively incorporate the inherent imprecision and uncertainty in psychological measurement.
 
-Substantively, I am also invested in applying these methodological innovations to real-world psychological research spanning diverse domains such as clinical, cognitive, social, health, and educational psychology, where I use advanced statistical and computational tools to tackle complex, context-specific questions. 
-In particular, my ongoing interest lies in advancing precision psychopathology by developing individualized, data-informed approaches to the diagnosis, treatment, and real-time intervention of mental health conditiions including depression, bipolar disorder, and schizophrenia.
+Substantively, I am also invested in applying these methodological innovations to real-world psychological research. My work spans a range of domains—including clinical, cognitive, social, health, and educational psychology—where I use advanced statistical and computational tools to investigate complex, context-specific questions. 
+In particular, my ongoing interest lies in predictive modeling to advance precision psychopathology by developing individualized, data-informed approaches to the diagnosis, treatment, and real-time intervention of mental health conditiions such as depression, bipolar disorder, and schizophrenia.
