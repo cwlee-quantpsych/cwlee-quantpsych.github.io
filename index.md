@@ -6,9 +6,9 @@ tagline: Quantitative Psychology • Data Science • Statistics
 
 # Welcome!
 
-I am Chaewon Lee, a quantitative psychologist and data scientist.
+I am Chaewon Lee, a quantitative psychologist, data scientist, and statistician.
 I am currently a Ph.D. candidate in the Quantitative Psychology program, housed within the L.L.Thurstone Psychometric Laboratory in the Department of Psychology and Neuroscience at the University of North Carolina at Chaple Hill.
-My research aims at developing and disseminating advanced statistical methods to address unique methodological challenges in psychological science. Specifically, I work on:
+My research focuses on developing and disseminating advanced statistical methods to address unique methodological challenges in psychological science. Specifically, I work on:
 
 - Machine learning and deep learning  
 - Time-series analysis
@@ -21,8 +21,8 @@ My work is guided by three grand pillars:
 2. Modeling intraindividual dynamics in psychological processes with greater robustness and precision;
 3. Leveraging statistical frameworks based on fuzzy theory to more effectively incorporate the inherent imprecision and uncertainty in psychological measurement.
 
-Substantively, I am also invested in applying these methodological innovations to real-world psychological research. My work spans a range of domains—including clinical, cognitive, social, health, and educational psychology—where I use advanced statistical and computational tools to investigate complex, context-specific questions. 
-In particular, my ongoing interest lies in predictive modeling to advance precision psychopathology by developing individualized, data-informed approaches to the diagnosis, treatment, and real-time intervention of mental health conditiions such as depression, bipolar disorder, and schizophrenia.
+Substantively, I am deeply invested in applying these methodological innovations to real-world psychological research. My work spans a range of domains—including clinical, cognitive, social, health, and educational psychology—where I use advanced statistical and computational tools to investigate complex, context-specific questions. 
+In particular, my ongoing interest lies in predictive modeling to advance precision psychopathology by developing individualized, data-informed approaches to the diagnosis, treatment, and real-time intervention of mental health conditions such as depression, bipolar disorder, and schizophrenia.
 
 A complete list of my publications is provided below.
 
@@ -63,7 +63,40 @@ A complete list of my publications is provided below.
 
 ---
 
-### Fun & Historical Facts About Me
+## Research Collaborations
+
+I have collaborated on multiple interdisciplinary research projects, including:
+
+- The NSF IUSE Student Success Project (PIs: Gates, K., & Greene, J.) at the UNC School of Education, where I applied machine learning algorithms and Markov modeling to learning management system (LMS) data to forecast student performance in undergraduate biology courses.
+
+- The EPICS Mood and Schizophrenia Lab (PI: Deldin, P.J.) at the University of Michigan, where I analyzed event-related potentials (ERP) to classify psychiatric patients and predict suicidality of individuals diagnosed with bipolar disorder using techniques such as deep learning and feature selection.
+
+- Collaborations with Dr. Tom Rodebaugh’s clinical research team at UNC Chapel Hill on dynamic time series modeling of tinnitus symptoms, using Group Iterative Multiple Model Estimation (GIMME).
+
+- Ongoing collaborations with mathematicians and engineers in South Korea, exploring the application of fuzzy set theory and chaos theory to model complex dynamics in social opinion formation.
+
+---
+
+## Education
+
+Before embarking on my Ph.D. training, I earned an M.S. in Applied Statistics from the University of Michigan, an M.A. in Economics from Yonsei University in Seoul, South Korea, and a B.S. in Biology also from Yonsei University.
+
+---
+
+## Teaching & Instruction
+
+At UNC Chapel Hill, I have served as a teaching assistant for PSYC 210 (Statistical Principles of Psychological Research) across multiple semesters since 2020. In this role, I led recitation sessions, supported students with SPSS- or Jamovi-based data analysis, and provided individual consultations to enhance their understanding. I received the Departmental Undergraduate Teaching Commendation twice, based on student evaluations.
+
+---
+
+## Academic Conferences
+
+- Lee, C.*, Yoon, J.H., & Bae, Y.C. (2024, November). Chaotic behaviors in opinion dynamics models influenced by external forces. Paper presented at the 25th International Symposium on Advanced Intelligent Systems (ISIS 2024), Himeji, Japan.
+- Lee, C.* (2025, October). No single approach fits all: Testing two generations of structural equation modeling estimation. Poster to be presented at the 23rd Annual Society of Multivariate Experimental Psychology (SMEP) Graduate Student Conference, University of Notre Dame, Indiana, USA.
+
+---
+
+## Fun Facts About Me
 
 **Fact 1. I am a classically trained pianist.**  
 I began playing the piano at the age of three and attended specialized arts middle and high schools in Korea to study it professionally. During my teenage years, I won several major national music competitions, performed on numerous stages, and collaborated with the Seoul Symphony Orchestra in a performance of Grieg’s Piano Concerto in A minor. At the age of 14, I was prestigiously selected as a musical prodigy by the Kumho Asiana Group—one of Korea’s leading conglomerates—which led to my own solo recital. My favorite repertoire includes Bach–Busoni’s *Chaconne*, Mendelssohn’s *Variations sérieuses*, Chopin’s Ballades, and more. In addition to solo performance, I have also performed as an accompanist for violinists, cellists, and vocalists in various concert and competition settings.
