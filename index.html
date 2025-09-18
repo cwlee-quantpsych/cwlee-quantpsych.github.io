@@ -18,15 +18,15 @@ layout: null
 
   <style>
     :root {
-      --bg: #4B9CD3;         /* UNC Carolina Blue */
-      --fg: #13294B;         /* Navy text inside card */
-      --muted: #555555;      /* Muted dark gray text */
-      --accent: #13294B;     /* UNC Navy for buttons */
-      --accent-ink: #ffffff; /* White text on buttons */
-      --card: #ffffff;       /* White card surface */
-      --pill: rgba(19,41,75,.12);   /* Navy tint for pills */
-      --pill-border: rgba(19,41,75,.25);
-      --focus: #ffbf47;      /* Optional gold focus ring */
+      --bg: #A7C7E7;       /* Softer pastel blue */
+      --fg: #13294B;       /* UNC navy for headings/text */
+      --muted: #555555;    /* Muted gray for body text */
+      --accent: #4B9CD3;   /* Carolina Blue accents */
+      --accent-ink: #ffffff;
+      --card: #ffffff;     /* White card */
+      --pill: rgba(75,156,211,.12);  /* soft tint */
+      --pill-border: rgba(75,156,211,.25);
+      --focus: #ffbf47;    /* Optional gold */
     }
 
     html, body { height:100%; margin:0; }
@@ -49,7 +49,7 @@ layout: null
       background: var(--card);
       border-radius: 16px;
       padding: 28px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      box-shadow: 0 10px 30px rgba(0,0,0,.15);
     }
 
     .photo { width: 100%; border-radius: 14px; display:block; }
@@ -77,11 +77,11 @@ layout: null
       border-radius: 10px;
       font-weight: 600;
       transition: transform .06s ease, box-shadow .06s ease;
-      box-shadow: 0 6px 16px rgba(19,41,75,.25);
+      box-shadow: 0 6px 16px rgba(75,156,211,.25);
     }
     .cta:hover {
       transform: translateY(-1px);
-      box-shadow: 0 8px 20px rgba(19,41,75,.32);
+      box-shadow: 0 8px 20px rgba(75,156,211,.32);
     }
     .cta:focus-visible {
       outline: 3px solid var(--focus);
@@ -152,17 +152,5 @@ layout: null
       </nav>
     </div>
   </main>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Chaewon Lee",
-    "jobTitle": "Quantitative Psychologist",
-    "image": "{{ '/assets/images/chaewon1.JPG' | relative_url }}",
-    "url": "{{ '/' | absolute_url }}",
-    "affiliation": { "@type": "CollegeOrUniversity", "name": "University of North Carolina at Chapel Hill" }
-  }
-  </script>
 </body>
 </html>
