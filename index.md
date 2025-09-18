@@ -4,7 +4,7 @@ title: Chaewon Lee
 tagline: Quantitative Psychology • Data Science • Statistics
 ---
 
-# Welcome!
+# Welcome to my personal homepage!
 
 I am Chaewon Lee, a quantitative psychologist, data scientist, and statistician.
 I am currently a Ph.D. candidate in the Quantitative Psychology program, housed within the L.L.Thurstone Psychometric Laboratory in the Department of Psychology and Neuroscience at the University of North Carolina at Chaple Hill.
