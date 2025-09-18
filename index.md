@@ -6,19 +6,28 @@ tagline: Quantitative Psychology • Data Science • Statistics
 
 # Welcome to my personal homepage!
 
-<img src="/assets/images/chaewon1.JPG" alt="Chaewon Lee" width="250" align="left" style="margin-right: 20px; border-radius: 20px;" /> 
-I am Chaewon Lee, a quantitative psychologist, data scientist, and statistician. I am currently a Ph.D. candidate in the Quantitative Psychology program, housed within the L.L.Thurstone Psychometric Laboratory in the Department of Psychology and Neuroscience at the University of North Carolina at Chaple Hill. 
+<img src="/assets/images/chaewon1.JPG" alt="Chaewon Lee" width="180" align="left" style="margin-right: 25px; margin-bottom: 10px; border-radius: 12px;" />
 
+<div style="overflow: hidden;">
+
+I am Chaewon Lee, a quantitative psychologist, data scientist, and statistician. I am currently a Ph.D. candidate in the Quantitative Psychology program, housed within the L.L. Thurstone Psychometric Laboratory in the Department of Psychology and Neuroscience at the University of North Carolina at Chapel Hill.
 
 My research focuses on developing and disseminating advanced statistical methods to address unique methodological challenges in psychological science. Specifically, I work on:
 
-- Machine learning and deep learning  
-- Time-series analysis
-- Dynamic network modeling
-- Structural equation modeling
-- Fuzzy modeling
+<div style="margin-top: 18px;"></div>
 
-My work is guided by three grand pillars: 
+- Machine learning and deep learning  
+- Time-series analysis  
+- Dynamic network modeling  
+- Structural equation modeling  
+- Fuzzy modeling  
+
+</div>
+
+<div style="clear: both; margin-top: 30px;"></div>
+
+**My work is guided by three grand pillars:**
+
 1. Introducing and adapting machine learning and deep learning techniques to address the unique challenges of psychological data and meet the growing needs of big data methods for digital sensor research;
 2. Modeling intraindividual dynamics in psychological processes with greater robustness and precision;
 3. Leveraging statistical frameworks based on fuzzy theory to more effectively incorporate the inherent imprecision and uncertainty in psychological measurement.
