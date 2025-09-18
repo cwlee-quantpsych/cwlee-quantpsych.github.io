@@ -1,48 +1,27 @@
 ---
-layout: home
+layout: page   # use 'page' or 'default' here; switch back to 'home' after testing
 title: Chaewon Lee
 permalink: /home
 ---
 
-<!-- ===== Sticky Tab Nav (single-page tabs) ===== -->
 <style>
-  :root {
-    --tab-bg: #0f1418;
-    --tab-accent: #0a84ff;
-  }
-
-  /* Let sticky work even if parent sets overflow */
+  :root { --tab-bg:#0f1418; --tab-accent:#0a84ff; --site-header-h:56px; }
   main, .page-content { overflow: visible; }
 
-  /* If your site has a fixed header, offset the sticky tabs so they’re not hidden under it */
-  :root { --site-header-h: 56px; }          /* adjust if your header is taller/shorter */
-  .site-header { height: var(--site-header-h); } /* optional hint; safe to keep */
-  
   .tabs {
     position: sticky;
     top: var(--site-header-h, 0px);
     z-index: 999;
-    backdrop-filter: saturate(160%) blur(6px);
-    background: rgba(15,20,24,.85); /* fallback for older browsers */
-    background: color-mix(in srgb, var(--tab-bg) 85%, transparent);
+    background: rgba(15,20,24,.85);
     border-bottom: 1px solid rgba(127,127,127,.2);
     padding: 10px 0;
     margin: 0 0 16px 0;
+    -webkit-backdrop-filter: saturate(160%) blur(6px);
+    backdrop-filter: saturate(160%) blur(6px);
   }
-  .tabs ul {
-    display:flex; flex-wrap:wrap; gap:10px 14px;
-    list-style:none; margin:0; padding:6px 2px;
-  }
-  .tabs a {
-    text-decoration:none; font-weight:600;
-    padding:8px 12px; border-radius:10px;
-    color: var(--tab-accent);
-  }
+  .tabs ul { display:flex; flex-wrap:wrap; gap:10px 14px; list-style:none; margin:0; padding:6px 2px; }
+  .tabs a { text-decoration:none; font-weight:600; padding:8px 12px; border-radius:10px; color: var(--tab-accent); }
   .tabs a:hover { text-decoration: underline; }
-  .tabs a.active {
-    background: rgba(10,132,255,.12);
-    border: 1px solid rgba(10,132,255,.25);
-  }
 
   html { scroll-behavior: smooth; }
   h2[id], h3[id] { scroll-margin-top: calc(var(--site-header-h, 0px) + 26px); }
@@ -51,38 +30,15 @@ permalink: /home
 
 <nav class="tabs">
   <ul>
-    <li><a href="#research"       >Research</a></li>
-    <li><a href="#publications"   >Publications</a></li>
-    <li><a href="#collaborations" >Collaborations</a></li>
-    <li><a href="#education"      >Education</a></li>
-    <li><a href="#teaching"       >Teaching</a></li>
-    <li><a href="#conferences"    >Conferences</a></li>
-    <li><a href="#life"           >Life Before the Lab</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#collaborations">Collaborations</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#teaching">Teaching</a></li>
+    <li><a href="#conferences">Conferences</a></li>
+    <li><a href="#life">Life Before the Lab</a></li>
   </ul>
 </nav>
-
-<script>
-  // Highlight the active tab while scrolling
-  (function() {
-    const links = Array.from(document.querySelectorAll('.tabs a'));
-    const ids   = links.map(a => a.getAttribute('href')).filter(h => h.startsWith('#'));
-    const secs  = ids.map(id => document.querySelector(id)).filter(Boolean);
-
-    const activate = (id) => {
-      links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === id));
-    };
-
-    const obs = new IntersectionObserver((entries) => {
-      const visible = entries
-        .filter(e => e.isIntersecting)
-        .sort((a,b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
-      if (visible) activate('#' + visible.target.id);
-    }, { rootMargin: "-40% 0px -55% 0px", threshold: [0, 0.1, 0.5, 1] });
-
-    secs.forEach(s => obs.observe(s));
-    if (links.length && ids.length) activate(ids[0]);
-  })();
-</script>
 
 <div class="top-spacer"></div>
 
