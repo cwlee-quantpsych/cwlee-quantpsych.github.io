@@ -44,7 +44,7 @@ A complete list of my publications is provided below.
 
 ### Accepted
 
-- **Lee, C.\*** & Gates, K.M. (Expected May 7, 2026). *Group-iterative multiple model estimation in Clinical Science.* _Annual Review of Clinical Psychology_
+- **Lee, C.\*** & Gates, K.M. (Expected May 7, 2026). *Group-iterative multiple model estimation in clinical science.* _Annual Review of Clinical Psychology_
 
 ---
 
