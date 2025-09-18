@@ -11,25 +11,25 @@ permalink: /home
     --site-header-h:56px;
 
     /* UNC-inspired palette */
-    --unc-dark: #13294B;      /* UNC navy */
-    --unc-gray: #4B4F54;      /* medium gray */
-    --unc-bg-light: #A7C7E7;  /* pastel blue 1 */
-    --unc-bg-lighter: #D4E6F9;/* pastel blue 2 */
+    --unc-dark: #13294B;       /* UNC navy */
+    --unc-gray: #4B4F54;       /* medium gray */
+    --unc-bg-light: #A7C7E7;   /* pastel blue 1 */
+    --unc-bg-lighter: #D4E6F9; /* pastel blue 2 */
   }
 
   body {
     font-family: 'Lato', system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.65;
     color: var(--unc-gray);
     background: linear-gradient(180deg, var(--unc-bg-lighter) 0%, var(--unc-bg-light) 100%);
   }
 
   main, .page-content { 
     overflow: visible; 
-    max-width: 1000px;   /* widened content width */
+    max-width: 1200px;   /* widened further for better readability */
     margin: 0 auto; 
-    padding: 0 28px;
+    padding: 0 32px;     /* a touch more breathing space */
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -40,6 +40,8 @@ permalink: /home
 
   p, li {
     color: var(--unc-gray);
+    font-size: 17px;       /* slightly larger for readability */
+    line-height: 1.65;
   }
 
   /* Tabs bar */
@@ -49,7 +51,7 @@ permalink: /home
     background: var(--unc-dark);
     border-bottom: 1px solid rgba(255,255,255,.2);
     padding: 12px 0;
-    margin: 0 0 16px 0;
+    margin: 0 0 18px 0;
   }
 
   .tabs ul {
@@ -58,7 +60,7 @@ permalink: /home
     gap: 22px 40px;
     list-style: none;
     margin: 0;
-    padding: 8px 18px;
+    padding: 8px 20px;
     align-items: center;
   }
 
@@ -78,29 +80,9 @@ permalink: /home
 
   html { scroll-behavior: smooth; }
   h2[id], h3[id] { scroll-margin-top: calc(var(--site-header-h, 0px) + 26px); }
-  .top-spacer { clear: both; margin-top: 18px; }
+  .top-spacer { clear: both; margin-top: 20px; }
 </style>
 
-<nav class="tabs">
-  <ul>
-    <li><a href="#research">Research</a></li>
-    <li><a href="#publications">Publications</a></li>
-    <li><a href="#collaborations">Collaborations</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#teaching">Teaching</a></li>
-    <li><a href="#conferences">Conferences</a></li>
-    <li><a href="#life">Life Before the Lab</a></li>
-  </ul>
-</nav>
-
-<script>
-  // Blur links after click to prevent Safari focus ring lingering
-  document.querySelectorAll('.tabs a').forEach(a=>{
-    a.addEventListener('click', ()=>a.blur(), {passive:true});
-  });
-</script>
-
-<div class="top-spacer"></div>
 
 
 
@@ -126,32 +108,36 @@ My methodological work unfolds through three core pipelines:
 
 ## Publications {#publications}
 
-### Published
+### Published  
 
-#### Research Articles
-- **Lee, C.\*** & Gates, K.M. (2025). *Automated machine learning for classification and regression: A tutorial for psychologists.* _Behavior Research Methods_, 57, 262. [DOI](https://doi.org/10.3758/s13428-025-02684-5)  
-- **Lee, C.\***, Luo, L., Kuhlmann, S. L., Plumley, R. D., Panter, A. T., Bernacki, M. L., Greene, J. A., & Gates, K. M. (2025). *Interpretable Predictive Analytics for Online Learning: A Markov-Based Machine Learning Approach.* _Journal of Learning Analytics_, 12(2), 259–278. [DOI](https://doi.org/10.18608/jla.2025.8375)  
-- **Lee, C.\***, Gates, K. M., Chun, J., Al Kontar, R., Kamali, M., McInnis, M. G., & Deldin, P. (2025). *Suicide risk estimation in bipolar disorder using N200 and P300 event-related potentials and machine learning: A pilot study.* _Journal of Affective Disorders Reports_, 20, 100875. [DOI](https://doi.org/10.1016/j.jadr.2025.100875)  
-- Plumley, R.D., Bernacki, M.L., Greene, J.A., …, **Lee, C.\***, Panter, A.T., & Gates, K.M. (2024). *Co‐designing enduring learning analytics prediction and support tools in undergraduate biology courses.* _British Journal of Educational Technology_, 55(5), 1860–1883. [DOI](https://doi.org/10.1111/bjet.13472)  
-- **Lee, C.\*** (2023). *An Integrative Machine Learning Approach for Small Samples and High-Dimensional Imbalanced Data in Psychological Experiment* (Master's thesis, The University of North Carolina at Chapel Hill)
+**Research Articles**  
+- Lee, C.*, & Gates, K. M. (2025). Automated machine learning for classification and regression: A tutorial for psychologists. *Behavior Research Methods, 57*(2), 262. https://doi.org/10.3758/s13428-025-02684-5  
+- Lee, C.*, Luo, L., Kuhlmann, S. L., Plumley, R. D., Panter, A. T., Bernacki, M. L., Greene, J. A., & Gates, K. M. (2025). Interpretable predictive analytics for online learning: A Markov-based machine learning approach. *Journal of Learning Analytics, 12*(2), 259–278. https://doi.org/10.18608/jla.2025.8375  
+- Lee, C.*, Gates, K. M., Chun, J., Al Kontar, R., Kamali, M., McInnis, M. G., & Deldin, P. (2025). Suicide risk estimation in bipolar disorder using N200 and P300 event-related potentials and machine learning: A pilot study. *Journal of Affective Disorders Reports, 20*, 100875. https://doi.org/10.1016/j.jadr.2025.100875  
+- Plumley, R. D., Bernacki, M. L., Greene, J. A., …, Lee, C.*, Panter, A. T., & Gates, K. M. (2024). Co-designing enduring learning analytics prediction and support tools in undergraduate biology courses. *British Journal of Educational Technology, 55*(5), 1860–1883. https://doi.org/10.1111/bjet.13472  
+- Lee, C.* (2023). An integrative machine learning approach for small samples and high-dimensional imbalanced data in psychological experiment [Master’s thesis, University of North Carolina at Chapel Hill].
 
-#### Software Program
-- **Lee, C.\*** (2025). *flex: Fuzzy least squares estimation with explicit formula* (Version 0.1.0) [R package]. _CRAN_. [DOI](https://doi.org/10.32614/CRAN.package.flex)
+**Software**  
+- Lee, C.* (2025). *flex: Fuzzy least squares estimation with explicit formula* (Version 0.1.0) [R package]. CRAN. https://doi.org/10.32614/CRAN.package.flex  
 
-### Accepted
+---
 
-- **Lee, C.\*** & Gates, K.M. (Expected May 7, 2026). *Group-iterative multiple model estimation in clinical science.* _Annual Review of Clinical Psychology_
+### Accepted  
+- Lee, C.*, & Gates, K. M. (in press). Group-iterative multiple model estimation in clinical science. *Annual Review of Clinical Psychology*.  
 
-### Under Review
+---
 
-- Rodebaugh, T.L., **Lee, C.\***, Gates, K.M., Frumkin, M.R., …, & Piccirillo, J. *Modeling psychological processes in Tinnitus disorder.*  
-- **Yoon, J.H.\***, **Lee, C.\***, Kwon, S., & Bae, Y.C. *Nonlinear and chaotic dynamics in generalized fuzzy opinion model.*
+### Under Review  
+- Rodebaugh, T. L., Lee, C.*, Gates, K. M., Frumkin, M. R., …, & Piccirillo, J. Modeling psychological processes in tinnitus disorder.  
+- Yoon, J. H.*, Lee, C.*, Kwon, S., & Bae, Y. C. Nonlinear and chaotic dynamics in generalized fuzzy opinion model.  
+
+---
 
 ### Submission Pending
+- Lee, C.* No single approach fits all: Testing two generations of structural equation modeling estimation.  
+- Lee, C.* Modeling imprecisison in psychological data: Fuzzy set theory and its application with fuzzy least squares regression.  
+- Lee, C.* FLEX: An R package for fuzzy numbers and fuzzy least squares regression.  
 
-- *No single approach fits all: Testing two generations of structural equation modeling estimation.*  
-- *Modeling imprecise psychological data: Fuzzy set theory and its application with fuzzy least squares regression.*  
-- *FLEX: An R Package for Fuzzy Numbers and Fuzzy Least Squares Regression*
 
 ## Research Collaborations {#collaborations}
 
