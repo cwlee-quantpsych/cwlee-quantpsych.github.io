@@ -6,27 +6,34 @@ tagline: Quantitative Psychology • Data Science • Statistics
 
 # Welcome to my personal homepage!
 
-<table>
-<tr>
-<td width="200px">
-  <img src="/assets/images/chaewon1.JPG" width="180" style="border-radius: 15px;" />
-</td>
-<td>
+<div style="display: flex; align-items: flex-start; padding: 10px; background: none; border: none; box-shadow: none;">
 
-I am Chaewon Lee, a quantitative psychologist, data scientist, and statistician.  
-I am currently a Ph.D. candidate in the Quantitative Psychology program, housed within the L.L. Thurstone Psychometric Laboratory in the Department of Psychology and Neuroscience at the University of North Carolina at Chapel Hill.
+  <img src="/assets/images/chaewon1.JPG" alt="Chaewon Lee"
+       style="width: 200px; margin-right: 40px; border-radius: 15px;" />
 
-My research focuses on developing and disseminating advanced statistical methods to address unique methodological challenges in psychological science. Specifically, I work on:
+  <div style="overflow: hidden; background: none; border: none; box-shadow: none;">
 
-- Machine learning and deep learning  
-- Time-series analysis  
-- Dynamic network modeling  
-- Structural equation modeling  
-- Fuzzy modeling  
+    <p style="margin-top: 0;">
+      I am Chaewon Lee, a quantitative psychologist, data scientist, and statistician.
+      I am currently a Ph.D. candidate in the Quantitative Psychology program, housed within the
+      L.L. Thurstone Psychometric Laboratory in the Department of Psychology and Neuroscience at the University of North Carolina at Chapel Hill.
+    </p>
 
-</td>
-</tr>
-</table>
+    <p>
+      My research focuses on developing and disseminating advanced statistical methods to address unique methodological
+      challenges in psychological science. Specifically, I work on:
+    </p>
+
+    <ul style="margin-top: 10px;">
+      <li>Machine learning and deep learning</li>
+      <li>Time-series analysis</li>
+      <li>Dynamic network modeling</li>
+      <li>Structural equation modeling</li>
+      <li>Fuzzy modeling</li>
+    </ul>
+
+  </div>
+</div>
 
 My work is guided by three grand pillars:
 
