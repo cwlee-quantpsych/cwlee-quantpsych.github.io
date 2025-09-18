@@ -7,18 +7,21 @@ permalink: /home
 <!-- ===== Sticky Tab Nav (single-page tabs) ===== -->
 <style>
   :root {
-    --tab-bg: #0f1418;       /* fallback if theme is dark */
-    --tab-fg: #1a1a1a;       /* fallback if theme is light */
-    --tab-accent: #0a84ff;   /* link accent */
-    --tab-muted: #8a8f98;
+    --tab-bg: #0f1418;
+    --tab-accent: #0a84ff;
   }
 
   /* Let sticky work even if parent sets overflow */
   main, .page-content { overflow: visible; }
 
-  /* Make the nav sticky */
+  /* If your site has a fixed header, offset the sticky tabs so they’re not hidden under it */
+  :root { --site-header-h: 56px; }          /* adjust if your header is taller/shorter */
+  .site-header { height: var(--site-header-h); } /* optional hint; safe to keep */
+  
   .tabs {
-    position: sticky; top: 0; z-index: 999;
+    position: sticky;
+    top: var(--site-header-h, 0px);
+    z-index: 999;
     backdrop-filter: saturate(160%) blur(6px);
     background: rgba(15,20,24,.85); /* fallback for older browsers */
     background: color-mix(in srgb, var(--tab-bg) 85%, transparent);
@@ -41,13 +44,8 @@ permalink: /home
     border: 1px solid rgba(10,132,255,.25);
   }
 
-  /* Smooth scroll & good anchor offsets */
   html { scroll-behavior: smooth; }
-
-  /* Prevent headings hiding under sticky nav */
-  h2[id], h3[id] { scroll-margin-top: 82px; }
-
-  /* Optional: compact top spacer below any hero block on the home layout */
+  h2[id], h3[id] { scroll-margin-top: calc(var(--site-header-h, 0px) + 26px); }
   .top-spacer { clear: both; margin-top: 18px; }
 </style>
 
@@ -75,7 +73,6 @@ permalink: /home
     };
 
     const obs = new IntersectionObserver((entries) => {
-      // Pick the top-most visible section
       const visible = entries
         .filter(e => e.isIntersecting)
         .sort((a,b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
@@ -83,7 +80,6 @@ permalink: /home
     }, { rootMargin: "-40% 0px -55% 0px", threshold: [0, 0.1, 0.5, 1] });
 
     secs.forEach(s => obs.observe(s));
-    // Fallback: set first link active on load
     if (links.length && ids.length) activate(ids[0]);
   })();
 </script>
