@@ -83,9 +83,6 @@ permalink: /home
   .top-spacer { clear: both; margin-top: 20px; }
 </style>
 
-
-
-
 ## Research Focus {#research}
 ### Methodological Innovation
 My research focuses on developing and disseminating advanced statistical methods to address the unique methodological challenges of psychological, behavioral, and social sciences. I primarily work across five statistical frameworks, often integrating them to create synergistic solutions that advance the field:
@@ -111,19 +108,19 @@ My methodological work unfolds through three core pipelines:
 ### Published  
 
 **Research Articles**  
-- Lee, C.*, & Gates, K. M. (2025). Automated machine learning for classification and regression: A tutorial for psychologists. *Behavior Research Methods, 57*(2), 262. [DOI](https://doi.org/10.3758/s13428-025-02684-5)  
-- Lee, C.*, Luo, L., Kuhlmann, S. L., Plumley, R. D., Panter, A. T., Bernacki, M. L., Greene, J. A., & Gates, K. M. (2025). Interpretable predictive analytics for online learning: A Markov-based machine learning approach. *Journal of Learning Analytics, 12*(2), 259–278. [DOI](https://doi.org/10.18608/jla.2025.8375)  
-- Lee, C.*, Gates, K. M., Chun, J., Al Kontar, R., Kamali, M., McInnis, M. G., & Deldin, P. (2025). Suicide risk estimation in bipolar disorder using N200 and P300 event-related potentials and machine learning: A pilot study. *Journal of Affective Disorders Reports, 20*, 100875. [DOI](https://doi.org/10.1016/j.jadr.2025.100875)  
-- Plumley, R. D., Bernacki, M. L., Greene, J. A., …, Lee, C.*, Panter, A. T., & Gates, K. M. (2024). Co-designing enduring learning analytics prediction and support tools in undergraduate biology courses. *British Journal of Educational Technology, 55*(5), 1860–1883. [DOI](https://doi.org/10.1111/bjet.13472)  
+- Lee, C.*, & Gates, K. M. (2025). Automated machine learning for classification and regression: A tutorial for psychologists. <em>Behavior Research Methods, 57</em>(2), 262. [DOI](https://doi.org/10.3758/s13428-025-02684-5)  
+- Lee, C.*, Luo, L., Kuhlmann, S. L., Plumley, R. D., Panter, A. T., Bernacki, M. L., Greene, J. A., & Gates, K. M. (2025). Interpretable predictive analytics for online learning: A Markov-based machine learning approach. <em>Journal of Learning Analytics, 12</em>(2), 259–278. [DOI](https://doi.org/10.18608/jla.2025.8375)  
+- Lee, C.*, Gates, K. M., Chun, J., Al Kontar, R., Kamali, M., McInnis, M. G., & Deldin, P. (2025). Suicide risk estimation in bipolar disorder using N200 and P300 event-related potentials and machine learning: A pilot study. <em>Journal of Affective Disorders Reports, 20</em>, 100875. [DOI](https://doi.org/10.1016/j.jadr.2025.100875)  
+- Plumley, R. D., Bernacki, M. L., Greene, J. A., …, Lee, C.*, Panter, A. T., & Gates, K. M. (2024). Co-designing enduring learning analytics prediction and support tools in undergraduate biology courses. <em>British Journal of Educational Technology, 55</em>(5), 1860–1883. [DOI](https://doi.org/10.1111/bjet.13472)  
 - Lee, C.* (2023). An integrative machine learning approach for small samples and high-dimensional imbalanced data in psychological experiment [Master’s thesis, University of North Carolina at Chapel Hill].
 
 **Software**  
-- Lee, C.* (2025). flex: Fuzzy least squares estimation with explicit formula (Version 0.1.0) [R package]. CRAN. [DOI](https://doi.org/10.32614/CRAN.package.flex)  
+- Lee, C.* (2025). <em>flex: Fuzzy least squares estimation with explicit formula</em> (Version 0.1.0) [R package]. CRAN. [DOI](https://doi.org/10.32614/CRAN.package.flex)  
 
 ---
 
 ### Accepted  
-- Lee, C.*, & Gates, K. M. (in press). Group-iterative multiple model estimation in clinical science. *Annual Review of Clinical Psychology*.  
+- Lee, C.*, & Gates, K. M. (in press). Group-iterative multiple model estimation in clinical science. <em>Annual Review of Clinical Psychology</em>.  
 
 ---
 
@@ -133,7 +130,7 @@ My methodological work unfolds through three core pipelines:
 
 ---
 
-### Submission Pending  
+### Submission Pending
 - Lee, C.* No single approach fits all: Testing two generations of structural equation modeling estimation.  
 - Lee, C.* Modeling imprecision in psychological data: Fuzzy set theory and its application with fuzzy least squares regression.  
 - Lee, C.* FLEX: An R package for fuzzy numbers and fuzzy least squares regression.  
