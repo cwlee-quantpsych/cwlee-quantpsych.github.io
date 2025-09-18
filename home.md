@@ -104,7 +104,7 @@ permalink: /home
 My research focuses on developing and disseminating advanced statistical methods to address the unique methodological challenges of psychological, behavioral, and social sciences. I primarily work across five statistical frameworks, often integrating them to create synergistic solutions that advance the field:
 
 <div style="margin-top:14px;">
-  <img src="{{ '/assets/images/research2.png' | relative_url }}"
+  <img src="{{ '/assets/images/research2.jpg' | relative_url }}"
        alt="Research approaches"
        style="max-width:1100px; width:100%; height:auto; border-radius:15px; display:block; margin:0;" />
 </div>
