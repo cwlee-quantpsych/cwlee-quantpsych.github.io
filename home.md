@@ -1,3 +1,10 @@
+---
+layout: page
+title: ""
+description: ""
+permalink: /home
+---
+
 <style>
   :root{
     --tab-accent:#0a84ff;
@@ -20,19 +27,15 @@
   h1,h2,h3,h4,h5,h6{ font-weight:700; color:var(--unc-dark); }
   p,li{ color:var(--unc-gray); font-size:17px; line-height:1.65; }
 
-  /* Hide auto-rendered page titles (from page content), not the site header */
+  /* Hide auto-rendered page titles from the page content */
   .page__header,.page__title,.page-title,.page__header h1{ display:none !important; }
 
-  /* -------- Make the top site title (“Chaewon Lee”) stylish --------
-     Works with Minimal Mistakes, many Jekyll themes, and generic headers. */
-  /* Container polish */
+  /* -------- Stylish top site title (“Chaewon Lee”) -------- */
   .masthead, .site-header, header[role="banner"]{
     background:transparent !important;
     box-shadow:none !important;
     border-bottom:1px solid rgba(19,41,75,.12);
   }
-
-  /* Title itself (cover multiple theme selectors) */
   a.site-title, .site-title, .masthead__title, .header__title, .navbar-brand{
     display:block !important;
     text-align:center !important;
@@ -43,20 +46,20 @@
     letter-spacing:-.3px !important;
     margin:18px auto 14px !important;
     line-height:1.1 !important;
-    font-size:clamp(28px,3.8vw,44px) !important; /* bold like “Research Focus” */
+    font-size:clamp(28px,3.8vw,44px) !important;
   }
-  /* Subtle underline accent to echo section styling */
   a.site-title::after, .site-title::after, .masthead__title::after, .header__title::after, .navbar-brand::after{
     content:""; display:block; width:64px; height:2px; margin:8px auto 0;
     background:var(--unc-dark); opacity:.8; border-radius:2px;
   }
-  /* Keep hover clean */
   a.site-title:hover, .navbar-brand:hover{ color:var(--unc-dark) !important; opacity:.95; }
+  .masthead__menu, .site-nav, .greedy-nav{ justify-content:center !important; }
 
-  /* If your theme adds left/right nav next to the title, keep things tidy */
-  .masthead__menu, .site-nav, .greedy-nav{
-    justify-content:center !important;
-  }
+  /* -------- Hide duplicate masthead/footer blocks -------- */
+  .site-subtitle,
+  .masthead__inner-wrap .site-subtitle,
+  .masthead__menu--secondary,
+  .footer, .page__footer, footer[role="contentinfo"]{ display:none !important; }
 
   /* -------- Tabs bar — clean, light look -------- */
   .tabs{
@@ -88,7 +91,6 @@
   }
 </style>
 
-
 <nav class="tabs" aria-label="Section navigation">
   <ul>
     <li><a href="#research">Research</a></li>
@@ -109,7 +111,6 @@
 </script>
 
 <div class="top-spacer"></div>
-
 
 ## Research Focus {#research}
 **Methodological Innovation**  
@@ -161,7 +162,6 @@ My methodological work unfolds through three core pipelines:
 ---
 
 ## Research Collaborations {#collaborations}
-
 I have collaborated on multiple interdisciplinary research projects, including:
 
 - **EPICS Mood and Schizophrenia Lab (PI: Deldin, P.J., University of Michigan):**  
@@ -192,6 +192,7 @@ I have collaborated on multiple interdisciplinary research projects, including:
 At UNC Chapel Hill, I have served as a teaching/instructional assistant for PSYC 210 (Statistical Principles of Psychological Research) across multiple semesters since 2020. In this role, I led recitation sessions, assisted students with SPSS- and Jamovi-based data analysis, and provided individualized support. In recognition of strong student evaluations, I was honored twice with the Departmental Teaching Assistant Commendation.
 
 ---
+
 ## Academic Talks {#talks}
 - **No Single Approach Fits All: Testing Two Generations of Structural Equation Modeling Estimation** — 23rd Annual Society of Multivariate Experimental Psychology (SMEP) Conference, University of Notre Dame, IN, USA. *Oct 2025*  
 - **Chaotic Behaviors in Opinion Dynamics Models Influenced by External Forces** — 25th International Symposium on Advanced Intelligent Systems (ISIS 2024), Himeji, Japan. *Nov 2024*  
@@ -200,6 +201,7 @@ At UNC Chapel Hill, I have served as a teaching/instructional assistant for PSYC
 - **Prediction of Suicide Attempt by Bipolar Disorder Patients with Machine Learning Algorithms** — Quant Forum, Department of Psychology and Neuroscience, UNC Chapel Hill. *May 2021*
 
 ---
+
 ## Life Before the Lab {#life}
 **Professionally Trained Classical Pianist**  
 I began playing the piano at the age of 3 and pursued professional training at Yewon School and Seoul Arts High School, two of Korea’s most prestigious arts institutions. During my teenage years, I won several major national music competitions and performed extensively as both a soloist and an accompanist for violinists, cellists, and vocalists in concert and competition settings. I also collaborated with the Seoul Symphony Orchestra in a performance of Grieg’s Piano Concerto in A minor. At the age of 14, I was prestigiously selected as a musical prodigy by the Kumho Asiana Group—one of Korea’s leading conglomerates—which led to my own solo debut recital. My favorite repertoire includes Bach–Busoni’s *Chaconne*, Mendelssohn’s *Variations sérieuses*, Chopin’s Ballades, and more. 
