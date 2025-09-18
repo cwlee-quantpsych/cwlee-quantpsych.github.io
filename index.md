@@ -16,6 +16,7 @@ My research focuses on developing and disseminating advanced statistical methods
 
 <div style="margin-top: 18px;"></div>
 
+&nbsp;
 - Machine learning and deep learning  
 - Time-series analysis  
 - Dynamic network modeling  
@@ -111,6 +112,10 @@ At UNC Chapel Hill, I have served as a teaching assistant for PSYC 210 (Statisti
 
 **Fact 1. I am a classically trained pianist.**  
 I began playing the piano at the age of three and attended specialized arts middle and high schools in Korea to study it professionally. During my teenage years, I won several major national music competitions, performed on numerous stages, and collaborated with the Seoul Symphony Orchestra in a performance of Grieg’s Piano Concerto in A minor. At the age of 14, I was prestigiously selected as a musical prodigy by the Kumho Asiana Group—one of Korea’s leading conglomerates—which led to my own solo recital. My favorite repertoire includes Bach–Busoni’s *Chaconne*, Mendelssohn’s *Variations sérieuses*, Chopin’s Ballades, and more. In addition to solo performance, I have also performed as an accompanist for violinists, cellists, and vocalists in various concert and competition settings.
+
+<div align="center" style="margin: 20px 0;">
+  <img src="/assets/images/chaewon2.JPG" alt="Chaewon Lee performing" width="400" style="border-radius: 12px;" />
+</div>
 
 **Fact 2. I used to work as an economist and investment banker.**  
 Before entering academia, I worked at Korea Investment & Securities in Seoul. I first served as a junior investment banker in the Equity Capital Market Department, where I worked on IPOs for KOSPI and KOSDAQ, conducting due diligence, accounting analysis, and preparing listing applications. I later transitioned to the Research Center as a junior economist, where I authored analytical reports on global macroeconomic trends and financial markets, and led forecasting for indicators such as exchange rates, crude oil prices, and international policy rates.
