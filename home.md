@@ -10,104 +10,108 @@ permalink: /home
     --tab-accent:#0a84ff;
     --site-header-h:56px;
 
-    /* UNC-inspired palette */
-    --unc-dark:#13294B;       /* UNC navy */
-    --unc-gray:#4B4F54;       /* medium gray */
-    --unc-bg-light:#A7C7E7;   /* pastel blue 1 */
-    --unc-bg-lighter:#D4E6F9; /* pastel blue 2 */
+    /* UNC palette */
+    --unc-dark:#13294B;
+    --unc-gray:#4B4F54;
+    --unc-bg-light:#A7C7E7;
+    --unc-bg-lighter:#D4E6F9;
 
-    --card-bg:#ffffffee;
-    --card-bd:rgba(19,41,75,.12);
+    --card-bg:#fff;
+    --card-bd:rgba(19,41,75,.14);
+    --card-shadow:0 10px 18px rgba(19,41,75,.10);
   }
 
-  /* -------- Base typography & page shell -------- */
+  /* -------- Base -------- */
   body{
     font-family:'Lato',system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size:16px; line-height:1.65; color:var(--unc-gray);
     background:linear-gradient(180deg,var(--unc-bg-lighter) 0%,var(--unc-bg-light) 100%);
   }
-  main,.page-content{ 
-    overflow:visible; 
-    max-width:1600px;   /* expanded from 1200px */
-    margin:0 auto; 
-    padding:0 40px; 
-  }
-  h1,h2,h3,h4,h5,h6{ font-weight:700; color:var(--unc-dark); }
-  p,li{ color:var(--unc-gray); font-size:17px; line-height:1.65; }
 
-  /* Hide auto-rendered page titles */
+  /* WIDER page: longer lines */
+  main,.page-content{
+    overflow:visible;
+    max-width:min(96vw, 1800px);  /* was 1200 → now up to 1800 or 96vw */
+    margin:0 auto;
+    padding:0 44px;               /* side breathing room */
+  }
+
+  h1,h2,h3,h4,h5,h6{ font-weight:700; color:var(--unc-dark); }
+  p,li{ color:var(--unc-gray); font-size:17px; line-height:1.7; }
+
+  /* Hide auto titles */
   .page__header,.page__title,.page-title,.page__header h1{ display:none !important; }
 
-  /* -------- Remove theme line & keep global header simple -------- */
-  .masthead, .site-header, header[role="banner"]{
-    background:transparent !important;
-    box-shadow:none !important;
-    border-bottom:0 !important;
-  }
-  a.site-title, .site-title, .masthead__title, .header__title, .navbar-brand{
-    color:transparent !important;
-    text-shadow:none !important;
-    pointer-events:none;
-  }
-  a.site-title::after, .site-title::after, .masthead__title::after, .header__title::after, .navbar-brand::after{ content:none !important; }
+  /* Remove theme chrome */
+  .masthead,.site-header,header[role="banner"]{ background:transparent !important; box-shadow:none !important; border-bottom:0 !important; }
+  a.site-title,.site-title,.masthead__title,.header__title,.navbar-brand{ color:transparent !important; text-shadow:none !important; pointer-events:none; }
+  a.site-title::after,.site-title::after,.masthead__title::after,.header__title::after,.navbar-brand::after{ content:none !important; }
 
-  /* -------- HERO: Name + right-aligned tabs -------- */
+  /* -------- HERO (split boxes) -------- */
   .hero-nav-wrap{
     position:sticky; top:0; z-index:15;
     backdrop-filter: blur(6px);
-    padding: 10px 0 18px 0;
+    padding:12px 0 18px 0;
   }
+
+  /* container spans wide */
   .hero-nav{
-    max-width:1600px;   /* expanded */
-    margin:0 auto; 
-    padding:14px 28px;
+    max-width:min(96vw, 1800px);
+    margin:0 auto;
+    padding:0 12px;
+    display:flex; align-items:center; gap:18px;
+  }
+
+  /* left pill: NAME */
+  .hero-title{
+    margin:0;
+    font-weight:900; line-height:1.05; color:var(--unc-dark);
+    font-size: clamp(34px, 3.3vw, 52px);
+    letter-spacing:-.2px;
+    white-space:nowrap;                 /* keep on one line */
     background:var(--card-bg);
     border:1px solid var(--card-bd);
-    border-radius:14px;
-    display:flex; 
-    align-items:center; 
-    justify-content:space-between;  /* name left, tabs right */
-    gap:24px;
-    flex-wrap:nowrap;   /* keep all on one line */
+    border-radius:16px;
+    box-shadow:var(--card-shadow);
+    padding:12px 18px;
+    flex:0 0 auto;                      /* size to content */
   }
-  .hero-title{
-    margin:0; 
-    font-weight:900; 
-    line-height:1.05;
-    color:var(--unc-dark);
-    font-size: clamp(32px, 3vw, 44px);
-    letter-spacing:-0.2px;
-    white-space:nowrap;  /* keep “Chaewon Lee” on one line */
+
+  /* right pill: TABS */
+  .tabs{
+    background:var(--card-bg);
+    border:1px solid var(--card-bd);
+    border-radius:16px;
+    box-shadow:var(--card-shadow);
+    padding:12px 16px;
+    flex:1 1 auto;                      /* grow to take remaining width */
+    overflow:hidden;                    /* clip hover raise */
   }
 
   .tabs ul{
-    display:flex; 
-    flex-wrap:nowrap;  /* keep tabs on one line */
-    gap:20px; 
-    list-style:none; 
-    margin:0; 
-    padding:0;
+    display:flex; align-items:center; justify-content:flex-start;
+    flex-wrap:nowrap;                   /* keep in one line */
+    gap:22px; list-style:none; margin:0; padding:0;
   }
   .tabs a{
     display:inline-block; padding:6px 10px;
-    font-weight:600; color:var(--unc-dark);
-    text-decoration:none; border-radius:8px;
+    font-weight:700; color:var(--unc-dark); text-decoration:none;
+    border-radius:8px; white-space:nowrap;
     transition:background .15s ease, color .15s ease, transform .08s ease;
-    white-space:nowrap;
   }
   .tabs a:hover{ background:var(--tab-accent); color:#fff; transform:translateY(-1px); }
   .tabs a.active{ background:var(--unc-dark); color:#fff; }
 
-  /* Responsive fallback */
-  @media (max-width: 860px){
-    .hero-nav{ flex-wrap:wrap; row-gap:10px; }
-    .tabs{ width:100%; }
-    .tabs ul{ justify-content:flex-start; flex-wrap:wrap; }
+  /* Responsive fallback: stack pills when very narrow */
+  @media (max-width: 980px){
+    .hero-nav{ flex-wrap:wrap; }
+    .tabs{ width:100%; order:2; }
+    .tabs ul{ flex-wrap:wrap; gap:14px 18px; }
   }
 
   html{ scroll-behavior:smooth; }
-  h2[id],h3[id]{ scroll-margin-top: calc(var(--site-header-h,0px) + 90px); }
-  .top-spacer{ clear:both; margin-top: 14px; }
+  h2[id], h3[id]{ scroll-margin-top: calc(var(--site-header-h,0px) + 90px); }
+  .top-spacer{ clear:both; margin-top:14px; }
 </style>
 
 <!-- ONE stylish header row: name left, tabs right -->
