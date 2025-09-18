@@ -27,7 +27,7 @@ permalink: /home
   h1,h2,h3,h4,h5,h6{ font-weight:700; color:var(--unc-dark); }
   p,li{ color:var(--unc-gray); font-size:17px; line-height:1.65; }
 
-  /* Hide auto-rendered page titles from the page content */
+  /* Hide auto-rendered page titles */
   .page__header,.page__title,.page-title,.page__header h1{ display:none !important; }
 
   /* -------- Stylish top site title (“Chaewon Lee”) -------- */
@@ -48,9 +48,9 @@ permalink: /home
     line-height:1.1 !important;
     font-size:clamp(28px,3.8vw,44px) !important;
   }
+  /* Remove underline below the name */
   a.site-title::after, .site-title::after, .masthead__title::after, .header__title::after, .navbar-brand::after{
-    content:""; display:block; width:64px; height:2px; margin:8px auto 0;
-    background:var(--unc-dark); opacity:.8; border-radius:2px;
+    content:none !important;
   }
   a.site-title:hover, .navbar-brand:hover{ color:var(--unc-dark) !important; opacity:.95; }
   .masthead__menu, .site-nav, .greedy-nav{ justify-content:center !important; }
@@ -61,14 +61,17 @@ permalink: /home
   .masthead__menu--secondary,
   .footer, .page__footer, footer[role="contentinfo"]{ display:none !important; }
 
-  /* -------- Tabs bar — clean, light look -------- */
+  /* -------- Tabs bar — right aligned -------- */
   .tabs{
     position:sticky; top:0; z-index:10;
     background:#ffffffdd; border-bottom:1px solid rgba(19,41,75,.15);
     backdrop-filter:blur(6px); padding:10px 0; margin:0 0 20px 0;
   }
+  .tabs .inner{
+    max-width:1200px; margin:0 auto; padding:0 32px;
+  }
   .tabs ul{
-    display:flex; flex-wrap:wrap; justify-content:center;
+    display:flex; flex-wrap:wrap; justify-content:flex-end; /* right aligned */
     gap:22px; list-style:none; margin:0; padding:0;
   }
   .tabs a{
@@ -80,7 +83,7 @@ permalink: /home
   .tabs a.active{ background:var(--unc-dark); color:#fff; }
 
   html{ scroll-behavior:smooth; }
-  h2[id],h3[id]{ scroll-margin-top:calc(var(--site-header-h,0px)+60px); }
+  h2[id],h3[id]{ scroll-margin-top:calc(var(--site-header-h,0px)+76px); }
   .top-spacer{ clear:both; margin-top:20px; }
 
   /* -------- Custom copyright footer -------- */
@@ -92,15 +95,17 @@ permalink: /home
 </style>
 
 <nav class="tabs" aria-label="Section navigation">
-  <ul>
-    <li><a href="#research">Research</a></li>
-    <li><a href="#publications">Publications</a></li>
-    <li><a href="#collaborations">Collaborations</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#teaching">Teaching</a></li>
-    <li><a href="#talks">Academic Talks</a></li>
-    <li><a href="#life">Life Before the Lab</a></li>
-  </ul>
+  <div class="inner">
+    <ul>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#collaborations">Collaborations</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#talks">Academic Talks</a></li>
+      <li><a href="#life">Life Before the Lab</a></li>
+    </ul>
+  </div>
 </nav>
 
 <script>
@@ -111,6 +116,7 @@ permalink: /home
 </script>
 
 <div class="top-spacer"></div>
+
 
 ## Research Focus {#research}
 **Methodological Innovation**  
