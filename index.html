@@ -17,101 +17,119 @@ layout: null
   <link rel="canonical" href="{{ '/' | absolute_url }}" />
 
   <style>
-    :root{
-      --bg:#A7C7E7;        /* pastel blue background */
-      --ink:#13294B;       /* navy text */
-      --muted:#4A6572;     /* muted gray-blue */
-      --accent:#4B9CD3;    /* carolina blue button */
-      --accent-ink:#ffffff;
-      --card:#ffffff;      /* WHITE card */
-      --focus:#ffbf47;
+    /* SUPER-DEFENSIVE RESET */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+
+    /* Pastel UNC-ish blue background (with hard fallback) */
+    html { background: #A7C7E7 !important; }
+    body {
+      min-height: 100vh;
+      background: #A7C7E7 !important; /* fallback, even if vars fail */
+      font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 18px;
+      color: #13294B; /* navy text by default */
     }
 
-    /* Make sure the canvas fills the viewport */
-    html, body { height:100%; margin:0; }
-
-    body{
-      min-height:100vh;
-      background:var(--bg);
-      /* don't color the body text—card will set its own color */
-      font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-      display:flex; align-items:center; justify-content:center;
-      padding:32px 18px;
+    /* THE CARD — make it impossible to disappear */
+    .wrap {
+      width: 100%;
+      max-width: 980px;
+      min-height: 280px;                 /* force visible height */
+      background: #ffffff !important;     /* hard white */
+      color: #13294B;
+      border-radius: 16px;
+      padding: 28px;
+      /* TEMP: bright border so you can see it — we'll remove later */
+      border: 3px solid #ff2e88;
+      box-shadow: 0 10px 30px rgba(0,0,0,.15);
+      display: block;                     /* no grid/flex surprises */
     }
 
-    /* THE CARD — force visibility */
-    .wrap{
-      background:var(--card) !important;  /* hard ensure white */
-      color:var(--ink);
-      max-width:980px; width:100%;
-      min-height: 280px;                   /* force non-zero height */
-      display:grid; grid-template-columns:240px 1fr; gap:28px;
-      border-radius:16px; padding:28px;
-      box-shadow:0 10px 30px rgba(0,0,0,.15);
-      position:relative; z-index:1;        /* sit above bg */
+    /* Simple two-column without grid: image block then text block on mobile stack */
+    .row { display: flex; gap: 28px; align-items: flex-start; }
+    .col { flex: 1 1 0; }
+    .col.photo-col { flex: 0 0 240px; }
+
+    .photo {
+      width: 100%;
+      max-width: 240px;
+      border-radius: 14px;
+      display: block;
     }
 
-    .photo{ width:100%; border-radius:14px; display:block; }
+    h1 { margin: 0 0 12px; font-size: 28px; letter-spacing: .2px; }
+    p  { margin: 12px 0 0; color: #4A6572; font-size: 18px; }
 
-    h1{ margin:0 0 12px; font-size:28px; letter-spacing:.2px; color:var(--ink); }
-    p{ margin:12px 0 0; color:var(--muted); font-size:18px; }
-
-    .cta{
-      margin-top:20px; display:inline-block;
-      background:var(--accent); color:var(--accent-ink);
-      text-decoration:none; padding:10px 16px; border-radius:10px; font-weight:600;
-      transition:transform .06s ease, box-shadow .06s ease;
-      box-shadow:0 6px 16px rgba(75,156,211,.25);
+    .cta {
+      margin-top: 20px;
+      display: inline-block;
+      background: #4B9CD3;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: transform .06s ease, box-shadow .06s ease;
+      box-shadow: 0 6px 16px rgba(75,156,211,.25);
     }
-    .cta:hover{ transform:translateY(-1px); box-shadow:0 8px 20px rgba(75,156,211,.32); }
-    .cta:focus-visible{ outline:3px solid var(--focus); outline-offset:3px; }
+    .cta:hover { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(75,156,211,.32); }
 
-    .quick{ margin-top:16px; display:flex; gap:8px; flex-wrap:wrap; }
-    .quick a{
-      display:inline-block; padding:7px 12px; border-radius:999px;
+    .quick { margin-top: 16px; display: flex; gap: 8px; flex-wrap: wrap; }
+    .pill {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 999px;
       background: rgba(75,156,211,.12);
       border: 1px solid rgba(75,156,211,.25);
-      color: var(--accent);
-      text-decoration:none; font-weight:600; font-size:14px;
+      color: #4B9CD3;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
       transition: transform .06s ease;
     }
-    .quick a:hover{ transform: translateY(-1px); }
+    .pill:hover { transform: translateY(-1px); }
 
-    @media (max-width:760px){
-      .wrap{ grid-template-columns:1fr; padding:22px; }
-    }
-    @media (prefers-reduced-motion:reduce){
-      .cta, .quick a{ transition:none; }
+    @media (max-width: 760px) {
+      .row { flex-direction: column; }
+      .col.photo-col { flex: 0 0 auto; }
+      .photo { max-width: none; width: 100%; }
     }
   </style>
 </head>
 <body>
   <main class="wrap">
-    <div>
-      <img class="photo" src="{{ '/assets/images/chaewon1.JPG' | relative_url }}" alt="Portrait of Chaewon Lee" />
-    </div>
-    <div>
-      <h1>Hello! I’m Chaewon Lee.</h1>
-      <p>
-        I’m a quantitative psychologist, data scientist, and statistician.<br>
-        I am currently a Ph.D. candidate in the Quantitative Psychology program,
-        housed within the L.L. Thurstone Psychometric Laboratory in the
-        Department of Psychology and Neuroscience at the University of
-        North Carolina at Chapel Hill.
-      </p>
-      <p>If you’d like to learn more about my work and background, please click below:</p>
+    <div class="row">
+      <div class="col photo-col">
+        <img class="photo" src="{{ '/assets/images/chaewon1.JPG' | relative_url }}" alt="Portrait of Chaewon Lee" />
+      </div>
 
-      <a class="cta" href="{{ '/home' | relative_url }}" aria-label="Enter site to view all sections on one page">Enter site →</a>
+      <div class="col">
+        <h1>Hello! I’m Chaewon Lee.</h1>
+        <p>
+          I’m a quantitative psychologist, data scientist, and statistician.<br>
+          I am currently a Ph.D. candidate in the Quantitative Psychology program,
+          housed within the L.L. Thurstone Psychometric Laboratory in the
+          Department of Psychology and Neuroscience at the University of
+          North Carolina at Chapel Hill.
+        </p>
+        <p>If you’d like to learn more about my work and background, please click below:</p>
 
-      <nav class="quick" aria-label="Quick links to site sections">
-        <a href="{{ '/home' | relative_url }}#research">Research</a>
-        <a href="{{ '/home' | relative_url }}#publications">Publications</a>
-        <a href="{{ '/home' | relative_url }}#collaborations">Collaborations</a>
-        <a href="{{ '/home' | relative_url }}#education">Education</a>
-        <a href="{{ '/home' | relative_url }}#teaching">Teaching</a>
-        <a href="{{ '/home' | relative_url }}#conferences">Conferences</a>
-        <a href="{{ '/home' | relative_url }}#life">Life Before the Lab</a>
-      </nav>
+        <a class="cta" href="{{ '/home' | relative_url }}" aria-label="Enter site to view all sections on one page">Enter site →</a>
+
+        <nav class="quick" aria-label="Quick links to site sections">
+          <a class="pill" href="{{ '/home' | relative_url }}#research">Research</a>
+          <a class="pill" href="{{ '/home' | relative_url }}#publications">Publications</a>
+          <a class="pill" href="{{ '/home' | relative_url }}#collaborations">Collaborations</a>
+          <a class="pill" href="{{ '/home' | relative_url }}#education">Education</a>
+          <a class="pill" href="{{ '/home' | relative_url }}#teaching">Teaching</a>
+          <a class="pill" href="{{ '/home' | relative_url }}#conferences">Conferences</a>
+          <a class="pill" href="{{ '/home' | relative_url }}#life">Life Before the Lab</a>
+        </nav>
+      </div>
     </div>
   </main>
 </body>
