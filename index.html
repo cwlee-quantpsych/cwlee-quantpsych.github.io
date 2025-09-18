@@ -19,12 +19,13 @@ layout: null
 
   <style>
     :root{
-      --bg: #A7C7E7;          /* pastel UNC blue */
+      /* Soft, UNC-inspired pastel theme */
+      --bg: #A7C7E7;          /* pastel UNC blue background */
       --ink: #101418;         /* main text */
-      --muted: #4a5968;       /* paragraph text */
+      --muted: #324b63;       /* paragraph */
       --accent: #4B9CD3;      /* Carolina blue accent */
-      --accent-deep: #13294B; /* UNC navy */
-      --chip-bg: #eaf4fc;
+      --accent-deep: #13294B; /* UNC navy for emphasis */
+      --chip-bg: #ffffff;     /* white chip bg */
       --chip-bd: #d6e9f9;
       --shadow: 0 12px 30px rgba(16, 20, 24, .08);
       --radius: 16px;
@@ -37,82 +38,106 @@ layout: null
       font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
+    /* Layout shell */
     .hero {
       max-width: 1200px;
       margin: 72px auto;
       padding: 0 24px;
       display: grid;
-      grid-template-columns: 1.15fr 1fr;
+      grid-template-columns: 1.15fr 1fr; /* text / image */
       gap: 48px;
       align-items: center;
     }
 
+    /* Left column */
+    .eyebrow {
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--accent-deep);
+      opacity: .85;
+      font-size: 12px;
+      margin-bottom: 18px;
+    }
+
     h1 {
       margin: 0 0 14px 0;
-      font-size: clamp(32px, 5vw, 52px);
-      line-height: 1.1;
+      font-size: clamp(36px, 5vw, 56px);
+      line-height: 1.05;
       font-weight: 900;
       letter-spacing: .2px;
       color: var(--accent-deep);
     }
+    h1 .dim { color: var(--muted); font-weight: 700; }
+
+    .subtitle {
+      font-weight: 800;
+      font-size: clamp(16px, 2.2vw, 22px);
+      color: var(--accent-deep);
+      margin: 8px 0 14px 0;
+    }
 
     p {
-      margin: 14px 0 0 0;
+      margin: 12px 0 0 0;
       color: var(--muted);
       font-size: 18px;
     }
 
+    /* CTA row */
     .ctarow {
-      margin-top: 24px;
+      margin-top: 22px;
       display: flex;
       gap: 14px;
       flex-wrap: wrap;
       align-items: center;
     }
-
     .btn {
-      display: inline-flex;
-      align-items: center;
+      display: inline-flex; align-items: center; gap: 10px;
       background: var(--accent);
-      color: #fff;
-      text-decoration: none;
-      font-weight: 700;
-      padding: 12px 18px;
-      border-radius: 12px;
+      color: #fff; text-decoration: none; font-weight: 700;
+      padding: 12px 16px; border-radius: 12px;
       box-shadow: var(--shadow);
       transition: transform .06s ease, box-shadow .06s ease, opacity .12s ease;
     }
     .btn:hover { transform: translateY(-1px); box-shadow: 0 14px 34px rgba(75,156,211,.28); }
     .btn:active { transform: translateY(0); opacity: .9; }
 
-    .quick {
-      margin-top: 20px;
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
+    .link {
+      display: inline-flex; align-items: center; gap: 8px;
+      text-decoration: none; font-weight: 700; color: var(--accent-deep);
+      padding: 8px 10px; border-radius: 10px;
+      background: var(--chip-bg); border: 1px solid var(--chip-bd);
     }
+    .link:hover { background: #e3f0fb; }
 
-    .pill {
-      display: inline-block;
-      padding: 7px 14px;
-      border-radius: 999px;
-      background: var(--chip-bg);
-      border: 1px solid var(--chip-bd);
-      color: var(--accent-deep);
-      font-weight: 600;
-      font-size: 15px;
-      text-decoration: none;
+    /* Icon chips */
+    .chips {
+      margin-top: 22px;
+      display: flex; gap: 10px; flex-wrap: wrap;
+    }
+    .chip {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 40px; height: 40px; border-radius: 999px;
+      background: var(--chip-bg); border: 1px solid var(--chip-bd);
+      color: var(--accent-deep); text-decoration: none;
       transition: transform .06s ease, background .12s ease;
     }
-    .pill:hover { transform: translateY(-1px); background: #e3f0fb; }
+    .chip:hover { transform: translateY(-1px); background: #e3f0fb; }
 
+    /* Right column image */
     .portrait {
-      width: 100%;
-      border-radius: var(--radius);
-      display: block;
-      box-shadow: var(--shadow);
+      width: 100%; border-radius: var(--radius);
+      display: block; box-shadow: var(--shadow);
+      filter: grayscale(12%);
     }
 
+    /* Small note under hero (optional) */
+    .note {
+      max-width: 1200px; margin: 12px auto 70px; padding: 0 24px;
+      color: #7a8794; font-size: 14px;
+    }
+
+    /* Responsive */
     @media (max-width: 960px) {
       .hero { grid-template-columns: 1fr; gap: 28px; margin: 56px auto; }
     }
@@ -123,32 +148,42 @@ layout: null
   <section class="hero">
     <!-- Left: text -->
     <div>
-      <h1>Hello! I’m Chaewon Lee.</h1>
+      <div class="eyebrow">Hello — I’m</div>
+      <h1><span class="dim">Chaewon</span> Chloe Lee</h1>
+      <div class="subtitle">Quantitative Psychologist · Data Scientist · Statistician</div>
 
-      <p>I’m a quantitative psychologist, data scientist, and statistician.</p>
-      <p>I am currently a Ph.D. candidate in the Quantitative Psychology program, housed within the L.L. Thurstone Psychometric Laboratory in the Department of Psychology and Neuroscience at the University of North Carolina at Chapel Hill.</p>
-      <p>If you’d like to learn more about my work and background, please click below:</p>
+      <p>
+  I’m a Ph.D. candidate in the Quantitative Psychology program housed within 
+  the L.L. Thurstone Psychometric Laboratory in the Department of Psychology 
+  and Neuroscience at the University of North Carolina at Chapel Hill. 
+  My research focuses on developing and disseminating advanced statistical 
+  methods to address the unique methodological challenges of psychological, 
+  behavioral, and social sciences. If you’d like to learn more about my 
+  background and research, please click below:
+</p>
 
       <div class="ctarow">
         <a class="btn" href="{{ '/home' | relative_url }}" aria-label="Enter site to view all sections on one page">
           Enter site →
         </a>
+
+        <a class="link" href="{{ '/assets/CV_ChaewonLee.pdf' | relative_url }}" target="_blank" rel="noopener">
+          Download CV →
+        </a>
       </div>
 
-      <nav class="quick" aria-label="Quick links to site sections">
-        <a class="pill" href="{{ '/home' | relative_url }}#research">Research</a>
-        <a class="pill" href="{{ '/home' | relative_url }}#publications">Publications</a>
-        <a class="pill" href="{{ '/home' | relative_url }}#collaborations">Collaborations</a>
-        <a class="pill" href="{{ '/home' | relative_url }}#education">Education</a>
-        <a class="pill" href="{{ '/home' | relative_url }}#teaching">Teaching</a>
-        <a class="pill" href="{{ '/home' | relative_url }}#conferences">Conferences</a>
-        <a class="pill" href="{{ '/home' | relative_url }}#life">Life Before the Lab</a>
-      </nav>
+      <!-- Social / quick icons -->
+      <div class="chips" aria-label="Social links">
+        <a class="chip" href="mailto:{{ site.email | default: 'your-email@example.com' }}" title="Email">✉️</a>
+        <a class="chip" href="https://scholar.google.com/" target="_blank" rel="noopener" title="Google Scholar">🎓</a>
+        <a class="chip" href="https://github.com/cwlee-quantpsych" target="_blank" rel="noopener" title="GitHub">🐙</a>
+        <a class="chip" href="https://www.linkedin.com/" target="_blank" rel="noopener" title="LinkedIn">🔗</a>
+      </div>
     </div>
 
     <!-- Right: image -->
     <div>
-      <img class="portrait" src="{{ '/assets/images/chaewon1.JPG' | relative_url }}" alt="Portrait of Chaewon Lee">
+      <img class="portrait" src="{{ '/assets/images/chaewon1.JPG' | relative_url }}" alt="Chaewon Chloe Lee portrait">
     </div>
   </section>
 
