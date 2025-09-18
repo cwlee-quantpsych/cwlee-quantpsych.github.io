@@ -1,17 +1,17 @@
 ---
-layout: page   # use 'page' or 'default' here; switch back to 'home' after testing
+layout: page
 title: Chaewon Lee
 permalink: /home
 ---
 
 <style>
-  :root { --tab-bg:#0f1418; --tab-accent:#0a84ff; --site-header-h:56px; }
+  :root { --tab-accent:#0a84ff; --site-header-h:56px; }
   main, .page-content { overflow: visible; }
 
+  /* NOT sticky anymore */
   .tabs {
-    position: sticky;
-    top: var(--site-header-h, 0px);
-    z-index: 999;
+    position: static;                 /* no sticking */
+    z-index: 1;
     background: rgba(15,20,24,.85);
     border-bottom: 1px solid rgba(127,127,127,.2);
     padding: 10px 0;
@@ -19,48 +19,34 @@ permalink: /home
     -webkit-backdrop-filter: saturate(160%) blur(6px);
     backdrop-filter: saturate(160%) blur(6px);
   }
+
   .tabs ul {
     display:flex; flex-wrap:wrap; gap:10px 14px;
     list-style:none; margin:0; padding:6px 2px;
   }
 
-  /* base links */
+  /* Base link styles */
   .tabs a {
-    text-decoration:none;
-    font-weight:600;
-    padding:8px 12px;
-    color: var(--tab-accent);
-    display: inline-flex;
-    align-items: center;
-    line-height: 1;
+    text-decoration:none; font-weight:600;
+    padding:8px 12px; color: var(--tab-accent);
+    display:inline-flex; align-items:center; line-height:1;
+    outline:none;                 /* kill UA outline */
+    -webkit-tap-highlight-color: transparent; /* iOS ripple */
+    border:none; box-shadow:none; /* extra safety */
   }
   .tabs a:hover { text-decoration: underline; }
 
-  /* remove Safari focus glow, but keep accessibility */
-  .tabs a:focus { outline: none; box-shadow: none; }
+  /* Keep keyboard accessibility without mouse glow */
+  .tabs a:focus { outline:none; box-shadow:none; }
   .tabs a:focus-visible {
     outline: 2px solid rgba(10,132,255,.6);
-    outline-offset: 3px;
-    border-radius: 10px;
-  }
-
-  /* active tab = underline instead of pill */
-  .tabs a.active {
-    background: transparent;
-    border: 0;
-    position: relative;
-  }
-  .tabs a.active::after {
-    content: "";
-    position: absolute;
-    left: 6px; right: 6px; bottom: -6px;
-    height: 2px;
-    background: var(--tab-accent);
-    border-radius: 2px;
+    outline-offset: 3px; border-radius: 10px;
   }
 
   html { scroll-behavior: smooth; }
+  /* offset for in-page anchors if you have a site header */
   h2[id], h3[id] { scroll-margin-top: calc(var(--site-header-h, 0px) + 26px); }
+
   .top-spacer { clear: both; margin-top: 18px; }
 </style>
 
@@ -75,6 +61,13 @@ permalink: /home
     <li><a href="#life">Life Before the Lab</a></li>
   </ul>
 </nav>
+
+<!-- JS only to remove focus ring after mouse/touch click -->
+<script>
+  document.querySelectorAll('.tabs a').forEach(a => {
+    a.addEventListener('click', () => a.blur(), {passive:true});
+  });
+</script>
 
 <div class="top-spacer"></div>
 
