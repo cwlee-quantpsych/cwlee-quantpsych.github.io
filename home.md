@@ -11,7 +11,6 @@ permalink: /home
 ## Research Focus
 ### Methodological Innovation
 My research focuses on developing and disseminating advanced statistical methods to address the unique methodological challenges of psychological, behavioral, and social sciences. I primarily work across five statistical frameworks, often integrating them to create synergistic solutions that advance the field:
-</p>
 
 <div style="margin-top:14px;">
   <img src="/assets/images/research1.JPG"
