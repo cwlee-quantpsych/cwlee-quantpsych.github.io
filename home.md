@@ -1,111 +1,93 @@
----
-layout: page
-title: ""
-description: ""
-permalink: /home
----
-
 <style>
-  :root {
+  :root{
     --tab-accent:#0a84ff;
     --site-header-h:56px;
 
     /* UNC-inspired palette */
-    --unc-dark: #13294B;       /* UNC navy */
-    --unc-gray: #4B4F54;       /* medium gray */
-    --unc-bg-light: #A7C7E7;   /* pastel blue 1 */
-    --unc-bg-lighter: #D4E6F9; /* pastel blue 2 */
+    --unc-dark:#13294B;       /* UNC navy */
+    --unc-gray:#4B4F54;       /* medium gray */
+    --unc-bg-light:#A7C7E7;   /* pastel blue 1 */
+    --unc-bg-lighter:#D4E6F9; /* pastel blue 2 */
   }
 
-  body {
-    font-family: 'Lato', system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.65;
-    color: var(--unc-gray);
-    background: linear-gradient(180deg, var(--unc-bg-lighter) 0%, var(--unc-bg-light) 100%);
+  /* -------- Base typography & page shell -------- */
+  body{
+    font-family:'Lato',system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:16px; line-height:1.65; color:var(--unc-gray);
+    background:linear-gradient(180deg,var(--unc-bg-lighter) 0%,var(--unc-bg-light) 100%);
+  }
+  main,.page-content{ overflow:visible; max-width:1200px; margin:0 auto; padding:0 32px; }
+  h1,h2,h3,h4,h5,h6{ font-weight:700; color:var(--unc-dark); }
+  p,li{ color:var(--unc-gray); font-size:17px; line-height:1.65; }
+
+  /* Hide auto-rendered page titles (from page content), not the site header */
+  .page__header,.page__title,.page-title,.page__header h1{ display:none !important; }
+
+  /* -------- Make the top site title (“Chaewon Lee”) stylish --------
+     Works with Minimal Mistakes, many Jekyll themes, and generic headers. */
+  /* Container polish */
+  .masthead, .site-header, header[role="banner"]{
+    background:transparent !important;
+    box-shadow:none !important;
+    border-bottom:1px solid rgba(19,41,75,.12);
   }
 
-  main, .page-content { 
-    overflow: visible; 
-    max-width: 1200px;
-    margin: 0 auto; 
-    padding: 0 32px;
+  /* Title itself (cover multiple theme selectors) */
+  a.site-title, .site-title, .masthead__title, .header__title, .navbar-brand{
+    display:block !important;
+    text-align:center !important;
+    font-family:'Lato',system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif !important;
+    font-weight:900 !important;
+    color:var(--unc-dark) !important;
+    text-decoration:none !important;
+    letter-spacing:-.3px !important;
+    margin:18px auto 14px !important;
+    line-height:1.1 !important;
+    font-size:clamp(28px,3.8vw,44px) !important; /* bold like “Research Focus” */
+  }
+  /* Subtle underline accent to echo section styling */
+  a.site-title::after, .site-title::after, .masthead__title::after, .header__title::after, .navbar-brand::after{
+    content:""; display:block; width:64px; height:2px; margin:8px auto 0;
+    background:var(--unc-dark); opacity:.8; border-radius:2px;
+  }
+  /* Keep hover clean */
+  a.site-title:hover, .navbar-brand:hover{ color:var(--unc-dark) !important; opacity:.95; }
+
+  /* If your theme adds left/right nav next to the title, keep things tidy */
+  .masthead__menu, .site-nav, .greedy-nav{
+    justify-content:center !important;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', system-ui, sans-serif;
-    font-weight: 700;
-    color: var(--unc-dark);
+  /* -------- Tabs bar — clean, light look -------- */
+  .tabs{
+    position:sticky; top:0; z-index:10;
+    background:#ffffffdd; border-bottom:1px solid rgba(19,41,75,.15);
+    backdrop-filter:blur(6px); padding:10px 0; margin:0 0 20px 0;
   }
-
-  p, li { color: var(--unc-gray); font-size: 17px; line-height: 1.65; }
-
-  /* ── Hide the theme’s auto page title completely ─────────────────────────── */
-  .page__header,
-  .page__title,
-  .page-title,
-  .page__header h1 {
-    display: none !important;
+  .tabs ul{
+    display:flex; flex-wrap:wrap; justify-content:center;
+    gap:22px; list-style:none; margin:0; padding:0;
   }
-
-  /* Custom copyright footer */
-  .custom-copy {
-    max-width: 1200px;
-    margin: 40px auto 24px;
-    padding: 16px 32px 0;
-    text-align: center;
-    color: var(--unc-dark);
-    font-size: 14px;
-    opacity: .9;
-    border-top: 1px solid rgba(19,41,75,.15);
+  .tabs a{
+    display:inline-block; padding:6px 10px; font-weight:600;
+    color:var(--unc-dark); text-decoration:none; border-radius:6px;
+    transition:all .18s ease;
   }
+  .tabs a:hover{ background:var(--tab-accent); color:#fff; }
+  .tabs a.active{ background:var(--unc-dark); color:#fff; }
 
-  /* Tabs bar — clean, light look */
-  .tabs {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background: #ffffffdd;
-    border-bottom: 1px solid rgba(19,41,75,.15);
-    backdrop-filter: blur(6px);
-    padding: 10px 0;
-    margin: 0 0 20px 0;
+  html{ scroll-behavior:smooth; }
+  h2[id],h3[id]{ scroll-margin-top:calc(var(--site-header-h,0px)+60px); }
+  .top-spacer{ clear:both; margin-top:20px; }
+
+  /* -------- Custom copyright footer -------- */
+  .custom-copy{
+    max-width:1200px; margin:40px auto 24px; padding:16px 32px 0;
+    text-align:center; color:var(--unc-dark); font-size:14px; opacity:.9;
+    border-top:1px solid rgba(19,41,75,.15);
   }
-
-  .tabs ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 22px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .tabs a {
-    display: inline-block;
-    padding: 6px 10px;
-    font-weight: 600;
-    color: var(--unc-dark);
-    text-decoration: none;
-    border-radius: 6px;
-    transition: all .18s ease;
-  }
-
-  .tabs a:hover {
-    background: var(--tab-accent);
-    color: #fff;
-  }
-
-  .tabs a.active {
-    background: var(--unc-dark);
-    color: #fff;
-  }
-
-  html { scroll-behavior: smooth; }
-  h2[id], h3[id] { scroll-margin-top: calc(var(--site-header-h, 0px) + 60px); }
-  .top-spacer { clear: both; margin-top: 20px; }
 </style>
+
 
 <nav class="tabs" aria-label="Section navigation">
   <ul>
