@@ -126,9 +126,13 @@ layout: null
 
     /* Right column image */
     .portrait {
-      width: 100%; border-radius: var(--radius);
-      display: block; box-shadow: var(--shadow);
+      width: 85%;              /* reduce from full width */
+      max-width: 320px;        /* cap maximum size */
+      border-radius: var(--radius);
+      display: block;
+      box-shadow: var(--shadow);
       filter: grayscale(12%);
+      margin: 0 auto;          /* center inside its column */
     }
 
     /* Small note under hero (optional) */
