@@ -29,11 +29,11 @@ permalink: /home
   }
 
   /* WIDER page: longer lines */
-  main,.page-content{
-    overflow:visible;
-    max-width:min(96vw, 1800px);  /* was 1200 → now up to 1800 or 96vw */
-    margin:0 auto;
-    padding:0 44px;               /* side breathing room */
+  main, .page-content {
+    overflow: visible;
+    max-width: 96vw;     /* use up almost the whole viewport */
+    margin: 0 auto;
+    padding: 0 60px;     /* comfortable left/right padding */
   }
 
   h1,h2,h3,h4,h5,h6{ font-weight:700; color:var(--unc-dark); }
