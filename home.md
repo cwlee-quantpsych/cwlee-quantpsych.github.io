@@ -136,7 +136,6 @@ My methodological work unfolds through three core pipelines:
 - **Lee, C.\*** Modeling imprecision in psychological data: Fuzzy set theory and its application with fuzzy least squares regression.  
 - **Lee, C.\*** FLEX: An R package for fuzzy numbers and fuzzy least squares regression.
 
-
 ## Research Collaborations {#collaborations}
 
 I have collaborated on multiple interdisciplinary research projects, including:
