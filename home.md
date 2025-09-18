@@ -5,13 +5,6 @@ description: ""
 permalink: /home
 ---
 
----
-layout: page
-title: ""
-description: ""
-permalink: /home
----
-
 <style>
   :root{
     --tab-accent:#0a84ff;
