@@ -6,6 +6,40 @@ permalink: /home
 ---
 
 <style>
+  /* Global font */
+  body {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;      /* smaller base text */
+    line-height: 1.55;
+    color: #101418;
+  }
+
+  /* Section headings */
+  h2 {
+    font-size: 22px;      /* was ~28–32px */
+    font-weight: 700;
+    margin-top: 36px;
+  }
+
+  h3 {
+    font-size: 18px;      /* was ~22–24px */
+    font-weight: 600;
+    margin-top: 24px;
+  }
+
+  /* Paragraphs */
+  p {
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  /* Lists */
+  li {
+    font-size: 15px;
+    line-height: 1.55;
+  }
+</style>
+<style>
   :root { --tab-accent:#0a84ff; --site-header-h:56px; }
   main, .page-content { overflow: visible; }
 
