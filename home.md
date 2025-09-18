@@ -12,10 +12,15 @@ permalink: /home
     --tab-accent: #0a84ff;   /* link accent */
     --tab-muted: #8a8f98;
   }
+
+  /* Let sticky work even if parent sets overflow */
+  main, .page-content { overflow: visible; }
+
   /* Make the nav sticky */
   .tabs {
     position: sticky; top: 0; z-index: 999;
     backdrop-filter: saturate(160%) blur(6px);
+    background: rgba(15,20,24,.85); /* fallback for older browsers */
     background: color-mix(in srgb, var(--tab-bg) 85%, transparent);
     border-bottom: 1px solid rgba(127,127,127,.2);
     padding: 10px 0;
@@ -35,8 +40,10 @@ permalink: /home
     background: rgba(10,132,255,.12);
     border: 1px solid rgba(10,132,255,.25);
   }
+
   /* Smooth scroll & good anchor offsets */
   html { scroll-behavior: smooth; }
+
   /* Prevent headings hiding under sticky nav */
   h2[id], h3[id] { scroll-margin-top: 82px; }
 
@@ -77,7 +84,7 @@ permalink: /home
 
     secs.forEach(s => obs.observe(s));
     // Fallback: set first link active on load
-    if (links.length) activate(ids[0]);
+    if (links.length && ids.length) activate(ids[0]);
   })();
 </script>
 
@@ -88,7 +95,7 @@ permalink: /home
 My research focuses on developing and disseminating advanced statistical methods to address the unique methodological challenges of psychological, behavioral, and social sciences. I primarily work across five statistical frameworks, often integrating them to create synergistic solutions that advance the field:
 
 <div style="margin-top:14px;">
-  <img src="/assets/images/research1.JPG"
+  <img src="{{ '/assets/images/research1.JPG' | relative_url }}"
        alt="Research approaches"
        style="max-width:1100px; width:100%; height:auto; border-radius:15px; display:block; margin:0;" />
 </div>
@@ -164,7 +171,7 @@ At UNC Chapel Hill, I have served as a teaching/instructional assistant for PSYC
 I began playing the piano at the age of 3 and pursued professional training at Yewon School and Seoul Arts High School, two of Korea’s most prestigious arts institutions. During my teenage years, I won several major national music competitions and performed extensively as both a soloist and an accompanist for violinists, cellists, and vocalists in concert and competition settings. I also collaborated with the Seoul Symphony Orchestra in a performance of Grieg’s Piano Concerto in A minor. At the age of 14, I was prestigiously selected as a musical prodigy by the Kumho Asiana Group—one of Korea’s leading conglomerates—which led to my own solo debut recital. My favorite repertoire includes Bach–Busoni’s *Chaconne*, Mendelssohn’s *Variations sérieuses*, Chopin’s Ballades, and more. 
 
 <div align="center" style="margin: 20px 0;">
-  <img src="/assets/images/chaewon2.JPG" alt="Chaewon Lee performing" width="400" style="border-radius: 12px;" />
+  <img src="{{ '/assets/images/chaewon2.JPG' | relative_url }}" alt="Chaewon Lee performing" width="400" style="border-radius: 12px;" />
 </div>
 
 ### Former Investment Banker and Economist, Based in Korea’s Wall Street
