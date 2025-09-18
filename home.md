@@ -11,13 +11,11 @@ permalink: /home
     --site-header-h:56px;
 
     /* UNC-inspired palette */
-    --unc-dark: #13294B;  /* UNC navy */
-    --unc-gray: #4B4F54;  /* medium gray */
-    --unc-bg-light: #A7C7E7; /* pastel blue 1 */
-    --unc-bg-lighter: #D4E6F9; /* pastel blue 2 */
+    --unc-dark: #13294B;      /* UNC navy */
+    --unc-gray: #4B4F54;      /* medium gray */
+    --unc-bg-light: #A7C7E7;  /* pastel blue 1 */
+    --unc-bg-lighter: #D4E6F9;/* pastel blue 2 */
   }
-
-  main, .page-content { overflow: visible; }
 
   body {
     font-family: 'Lato', system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -25,6 +23,13 @@ permalink: /home
     line-height: 1.6;
     color: var(--unc-gray);
     background: linear-gradient(180deg, var(--unc-bg-lighter) 0%, var(--unc-bg-light) 100%);
+  }
+
+  main, .page-content { 
+    overflow: visible; 
+    max-width: 1000px;   /* widened content width */
+    margin: 0 auto; 
+    padding: 0 28px;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -164,16 +169,31 @@ I have collaborated on multiple interdisciplinary research projects, including:
 
 ## Education {#education}
 
-Before embarking on my Ph.D. training, I earned an M.S. in Applied Statistics from the University of Michigan, an M.A. in Economics from Yonsei University in Seoul, South Korea, and a B.S. in Biology also from Yonsei University.
+**M.S. in Applied Statistics** — University of Michigan, Ann Arbor, MI, USA  
+**M.A. in Economics** — Yonsei University, Seoul, South Korea  
+**B.S. in Biology** — Yonsei University, Seoul, South Korea  
 
 ## Teaching & Instruction {#teaching}
 
 At UNC Chapel Hill, I have served as a teaching/instructional assistant for PSYC 210 (Statistical Principles of Psychological Research) across multiple semesters since 2020. In this role, I led recitation sessions, assisted students with SPSS- and Jamovi-based data analysis, and provided individualized support. In recognition of strong student evaluations, I was honored twice with the Departmental Teaching Assistant Commendation.
 
-## Conferences {#conferences}
+## Academic Talks {#talks}
 
-- Lee, C.*, Yoon, J.H., & Bae, Y.C. (2024, November). Chaotic behaviors in opinion dynamics models influenced by external forces. Paper presented at the 25th International Symposium on Advanced Intelligent Systems (ISIS 2024), Himeji, Japan.
-- Lee, C.* (2025, October). No single approach fits all: Testing two generations of structural equation modeling estimation. Poster to be presented at the 23rd Annual Society of Multivariate Experimental Psychology (SMEP) Graduate Student Conference, University of Notre Dame, Indiana, USA.
+- **No Single Approach Fits All: Testing Two Generations of Structural Equation Modeling Estimation**  
+  23rd Annual Society of Multivariate Experimental Psychology (SMEP) Conference, University of Notre Dame, IN, USA — *Oct 2025*
+
+- **Chaotic Behaviors in Opinion Dynamics Models Influenced by External Forces**  
+  25th International Symposium on Advanced Intelligent Systems (ISIS 2024), Himeji, Japan — *Nov 2024*
+
+- **Integrative Classification Framework in Machine Learning for Small Samples and High-Dimensional Imbalanced Data**  
+  Quant Forum, Department of Psychology and Neuroscience, UNC Chapel Hill — *Apr 2023*
+
+- **Sequence Analysis for Classification: Proposing a New Hybrid Markov Model – Machine Learning Approach**  
+  Quant Forum, Department of Psychology and Neuroscience, UNC Chapel Hill — *Apr 2022*
+
+- **Prediction of Suicide Attempt by Bipolar Disorder Patients with Machine Learning Algorithms**  
+  Quant Forum, Department of Psychology and Neuroscience, UNC Chapel Hill — *May 2021*
+
 
 ## Life Before the Lab {#life}
 
