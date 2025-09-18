@@ -17,104 +17,108 @@ layout: null
   <link rel="canonical" href="{{ '/' | absolute_url }}" />
 
   <style>
-    :root{
-      /* UNC brand palette */
-      --bg:#4B9CD3;            /* Carolina Blue */
-      --fg:#ffffff;            /* White text */
-      --muted:#dbe8f2;         /* Light blue secondary */
-      --accent:#13294B;        /* UNC Navy */
-      --accent-ink:#ffffff;    /* Text on accent */
-      --card:#ffffff;          /* White card */
-      --pill:rgba(19,41,75,.12);
-      --pill-border:rgba(19,41,75,.25);
-      --focus:#ffbf47;         /* Gold focus */
+    :root {
+      --bg: #4B9CD3;         /* UNC Carolina Blue */
+      --fg: #13294B;         /* Navy text inside card */
+      --muted: #555555;      /* Muted dark gray text */
+      --accent: #13294B;     /* UNC Navy for buttons */
+      --accent-ink: #ffffff; /* White text on buttons */
+      --card: #ffffff;       /* White card surface */
+      --pill: rgba(19,41,75,.12);   /* Navy tint for pills */
+      --pill-border: rgba(19,41,75,.25);
+      --focus: #ffbf47;      /* Optional gold focus ring */
     }
 
-    html { height:100%; margin:0; background:#4B9CD3 !important; }
+    html, body { height:100%; margin:0; }
     body {
-      height:100%; margin:0;
-      background:var(--bg) !important;
-      color:var(--fg);
-      font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-      display:flex; align-items:center; justify-content:center;
-      padding:32px 18px;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding: 32px 18px;
     }
 
     .wrap {
-      max-width:980px; width:100%;
-      display:grid; grid-template-columns:240px 1fr; gap:28px;
-      background:var(--card);
-      border-radius:16px; padding:28px;
-      box-shadow:0 10px 30px rgba(0,0,0,.25);
-      color:#13294B; /* navy text inside card */
+      max-width: 980px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 28px;
+      background: var(--card);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
     }
 
-    .photo { width:100%; border-radius:14px; display:block; }
+    .photo { width: 100%; border-radius: 14px; display:block; }
 
     h1 {
-      margin:0 0 6px 0;
-      font-size:28px;
+      margin: 0 0 6px 0;
+      font-size: 28px;
       letter-spacing:.2px;
-      color:#13294B;
+      color: var(--fg);
     }
 
     p {
-      margin:10px 0 0 0;
-      color:#444;
-      font-size:18px;
+      margin: 10px 0 0 0;
+      color: var(--muted);
+      font-size: 18px;
     }
 
     .cta {
-      margin-top:18px;
+      margin-top: 18px;
       display:inline-block;
-      background:var(--accent);
-      color:var(--accent-ink);
+      background: var(--accent);
+      color: var(--accent-ink);
       text-decoration:none;
-      padding:10px 16px;
-      border-radius:10px;
-      font-weight:600;
-      transition:transform .06s ease, box-shadow .06s ease;
-      box-shadow:0 6px 16px rgba(19,41,75,.25);
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: transform .06s ease, box-shadow .06s ease;
+      box-shadow: 0 6px 16px rgba(19,41,75,.25);
     }
     .cta:hover {
-      transform:translateY(-1px);
-      box-shadow:0 8px 20px rgba(19,41,75,.32);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px rgba(19,41,75,.32);
     }
     .cta:focus-visible {
-      outline:3px solid var(--focus);
-      outline-offset:3px;
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
     }
 
     .quick {
-      margin-top:14px;
-      display:flex;
-      gap:8px;
-      flex-wrap:wrap;
+      margin-top: 14px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
     }
 
     .pill {
       display:inline-block;
-      padding:7px 12px;
-      border-radius:999px;
-      background:var(--pill);
-      border:1px solid var(--pill-border);
-      color:#13294B;
-      text-decoration:none;
-      font-weight:600;
-      font-size:14px;
-      transition:transform .06s ease, background .06s ease, border-color .06s ease;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: var(--pill);
+      border: 1px solid var(--pill-border);
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      transition: transform .06s ease, background .06s ease, border-color .06s ease;
     }
-    .pill:hover { transform:translateY(-1px); }
+    .pill:hover { transform: translateY(-1px); }
     .pill:focus-visible {
-      outline:3px solid var(--focus);
-      outline-offset:3px;
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
     }
 
-    @media (max-width:760px) {
-      .wrap { grid-template-columns:1fr; padding:22px; }
+    @media (max-width: 760px) {
+      .wrap { grid-template-columns: 1fr; padding: 22px; }
     }
-    @media (prefers-reduced-motion:reduce) {
-      .cta,.pill { transition:none; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .cta, .pill { transition: none; }
     }
   </style>
 </head>
@@ -126,7 +130,8 @@ layout: null
     <div>
       <h1>Hello! I’m Chaewon Lee.</h1>
       <p>
-        I’m a quantitative psychologist, data scientist, and statistician.<br>
+        I’m a quantitative psychologist, data scientist, and statistician.
+        <br>
         I am currently a Ph.D. candidate in the Quantitative Psychology program,
         housed within the L.L. Thurstone Psychometric Laboratory in the
         Department of Psychology and Neuroscience at the University of
@@ -134,10 +139,8 @@ layout: null
       </p>
       <p>If you’d like to learn more about my work and background, please click below:</p>
 
-      <!-- Link to /home -->
       <a class="cta" href="{{ '/home' | relative_url }}" aria-label="Enter site to view all sections on one page">Enter site →</a>
 
-      <!-- Quick jump pills -->
       <nav class="quick" aria-label="Quick links to site sections">
         <a class="pill" href="{{ '/home' | relative_url }}#research">Research</a>
         <a class="pill" href="{{ '/home' | relative_url }}#publications">Publications</a>
@@ -150,7 +153,6 @@ layout: null
     </div>
   </main>
 
-  <!-- Schema for SEO -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -159,10 +161,7 @@ layout: null
     "jobTitle": "Quantitative Psychologist",
     "image": "{{ '/assets/images/chaewon1.JPG' | relative_url }}",
     "url": "{{ '/' | absolute_url }}",
-    "affiliation": {
-      "@type": "CollegeOrUniversity",
-      "name": "University of North Carolina at Chapel Hill"
-    }
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "University of North Carolina at Chapel Hill" }
   }
   </script>
 </body>
