@@ -6,36 +6,27 @@ tagline: Quantitative Psychology • Data Science • Statistics
 
 # Welcome to my personal homepage!
 
-<div style="overflow: hidden;">
-  <img src="/assets/images/chaewon1.JPG" alt="Chaewon Lee" width="200" align="left"
-       style="margin-right: 40px; margin-bottom: 10px; border-radius: 15px;" />
+<table>
+<tr>
+<td width="200px">
+  <img src="/assets/images/chaewon1.JPG" width="180" style="border-radius: 15px;" />
+</td>
+<td>
 
-  <div style="margin-left: 220px;"> 
+I am Chaewon Lee, a quantitative psychologist, data scientist, and statistician.  
+I am currently a Ph.D. candidate in the Quantitative Psychology program, housed within the L.L. Thurstone Psychometric Laboratory in the Department of Psychology and Neuroscience at the University of North Carolina at Chapel Hill.
 
-    <p>
-      I am Chaewon Lee, a quantitative psychologist, data scientist, and statistician.
-      I am currently a Ph.D. candidate in the Quantitative Psychology program, housed within the L.L. Thurstone
-      Psychometric Laboratory in the Department of Psychology and Neuroscience at the University of North Carolina at Chapel Hill.
-    </p>
+My research focuses on developing and disseminating advanced statistical methods to address unique methodological challenges in psychological science. Specifically, I work on:
 
-    <p>
-      My research focuses on developing and disseminating advanced statistical methods to address unique
-      methodological challenges in psychological science. Specifically, I work on:
-    </p>
+- Machine learning and deep learning  
+- Time-series analysis  
+- Dynamic network modeling  
+- Structural equation modeling  
+- Fuzzy modeling  
 
-    <ul>
-      <li>Machine learning and deep learning</li>
-      <li>Time-series analysis</li>
-      <li>Dynamic network modeling</li>
-      <li>Structural equation modeling</li>
-      <li>Fuzzy modeling</li>
-    </ul>
-
-  </div>
-</div>
-
-<div style="clear: both; margin-top: 30px;"></div>
-
+</td>
+</tr>
+</table>
 
 My work is guided by three grand pillars:
 
