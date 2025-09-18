@@ -5,6 +5,13 @@ description: ""
 permalink: /home
 ---
 
+---
+layout: page
+title: ""
+description: ""
+permalink: /home
+---
+
 <style>
   :root{
     --tab-accent:#0a84ff;
@@ -30,52 +37,43 @@ permalink: /home
   /* Hide auto-rendered page titles */
   .page__header,.page__title,.page-title,.page__header h1{ display:none !important; }
 
-  /* -------- Stylish top site title (“Chaewon Lee”) -------- */
+  /* -------- Header bar with name + nav -------- */
   .masthead, .site-header, header[role="banner"]{
-    background:transparent !important;
+    background:#ffffffdd !important;
+    backdrop-filter:blur(6px);
     box-shadow:none !important;
     border-bottom:1px solid rgba(19,41,75,.12);
+    display:flex; align-items:center; justify-content:space-between;
+    padding:10px 32px;
+    position:sticky; top:0; z-index:20;
   }
+
+  /* Site title */
   a.site-title, .site-title, .masthead__title, .header__title, .navbar-brand{
-    display:block !important;
-    text-align:center !important;
     font-family:'Lato',system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif !important;
     font-weight:900 !important;
     color:var(--unc-dark) !important;
     text-decoration:none !important;
     letter-spacing:-.3px !important;
-    margin:18px auto 14px !important;
     line-height:1.1 !important;
-    font-size:clamp(28px,3.8vw,44px) !important;
+    font-size:clamp(26px,3vw,40px) !important;
   }
-  /* Remove underline below the name */
+  /* no underline */
   a.site-title::after, .site-title::after, .masthead__title::after, .header__title::after, .navbar-brand::after{
     content:none !important;
   }
   a.site-title:hover, .navbar-brand:hover{ color:var(--unc-dark) !important; opacity:.95; }
-  .masthead__menu, .site-nav, .greedy-nav{ justify-content:center !important; }
 
-  /* -------- Hide duplicate masthead/footer blocks -------- */
-  .site-subtitle,
-  .masthead__inner-wrap .site-subtitle,
-  .masthead__menu--secondary,
-  .footer, .page__footer, footer[role="contentinfo"]{ display:none !important; }
-
-  /* -------- Tabs bar — right aligned -------- */
+  /* -------- Tabs inside header, right side -------- */
   .tabs{
-    position:sticky; top:0; z-index:10;
-    background:#ffffffdd; border-bottom:1px solid rgba(19,41,75,.15);
-    backdrop-filter:blur(6px); padding:10px 0; margin:0 0 20px 0;
-  }
-  .tabs .inner{
-    max-width:1200px; margin:0 auto; padding:0 32px;
+    margin:0; padding:0; background:transparent; border:none; backdrop-filter:none;
   }
   .tabs ul{
-    display:flex; flex-wrap:wrap; justify-content:flex-end; /* right aligned */
-    gap:22px; list-style:none; margin:0; padding:0;
+    display:flex; gap:22px;
+    list-style:none; margin:0; padding:0;
   }
   .tabs a{
-    display:inline-block; padding:6px 10px; font-weight:600;
+    display:inline-block; padding:6px 8px; font-weight:600;
     color:var(--unc-dark); text-decoration:none; border-radius:6px;
     transition:all .18s ease;
   }
@@ -86,7 +84,13 @@ permalink: /home
   h2[id],h3[id]{ scroll-margin-top:calc(var(--site-header-h,0px)+76px); }
   .top-spacer{ clear:both; margin-top:20px; }
 
-  /* -------- Custom copyright footer -------- */
+  /* Hide duplicate masthead/footer */
+  .site-subtitle,
+  .masthead__inner-wrap .site-subtitle,
+  .masthead__menu--secondary,
+  .footer, .page__footer, footer[role="contentinfo"]{ display:none !important; }
+
+  /* Custom copyright footer */
   .custom-copy{
     max-width:1200px; margin:40px auto 24px; padding:16px 32px 0;
     text-align:center; color:var(--unc-dark); font-size:14px; opacity:.9;
@@ -94,8 +98,9 @@ permalink: /home
   }
 </style>
 
-<nav class="tabs" aria-label="Section navigation">
-  <div class="inner">
+<header class="masthead">
+  <a class="site-title" href="/">Chaewon Lee</a>
+  <nav class="tabs" aria-label="Section navigation">
     <ul>
       <li><a href="#research">Research</a></li>
       <li><a href="#publications">Publications</a></li>
@@ -105,18 +110,16 @@ permalink: /home
       <li><a href="#talks">Academic Talks</a></li>
       <li><a href="#life">Life Before the Lab</a></li>
     </ul>
-  </div>
-</nav>
+  </nav>
+</header>
 
 <script>
-  // Blur links after click to avoid Safari’s lingering outline
   document.querySelectorAll('.tabs a').forEach(a=>{
     a.addEventListener('click', ()=>a.blur(), {passive:true});
   });
 </script>
 
 <div class="top-spacer"></div>
-
 
 ## Research Focus {#research}
 **Methodological Innovation**  
