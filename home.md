@@ -26,7 +26,15 @@ permalink: /home
     font-size:16px; line-height:1.65; color:var(--unc-gray);
     background:linear-gradient(180deg,var(--unc-bg-lighter) 0%,var(--unc-bg-light) 100%);
   }
-  main,.page-content{ overflow:visible; max-width:1200px; margin:0 auto; padding:0 32px; }
+
+  /* WIDER CONTENT: expand to 1600px or 92vw on large screens */
+  main,.page-content{
+    overflow:visible;
+    max-width:min(92vw, 1600px);
+    margin:0 auto;
+    padding:0 40px;
+  }
+
   h1,h2,h3,h4,h5,h6{ font-weight:700; color:var(--unc-dark); }
   p,li{ color:var(--unc-gray); font-size:17px; line-height:1.65; }
 
@@ -37,7 +45,7 @@ permalink: /home
   .masthead, .site-header, header[role="banner"]{
     background:transparent !important;
     box-shadow:none !important;
-    border-bottom:0 !important; /* remove that thin line */
+    border-bottom:0 !important;
   }
   /* Make the built-in site title quiet (we provide our own hero below) */
   a.site-title, .site-title, .masthead__title, .header__title, .navbar-brand{
@@ -54,7 +62,8 @@ permalink: /home
     padding: 10px 0 18px 0;
   }
   .hero-nav{
-    max-width:1200px; margin:0 auto; padding:10px 16px;
+    max-width:min(92vw, 1600px);
+    margin:0 auto; padding:10px 20px;
     background:var(--card-bg);
     border:1px solid var(--card-bd);
     border-radius:14px;
@@ -64,13 +73,11 @@ permalink: /home
     margin:0; flex:1 1 auto;
     font-weight:900; line-height:1.05;
     color:var(--unc-dark);
-    font-size: clamp(28px, 3.8vw, 44px); /* matches Research Focus vibe */
+    font-size: clamp(28px, 3.6vw, 46px);
     letter-spacing:-.2px;
   }
 
-  .tabs{
-    flex:0 1 auto;
-  }
+  .tabs{ flex:0 1 auto; }
   .tabs ul{
     display:flex; flex-wrap:wrap; justify-content:flex-end;
     gap:16px 20px; list-style:none; margin:0; padding:0;
@@ -90,6 +97,13 @@ permalink: /home
     .hero-nav{ flex-wrap:wrap; row-gap:10px; }
     .tabs{ width:100%; }
     .tabs ul{ justify-content:flex-start; }
+  }
+
+  /* Slightly tighten paragraph width on ultra-wide for readability */
+  @media (min-width: 1700px){
+    .page-content > *:not(.hero-nav-wrap):not(.hero-nav){
+      max-width: 1500px;
+    }
   }
 
   html{ scroll-behavior:smooth; }
