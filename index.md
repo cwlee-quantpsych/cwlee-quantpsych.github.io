@@ -67,7 +67,7 @@ A complete list of my publications is provided below.
 
 I have collaborated on multiple interdisciplinary research projects, including:
 
-- The NSF IUSE Student Success Project (PIs: Gates, K., & Greene, J.) at the UNC School of Education, where I applied machine learning algorithms and Markov modeling to learning management system (LMS) data to forecast student performance in undergraduate biology courses.
+- The NSF IUSE Student Success Project (PIs: Gates, K., & Greene, J.) at the UNC School of Education and the Department of Psychology and Neuroscience, where I applied machine learning and Markov modeling to learning management system (LMS) data to forecast student performance in undergraduate biology courses.
 
 - The EPICS Mood and Schizophrenia Lab (PI: Deldin, P.J.) at the University of Michigan, where I analyzed event-related potentials (ERP) to classify psychiatric patients and predict suicidality of individuals diagnosed with bipolar disorder using techniques such as deep learning and feature selection.
 
