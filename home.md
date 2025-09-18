@@ -96,12 +96,12 @@ My research focuses on developing and disseminating advanced statistical methods
 
 My methodological work unfolds through three core pipelines:
 
-1. Adapting deep learning techniques to enhance traditional psychological methods and meet the demands of research using passive sensing and large-scale behavioral and physiological data;
-2. Drawing robust inference on intraindividual dynamic processes from limited samples and sparse time points
-3. Rethinking imprecision in psychological scales — not merely as measurement error to minimize, but as a source of information to be actively leveraged in statistical modeling.
+-  Adapting deep learning techniques to enhance traditional psychological methods and meet the demands of research using passive sensing and large-scale behavioral and physiological data;
+-  Drawing robust inference on intraindividual dynamic processes from limited samples and sparse time points
+-  Rethinking imprecision in psychological scales — not merely as measurement error to minimize, but as a source of information to be actively leveraged in statistical modeling.
 
 ### Substantive Translation
-**Precision psychology** is the motivating aim behind translating my core modeling frameworks and methodological innovations into meaningful applications across psychological, behavioral, and social sciences. This includes advancing individualized diagnosis and treatment of mental health conditions, uncovering brain–behavior dynamics, and supporting adaptive interventions in clinical and educational settings. 
+<em>Precision psychology</em> is the motivating aim behind translating my core modeling frameworks and methodological innovations into meaningful applications across psychological, behavioral, and social sciences. This includes advancing individualized diagnosis and treatment of mental health conditions, uncovering brain–behavior dynamics, and supporting adaptive interventions in clinical and educational settings. 
 
 ## Publications {#publications}
 
