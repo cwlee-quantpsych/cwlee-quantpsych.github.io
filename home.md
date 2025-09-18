@@ -8,16 +8,14 @@ permalink: /home
 <style>
   :root{
     --tab-accent:#0a84ff;
-    --site-header-h:56px;
-
-    /* UNC-inspired palette */
+    --site-header-h:68px;     /* actual header height for scroll offset */
     --unc-dark:#13294B;       /* UNC navy */
     --unc-gray:#4B4F54;       /* medium gray */
     --unc-bg-light:#A7C7E7;   /* pastel blue 1 */
     --unc-bg-lighter:#D4E6F9; /* pastel blue 2 */
   }
 
-  /* -------- Base typography & page shell -------- */
+  /* Base */
   body{
     font-family:'Lato',system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size:16px; line-height:1.65; color:var(--unc-gray);
@@ -27,92 +25,96 @@ permalink: /home
   h1,h2,h3,h4,h5,h6{ font-weight:700; color:var(--unc-dark); }
   p,li{ color:var(--unc-gray); font-size:17px; line-height:1.65; }
 
-  /* Hide auto-rendered page titles */
+  /* Hide content page title */
   .page__header,.page__title,.page-title,.page__header h1{ display:none !important; }
 
-  /* -------- Header bar with name + nav -------- */
-  .masthead, .site-header, header[role="banner"]{
-    background:#ffffffdd !important;
-    backdrop-filter:blur(6px);
-    box-shadow:none !important;
+  /* ===== Header (Name + Tabs, single bar) ===== */
+  .topbar{
+    position:sticky; top:0; z-index:30;
+    background:#ffffffde; backdrop-filter:blur(6px);
     border-bottom:1px solid rgba(19,41,75,.12);
-    display:flex; align-items:center; justify-content:space-between;
-    padding:10px 32px;
-    position:sticky; top:0; z-index:20;
+  }
+  .topbar__inner{
+    max-width:1200px; margin:0 auto; padding:10px 32px;
+    display:flex; align-items:center; gap:20px;
   }
 
-  /* Site title */
-  a.site-title, .site-title, .masthead__title, .header__title, .navbar-brand{
-    font-family:'Lato',system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif !important;
-    font-weight:900 !important;
-    color:var(--unc-dark) !important;
+  /* Name */
+  .site-title{
+    margin:0; padding:0; flex:0 0 auto;
+    font-weight:900; letter-spacing:-.3px;
+    color:var(--unc-dark); line-height:1.1;
+    font-size:clamp(28px,4vw,46px);
     text-decoration:none !important;
-    letter-spacing:-.3px !important;
-    line-height:1.1 !important;
-    font-size:clamp(26px,3vw,40px) !important;
   }
-  /* no underline */
-  a.site-title::after, .site-title::after, .masthead__title::after, .header__title::after, .navbar-brand::after{
-    content:none !important;
-  }
-  a.site-title:hover, .navbar-brand:hover{ color:var(--unc-dark) !important; opacity:.95; }
 
-  /* -------- Tabs inside header, right side -------- */
+  /* Tabs (right side) */
   .tabs{
-    margin:0; padding:0; background:transparent; border:none; backdrop-filter:none;
+    margin-left:auto; flex:1 1 auto;
+    overflow-x:auto; -webkit-overflow-scrolling:touch;
   }
+  .tabs::-webkit-scrollbar{ height:8px; }
   .tabs ul{
-    display:flex; gap:22px;
+    display:flex; gap:26px; align-items:center;
     list-style:none; margin:0; padding:0;
+    justify-content:flex-end;
+    white-space:nowrap;  /* keep in one line */
   }
   .tabs a{
-    display:inline-block; padding:6px 8px; font-weight:600;
-    color:var(--unc-dark); text-decoration:none; border-radius:6px;
-    transition:all .18s ease;
+    display:inline-block; padding:6px 8px;
+    font-weight:700; color:var(--unc-dark);
+    text-decoration:none; border-radius:6px;
+    transition:background .18s ease,color .18s ease;
   }
   .tabs a:hover{ background:var(--tab-accent); color:#fff; }
   .tabs a.active{ background:var(--unc-dark); color:#fff; }
+  .tabs a{ white-space:nowrap; } /* prevent multi-line breaks */
 
   html{ scroll-behavior:smooth; }
-  h2[id],h3[id]{ scroll-margin-top:calc(var(--site-header-h,0px)+76px); }
-  .top-spacer{ clear:both; margin-top:20px; }
+  h2[id],h3[id]{ scroll-margin-top:calc(var(--site-header-h) + 16px); }
 
-  /* Hide duplicate masthead/footer */
-  .site-subtitle,
-  .masthead__inner-wrap .site-subtitle,
-  .masthead__menu--secondary,
-  .footer, .page__footer, footer[role="contentinfo"]{ display:none !important; }
+  /* Remove theme footers/dupes */
+  .site-subtitle,.masthead__menu--secondary,.footer,.page__footer,footer[role="contentinfo"]{ display:none !important; }
 
-  /* Custom copyright footer */
+  /* Copyright */
   .custom-copy{
     max-width:1200px; margin:40px auto 24px; padding:16px 32px 0;
     text-align:center; color:var(--unc-dark); font-size:14px; opacity:.9;
     border-top:1px solid rgba(19,41,75,.15);
   }
+
+  /* Small screens tweaks */
+  @media (max-width: 720px){
+    .topbar__inner{ padding:10px 18px; }
+    .tabs ul{ gap:18px; }
+  }
 </style>
 
-<header class="masthead">
-  <a class="site-title" href="/">Chaewon Lee</a>
-  <nav class="tabs" aria-label="Section navigation">
-    <ul>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#collaborations">Collaborations</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#teaching">Teaching</a></li>
-      <li><a href="#talks">Academic Talks</a></li>
-      <li><a href="#life">Life Before the Lab</a></li>
-    </ul>
-  </nav>
+<header class="topbar">
+  <div class="topbar__inner">
+    <a class="site-title" href="/">Chaewon Lee</a>
+    <nav class="tabs" aria-label="Section navigation">
+      <ul>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#collaborations">Collaborations</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#talks">Academic Talks</a></li>
+        <li><a href="#life">Life Before the Lab</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <script>
+  // Blur links after click to avoid lingering outlines
   document.querySelectorAll('.tabs a').forEach(a=>{
     a.addEventListener('click', ()=>a.blur(), {passive:true});
   });
 </script>
 
-<div class="top-spacer"></div>
+<div class="top-spacer" style="height:10px;"></div>
 
 ## Research Focus {#research}
 **Methodological Innovation**  
