@@ -6,28 +6,26 @@ tagline: Quantitative Psychology • Data Science • Statistics
 
 # Welcome to my personal homepage!
 
-<table style="border: none; border-collapse: collapse;">
-  <tr style="border: none;">
-    <td width="200" style="border: none; vertical-align: top;">
-      <img src="/assets/images/chaewon1.JPG" width="200" style="border-radius: 15px;" />
+<table style="border-collapse: collapse;">
+  <tr>
+    <td style="vertical-align: top; padding-right: 30px;">
+      <img src="/assets/images/chaewon1.JPG" width="180" style="border-radius: 15px;" />
     </td>
-    <td style="border: none; padding-left: 40px; vertical-align: top;">
-
-      I am Chaewon Lee, a quantitative psychologist, data scientist, and statistician.  
-      I am currently a Ph.D. candidate in the Quantitative Psychology program, housed within the L.L. Thurstone Psychometric Laboratory in the Department of Psychology and Neuroscience at the University of North Carolina at Chapel Hill.
-
-      <br><br>
-
-      My research focuses on developing and disseminating advanced statistical methods to address unique methodological challenges in psychological science. Specifically, I work on:
-
-      <ul style="margin-top: 10px; margin-bottom: 0;">
+    <td style="vertical-align: top;">
+      <p>
+        I am Chaewon Lee, a quantitative psychologist, data scientist, and statistician.<br>
+        I am currently a Ph.D. candidate in the Quantitative Psychology program, housed within the L.L. Thurstone Psychometric Laboratory in the Department of Psychology and Neuroscience at the University of North Carolina at Chapel Hill.
+      </p>
+      <p>
+        My research focuses on developing and disseminating advanced statistical methods to address unique methodological challenges in psychological science. Specifically, I work on:
+      </p>
+      <ul>
         <li>Machine learning and deep learning</li>
         <li>Time-series analysis</li>
         <li>Dynamic network modeling</li>
         <li>Structural equation modeling</li>
         <li>Fuzzy statistical modeling</li>
       </ul>
-
     </td>
   </tr>
 </table>
