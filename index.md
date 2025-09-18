@@ -4,30 +4,46 @@ title: Chaewon Lee
 tagline: Quantitative Psychology • Data Science • Statistics
 ---
 
-# Welcome to my personal homepage!
+<!-- Intro: photo + text side-by-side -->
+<div style="display:flex; gap:28px; align-items:flex-start; flex-wrap:wrap;">
 
-<img src="/assets/images/chaewon1.JPG" alt="Chaewon Lee" width="240" align="left" style="margin-right: 30px; border-radius: 15px;" />
+  <img src="/assets/images/chaewon1.JPG"
+       alt="Chaewon Lee"
+       style="width:200px; border-radius:15px; flex:0 0 auto;" />
 
-I am Chaewon Lee, a quantitative psychologist, data scientist, and statistician.  
-I am currently a Ph.D. candidate in the Quantitative Psychology program, housed within the L.L. Thurstone Psychometric Laboratory in the Department of Psychology and Neuroscience at the University of North Carolina at Chapel Hill.  
-
-My research focuses on developing and disseminating advanced statistical methods to address unique methodological challenges in psychological science. Specifically, I work on:
-
-<div style="margin-left: 270px;">
-<img src="/assets/images/research.png" alt="Chaewon Lee" width="400" align="left" style="margin-right: 30px; border-radius: 15px;" />
+  <div style="flex:1 1 200px; min-width:280px;">
+  <br>
+    Hello! I am Chaewon Lee, a quantitative psychologist, data scientist, and statistician.  
+    I am currently a Ph.D. candidate in the Quantitative Psychology program, housed within the L.L. Thurstone Psychometric Laboratory in the Department of Psychology and Neuroscience at the University of North Carolina at Chapel Hill.
+  </div>
 
 </div>
+
+<!-- Ensure the next section starts BELOW the photo/text block -->
+<div style="clear:both; margin-top:28px;"></div>
+
+<!-- Research focus block BELOW the photo -->
+
+## Research Focus
+### Methodological Innovation
+My research focuses on developing and disseminating advanced statistical methods to address the unique methodological challenges of psychological, behavioral, and social sciences. I primarily work across five statistical frameworks, often integrating them to create synergistic solutions that advance the field:
+</p>
+
+<div style="margin-top:14px;">
+  <img src="/assets/images/research1.JPG"
+       alt="Research approaches"
+       style="max-width:1100px; width:100%; height:auto; border-radius:15px; display:block; margin:0;" />
 </div>
 <br>
+My methodological work unfolds through three core pipelines:
 
-My work is guided by three grand pillars:
+1. Adapting deep learning techniques to enhance traditional psychological methods and meet the demands of research using passive sensing and large-scale behavioral and physiological data;
+2. Drawing robust inference on intraindividual dynamic processes from limited samples and sparse time points
+3. Rethinking imprecision in psychological scales — not merely as measurement error to minimize, but as a source of information to be actively leveraged in statistical modeling.
 
-1. Introducing and adapting machine learning and deep learning techniques to address the unique challenges of psychological data and meet the growing needs of big data methods for digital sensor research;
-2. Modeling intraindividual dynamics in psychological processes with greater robustness and precision;
-3. Leveraging statistical frameworks based on fuzzy theory to more effectively incorporate the inherent imprecision and uncertainty in psychological measurement.
 
-Substantively, I am deeply invested in applying these methodological innovations to real-world psychological research. My work spans a range of domains—including clinical, cognitive, social, health, and educational psychology—where I use advanced statistical and computational tools to investigate complex, context-specific questions. 
-In particular, my ongoing interest lies in predictive modeling to advance precision psychopathology by developing individualized, data-informed approaches to the diagnosis, treatment, and real-time intervention of mental health conditions such as depression, bipolar disorder, and schizophrenia.
+### Substantive Translation
+**Precision psychology** is the motivating aim behind translating my core modeling frameworks and methodological innovations into meaningful applications across psychological, behavioral, and social sciences. This includes advancing individualized diagnosis and treatment of mental health conditions, uncovering brain–behavior dynamics, and supporting adaptive interventions in clinical and educational settings. 
 
 A complete list of my publications is provided below.
 
@@ -103,13 +119,13 @@ At UNC Chapel Hill, I have served as a teaching assistant for PSYC 210 (Statisti
 
 ## Fun Facts About Me
 
-**Fact 1. I am a classically trained pianist.**  
+**1. I am a professionally trained classic pianist.**  
 I began playing the piano at the age of three and attended specialized arts middle and high schools in Korea to study it professionally. During my teenage years, I won several major national music competitions, performed on numerous stages, and collaborated with the Seoul Symphony Orchestra in a performance of Grieg’s Piano Concerto in A minor. At the age of 14, I was prestigiously selected as a musical prodigy by the Kumho Asiana Group—one of Korea’s leading conglomerates—which led to my own solo recital. My favorite repertoire includes Bach–Busoni’s *Chaconne*, Mendelssohn’s *Variations sérieuses*, Chopin’s Ballades, and more. In addition to solo performance, I have also performed as an accompanist for violinists, cellists, and vocalists in various concert and competition settings.
 
 <div align="center" style="margin: 20px 0;">
   <img src="/assets/images/chaewon2.JPG" alt="Chaewon Lee performing" width="400" style="border-radius: 12px;" />
 </div>
 
-**Fact 2. I used to work as an economist and investment banker.**  
+**2. I used to work as an economist and investment banker.**  
 Before entering academia, I worked at Korea Investment & Securities in Seoul. I first served as a junior investment banker in the Equity Capital Market Department, where I worked on IPOs for KOSPI and KOSDAQ, conducting due diligence, accounting analysis, and preparing listing applications. I later transitioned to the Research Center as a junior economist, where I authored analytical reports on global macroeconomic trends and financial markets, and led forecasting for indicators such as exchange rates, crude oil prices, and international policy rates.
 
