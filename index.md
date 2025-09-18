@@ -6,8 +6,8 @@ tagline: Quantitative Psychology • Data Science • Statistics
 
 # Welcome to my personal homepage!
 
-<img src="/assets/images/chaewon1.JPG" alt="Chaewon Lee" width="180" align="left"
-     style="margin-right: 50px; border-radius: 12px;" />
+<img src="/assets/images/chaewon1.JPG" alt="Chaewon Lee" width="200" align="left"
+     style="margin-right: 40px; border-radius: 15px;" />
 
 <div style="overflow: hidden;">
 
@@ -17,11 +17,11 @@ My research focuses on developing and disseminating advanced statistical methods
 
 <div style="margin-top: 18px;"></div>
 
-- Machine learning and deep learning  
-- Time-series analysis  
-- Dynamic network modeling  
-- Structural equation modeling  
-- Fuzzy modeling  
+  - Machine learning and deep learning  
+  - Time-series analysis  
+  - Dynamic network modeling  
+  - Structural equation modeling  
+  - Fuzzy modeling  
 
 </div>
 
