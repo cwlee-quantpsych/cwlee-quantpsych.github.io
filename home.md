@@ -22,18 +22,21 @@ permalink: /home
   }
 
   /* -------- Base -------- */
+  *{ box-sizing: border-box; }
   body{
     font-family:'Lato',system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size:16px; line-height:1.7; color:var(--unc-gray);
     background:linear-gradient(180deg,var(--unc-bg-lighter) 0%,var(--unc-bg-light) 100%);
+    overflow-x:hidden; /* 방지: 가로 스크롤 생기는 미세 overflow */
   }
 
-  /* WIDER page: longer lines */
+  /* TRUE full-width template */
   main, .page-content{
     overflow:visible;
-    max-width:96vw;          /* nearly full width of screen */
+    max-width:100vw;       /* 화면 가로를 전부 사용 */
+    width:100%;
     margin:0 auto;
-    padding:0 60px;          /* breathing room left & right */
+    padding:0 24px;        /* 좌우 최소 여백만 남김 (원하면 더 줄여도 됨) */
   }
 
   h1,h2,h3,h4,h5,h6{ font-weight:700; color:var(--unc-dark); }
@@ -63,7 +66,7 @@ permalink: /home
     backdrop-filter:blur(6px);
   }
   .hero-grid{
-    max-width:96vw; margin:0 auto; padding:0 12px;
+    max-width:100vw; margin:0 auto; padding:0 12px;
     display:grid; grid-template-columns:auto 1fr; gap:18px;
     align-items:center;
   }
@@ -73,13 +76,13 @@ permalink: /home
     margin:0;
     padding:12px 22px;
     font-weight:900; line-height:1.05; letter-spacing:-.2px;
-    font-size:clamp(34px, 3.3vw, 52px);
+    font-size:clamp(34px, 3.3vw, 54px);
     color:var(--unc-dark);
     background:var(--card-bg);
     border:1px solid var(--card-bd);
     border-radius:18px;
     box-shadow:var(--card-shadow);
-    white-space:nowrap; /* keep on one line */
+    white-space:nowrap; /* 한 줄 유지 */
   }
 
   /* Tabs pill */
@@ -89,32 +92,44 @@ permalink: /home
     border-radius:18px;
     box-shadow:var(--card-shadow);
     padding:12px 20px;
-    overflow:hidden;
+    overflow:visible;        /* 안 잘리게 */
   }
+
   .tabs-list{
     display:flex; align-items:center; gap:24px;
     list-style:none; margin:0; padding:0;
-    flex-wrap:nowrap; /* keep in one line on wide screens */
+    flex-wrap:nowrap;         /* 넓을 땐 한 줄 유지 */
+    white-space:nowrap;
   }
   .tabs-list a{
     display:inline-block; padding:8px 10px;
     font-weight:700; color:var(--unc-dark); text-decoration:none;
-    border-radius:10px; white-space:nowrap;
+    border-radius:10px;
     transition:background .15s ease, color .15s ease, transform .08s ease;
   }
   .tabs-list a:hover{ background:var(--tab-accent); color:#fff; transform:translateY(-1px); }
   .tabs-list a.active{ background:var(--unc-dark); color:#fff; }
 
-  /* Responsive: stack pills on smaller screens */
+  /* 좁은 화면: 절대 잘리지 않게 가로 스크롤 허용 (줄바꿈 대신) */
+  @media (max-width: 1280px){
+    .tabs-card{
+      overflow-x:auto;       /* 가로 스크롤 */
+      -webkit-overflow-scrolling:touch;
+    }
+    .tabs-list{ flex-wrap:nowrap; white-space:nowrap; gap:20px; }
+  }
   @media (max-width: 980px){
-    .hero-grid{ grid-template-columns:1fr; gap:10px; }
-    .tabs-list{ flex-wrap:wrap; gap:14px 18px; }
+    .name-card{ font-size: clamp(28px, 4.6vw, 40px); }
+    .tabs-list a{ font-size: 0.95rem; }
   }
 
   /* Smooth anchors */
   html{ scroll-behavior:smooth; }
   h2[id], h3[id]{ scroll-margin-top: calc(var(--site-header-h,0px) + 90px); }
   .top-spacer{ clear:both; margin-top:14px; }
+
+  /* Optional: wider images follow container width nicely */
+  .page-content img{ max-width:100%; height:auto; }
 </style>
 
 <!-- HEADER: separate pill for name + pill for tabs -->
@@ -137,13 +152,14 @@ permalink: /home
 </div>
 
 <script>
-  // Blur links after click to avoid lingering focus outline
+  // 클릭 후 포커스 잔상 제거
   document.querySelectorAll('.tabs-list a').forEach(a=>{
     a.addEventListener('click', ()=>a.blur(), {passive:true});
   });
 </script>
 
 <div class="top-spacer"></div>
+
 
 
 ## Research Focus {#research}
