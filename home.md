@@ -44,6 +44,15 @@ permalink: /home
     line-height: 1.65;
   }
 
+  /* Style for the page title */
+  h1.page-title {
+    font-size: 42px;       /* bigger headline */
+    font-weight: 900;      /* bold */
+    color: var(--unc-dark);
+    text-align: center;    /* centered */
+    margin: 32px 0 28px 0; /* spacing top and bottom */
+  }
+
   /* Tabs bar */
   .tabs {
     position: static;
