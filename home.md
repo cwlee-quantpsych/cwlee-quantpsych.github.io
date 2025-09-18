@@ -149,6 +149,8 @@ My methodological work unfolds through three core pipelines:
 **Substantive Translation**  
 <em>Precision psychology</em> is the motivating aim behind translating my core modeling frameworks and methodological innovations into meaningful applications across psychological, behavioral, and social sciences. This includes advancing individualized diagnosis and treatment of mental health conditions, uncovering brain–behavior dynamics, and supporting adaptive interventions in clinical and educational settings. 
 
+---
+
 ## Publications {#publications}
 ### Published  
 
@@ -174,20 +176,33 @@ My methodological work unfolds through three core pipelines:
 - **Lee, C.\*** Modeling imprecision in psychological data: Fuzzy set theory and its application with fuzzy least squares regression.  
 - **Lee, C.\*** FLEX: An R package for fuzzy numbers and fuzzy least squares regression.
 
+---
+
 ## Research Collaborations {#collaborations}
+
 I have collaborated on multiple interdisciplinary research projects, including:
 
-- The EPICS Mood and Schizophrenia Lab (PI: Deldin, P.J.) at the University of Michigan, where I analyzed event-related potentials (ERP) to classify psychiatric patients and predict suicidality of individuals diagnosed with bipolar disorder using techniques such as deep learning and feature selection.  
-- PROACTIVE Project (PI: T. Manschreck), in collaboration with researchers at Harvard Medical School / Beth Israel Deaconess Medical Center, where I focused on identifying the relationship between a patient’s metabolic features and the effectiveness of schizophrenia treatments, including long-acting injectable Risperidone and oral antipsychotic medications.  
-- The NSF IUSE Student Success Project (PIs: Gates, K., & Greene, J.) at the UNC School of Education and the Department of Psychology and Neuroscience, where I applied machine learning and Markov modeling to learning management system (LMS) data to forecast student performance in undergraduate biology courses.  
-- Collaborations with Dr. Tom Rodebaugh’s clinical psychology team at UNC Chapel Hill on dynamic time series modeling of tinnitus symptoms, using Group Iterative Multiple Model Estimation (GIMME).  
-- Ongoing collaborations with mathematicians and engineers in South Korea, exploring the application of fuzzy set theory and chaos theory to model complex dynamics in social opinion formation.
+- **EPICS Mood and Schizophrenia Lab (PI: Deldin, P.J., University of Michigan):**  
+  Analyzed event-related potentials (ERP) to classify psychiatric patients and predict suicidality in individuals diagnosed with bipolar disorder, using deep learning and feature selection.  
+
+- **PROACTIVE Project (PI: T. Manschreck, Harvard Medical School / Beth Israel Deaconess Medical Center):**  
+  Investigated relationships between patients’ metabolic features and the effectiveness of schizophrenia treatments, including long-acting injectable Risperidone and oral antipsychotics.  
+
+- **NSF IUSE Student Success Project (PIs: Gates, K., & Greene, J., UNC School of Education / Department of Psychology and Neuroscience):**  
+  Applied machine learning and Markov modeling to learning management system (LMS) data to forecast student performance in undergraduate biology courses.  
+
+- **Clinical Psychology Collaborations (PI: Rodebaugh, T.L., UNC Chapel Hill):**  
+  Modeled dynamic time series of tinnitus symptoms using Group Iterative Multiple Model Estimation (GIMME).  
+
+- **Mathematics and Engineering Collaborations (South Korea):**  
+  Explored applications of fuzzy set theory and chaos theory to model complex dynamics in social opinion formation.  
 
 ---
+
 ## Education {#education}
-**M.S. in Applied Statistics** — University of Michigan, Ann Arbor, MI, USA  
-**M.A. in Economics** — Yonsei University, Seoul, South Korea  
-**B.S. in Biology** — Yonsei University, Seoul, South Korea  
+**M.S. in Applied Statistics**  University of Michigan, Ann Arbor, MI, USA  
+**M.A. in Economics**  Yonsei University, Seoul, South Korea  
+**B.S. in Biology**  Yonsei University, Seoul, South Korea  
 
 ---
 
