@@ -19,9 +19,45 @@ permalink: /home
     -webkit-backdrop-filter: saturate(160%) blur(6px);
     backdrop-filter: saturate(160%) blur(6px);
   }
-  .tabs ul { display:flex; flex-wrap:wrap; gap:10px 14px; list-style:none; margin:0; padding:6px 2px; }
-  .tabs a { text-decoration:none; font-weight:600; padding:8px 12px; border-radius:10px; color: var(--tab-accent); }
+  .tabs ul {
+    display:flex; flex-wrap:wrap; gap:10px 14px;
+    list-style:none; margin:0; padding:6px 2px;
+  }
+
+  /* base links */
+  .tabs a {
+    text-decoration:none;
+    font-weight:600;
+    padding:8px 12px;
+    color: var(--tab-accent);
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+  }
   .tabs a:hover { text-decoration: underline; }
+
+  /* remove Safari focus glow, but keep accessibility */
+  .tabs a:focus { outline: none; box-shadow: none; }
+  .tabs a:focus-visible {
+    outline: 2px solid rgba(10,132,255,.6);
+    outline-offset: 3px;
+    border-radius: 10px;
+  }
+
+  /* active tab = underline instead of pill */
+  .tabs a.active {
+    background: transparent;
+    border: 0;
+    position: relative;
+  }
+  .tabs a.active::after {
+    content: "";
+    position: absolute;
+    left: 6px; right: 6px; bottom: -6px;
+    height: 2px;
+    background: var(--tab-accent);
+    border-radius: 2px;
+  }
 
   html { scroll-behavior: smooth; }
   h2[id], h3[id] { scroll-margin-top: calc(var(--site-header-h, 0px) + 26px); }
