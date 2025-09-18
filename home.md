@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Chaewon Lee"
+title: ""
 description: ""
 permalink: /home
 ---
