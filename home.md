@@ -120,7 +120,7 @@ My methodological work unfolds through three core pipelines:
 ---
 
 ### Accepted  
-- Lee, C.*, & Gates, K. M. (in press). Group-iterative multiple model estimation in clinical science. <em>Annual Review of Clinical Psychology</em>.  
+- Lee, C.*, & Gates, K. M. (Expected May 7, 2026). Group-iterative multiple model estimation in clinical science. <em>Annual Review of Clinical Psychology</em>.  
 
 ---
 
