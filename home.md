@@ -9,9 +9,9 @@ permalink: /home
   :root { --tab-accent:#0a84ff; --site-header-h:56px; }
   main, .page-content { overflow: visible; }
 
-  /* NOT sticky anymore */
+  /* Tabs bar */
   .tabs {
-    position: static;                 /* no sticking */
+    position: static;                 /* not sticky */
     z-index: 1;
     background: rgba(15,20,24,.85);
     border-bottom: 1px solid rgba(127,127,127,.2);
@@ -22,35 +22,56 @@ permalink: /home
   }
 
   .tabs ul {
-    display:flex; flex-wrap:wrap; gap:10px 14px;
-    list-style:none; margin:0; padding:6px 2px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px 14px;
+    list-style:none;
+    margin:0;
+    padding:6px 2px;
+    align-items:center;   /* ensure even vertical centering */
+  }
+
+  .tabs li {
+    display:flex;
+    align-items:center;   /* normalize vertical alignment */
   }
 
   /* Base link styles */
   .tabs a {
-    text-decoration:none; font-weight:600;
-    padding:8px 12px; color: var(--tab-accent);
-    display:inline-flex; align-items:center; line-height:1;
-    outline:none;                 /* kill UA outline */
-    -webkit-tap-highlight-color: transparent; /* iOS ripple */
-    border:none; box-shadow:none; /* extra safety */
+    text-decoration:none;
+    font-weight:600;
+    padding:8px 12px;
+    color: var(--tab-accent);
+    display:inline-flex;
+    align-items:center;
+    line-height:1.2;          /* normalize across fonts */
+    outline:none;
+    -webkit-tap-highlight-color: transparent;
+    border:none;
+    box-shadow:none;
   }
   .tabs a:hover { text-decoration: underline; }
 
-  /* Keep keyboard accessibility without mouse glow */
+  /* Active tab style (underline only, no box) */
   .tabs a.active {
-  background: none;     /* no background highlight */
-  border: none;         /* remove border box */
-  text-decoration: underline; /* optional highlight instead */
-}
-.tabs a:focus, .tabs a:focus-visible {
-  outline: none;
-  box-shadow: none;
-}
+    background: none;
+    border: none;
+    text-decoration: underline;
+  }
+
+  /* Accessibility: suppress default browser focus glow */
+  .tabs a:focus,
+  .tabs a:focus-visible {
+    outline:none;
+    box-shadow:none;
+  }
 
   html { scroll-behavior: smooth; }
+
   /* offset for in-page anchors if you have a site header */
-  h2[id], h3[id] { scroll-margin-top: calc(var(--site-header-h, 0px) + 26px); }
+  h2[id], h3[id] {
+    scroll-margin-top: calc(var(--site-header-h, 0px) + 26px);
+  }
 
   .top-spacer { clear: both; margin-top: 18px; }
 </style>
