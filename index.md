@@ -6,7 +6,8 @@ tagline: Quantitative Psychology • Data Science • Statistics
 
 # Welcome to my personal homepage!
 
-<img src="/assets/images/chaewon1.JPG" alt="Chaewon Lee" width="180" align="left" style="margin-right: 25px; margin-bottom: 40px; border-radius: 15px;" />
+<img src="/assets/images/chaewon1.JPG" alt="Chaewon Lee" width="180" align="left"
+     style="margin-right: 50px; border-radius: 12px;" />
 
 <div style="overflow: hidden;">
 
