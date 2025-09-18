@@ -6,72 +6,75 @@ permalink: /home
 ---
 
 <style>
-  :root { --tab-accent:#0a84ff; --site-header-h:56px; }
+  :root { --tab-accent:#0a84ff; --site-header-h:0px; } /* header hidden, so offset = 0 */
   main, .page-content { overflow: visible; }
 
-  /* Tabs bar */
+  /* HIDE the theme header/title ONLY on this page */
+  .site-header,
+  .site-title,
+  .site-title a {
+    display: none !important;
+  }
+
+  /* Tabs bar (not sticky) */
   .tabs {
-    position: static;                 /* not sticky */
+    position: static;
     z-index: 1;
-    background: rgba(15,20,24,.85);
+    background: #2a2f33; /* solid, avoids odd blending artifacts */
     border-bottom: 1px solid rgba(127,127,127,.2);
-    padding: 10px 0;
+    padding: 12px 0;
     margin: 0 0 16px 0;
-    -webkit-backdrop-filter: saturate(160%) blur(6px);
-    backdrop-filter: saturate(160%) blur(6px);
   }
 
   .tabs ul {
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px 14px;
-    list-style:none;
-    margin:0;
-    padding:6px 2px;
-    align-items:center;   /* ensure even vertical centering */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px 40px;         /* a bit more spacing like your screenshot */
+    list-style: none;
+    margin: 0;
+    padding: 8px 18px;
+    align-items: center;    /* vertical alignment for all items */
   }
 
   .tabs li {
-    display:flex;
-    align-items:center;   /* normalize vertical alignment */
+    display: flex;
+    align-items: center;
+    margin: 0;              /* ensure no stray margins */
   }
 
-  /* Base link styles */
+  /* Normalize link boxes so every tab sits on the same baseline */
   .tabs a {
-    text-decoration:none;
-    font-weight:600;
-    padding:8px 12px;
+    display: flex;               /* not inline-flex — avoids baseline quirks */
+    align-items: center;
+    justify-content: center;
+    height: 32px;                /* fixed box height = identical vertical alignment */
+    line-height: 1;              /* tight line-height so glyph metrics don’t shift */
+    padding: 0 12px;
+    margin: 0;
+    font-weight: 700;
     color: var(--tab-accent);
-    display:inline-flex;
-    align-items:center;
-    line-height:1.2;          /* normalize across fonts */
-    outline:none;
+    text-decoration: none;
+    border: 0;
+    box-shadow: none;
+    outline: none;
     -webkit-tap-highlight-color: transparent;
-    border:none;
-    box-shadow:none;
   }
   .tabs a:hover { text-decoration: underline; }
 
-  /* Active tab style (underline only, no box) */
-  .tabs a.active {
-    background: none;
-    border: none;
-    text-decoration: underline;
-  }
-
-  /* Accessibility: suppress default browser focus glow */
+  /* Remove any active/focus “pill” or outline */
+  .tabs a.active { background: none; border: 0; text-decoration: underline; }
   .tabs a:focus,
-  .tabs a:focus-visible {
-    outline:none;
-    box-shadow:none;
+  .tabs a:focus-visible,
+  .tabs a:active {
+    outline: none !important;
+    box-shadow: none !important;
   }
+  .tabs a::-moz-focus-inner { border: 0; }
 
   html { scroll-behavior: smooth; }
 
-  /* offset for in-page anchors if you have a site header */
-  h2[id], h3[id] {
-    scroll-margin-top: calc(var(--site-header-h, 0px) + 26px);
-  }
+  /* Anchor offset (header is hidden, so 18px is enough to avoid clipping) */
+  h2[id], h3[id] { scroll-margin-top: 18px; }
 
   .top-spacer { clear: both; margin-top: 18px; }
 </style>
@@ -88,14 +91,15 @@ permalink: /home
   </ul>
 </nav>
 
-<!-- JS only to remove focus ring after mouse/touch click -->
+<!-- Blur links after click to prevent Safari focus ring reappearing -->
 <script>
-  document.querySelectorAll('.tabs a').forEach(a => {
-    a.addEventListener('click', () => a.blur(), {passive:true});
+  document.querySelectorAll('.tabs a').forEach(a=>{
+    a.addEventListener('click', ()=>a.blur(), {passive:true});
   });
 </script>
 
 <div class="top-spacer"></div>
+
 
 ## Research Focus {#research}
 ### Methodological Innovation
