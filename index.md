@@ -11,23 +11,26 @@ tagline: Quantitative Psychology • Data Science • Statistics
 
 <div style="overflow: hidden;">
 
-I am Chaewon Lee, a quantitative psychologist, data scientist, and statistician. I am currently a Ph.D. candidate in the Quantitative Psychology program, housed within the L.L. Thurstone Psychometric Laboratory in the Department of Psychology and Neuroscience at the University of North Carolina at Chapel Hill.
+  I am Chaewon Lee, a quantitative psychologist, data scientist, and statistician. I am currently a Ph.D. candidate in the Quantitative Psychology program, housed within the L.L. Thurstone Psychometric Laboratory in the Department of Psychology and Neuroscience at the University of North Carolina at Chapel Hill.
 
-My research focuses on developing and disseminating advanced statistical methods to address unique methodological challenges in psychological science. Specifically, I work on:
+  My research focuses on developing and disseminating advanced statistical methods to address unique methodological challenges in psychological science. Specifically, I work on:
 
-<div style="margin-top: 18px;"></div>
-
-  - Machine learning and deep learning  
-  - Time-series analysis  
-  - Dynamic network modeling  
-  - Structural equation modeling  
-  - Fuzzy modeling  
+  <div style="margin-top: 18px; margin-left: 20px;">
+    <ul style="padding-left: 20px;">
+      <li>Machine learning and deep learning</li>
+      <li>Time-series analysis</li>
+      <li>Dynamic network modeling</li>
+      <li>Structural equation modeling</li>
+      <li>Fuzzy modeling</li>
+    </ul>
+  </div>
 
 </div>
 
 <div style="clear: both; margin-top: 30px;"></div>
 
-**My work is guided by three grand pillars:**
+
+My work is guided by three grand pillars:
 
 1. Introducing and adapting machine learning and deep learning techniques to address the unique challenges of psychological data and meet the growing needs of big data methods for digital sensor research;
 2. Modeling intraindividual dynamics in psychological processes with greater robustness and precision;
