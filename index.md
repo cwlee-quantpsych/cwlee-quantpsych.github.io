@@ -6,26 +6,33 @@ tagline: Quantitative Psychology • Data Science • Statistics
 
 # Welcome to my personal homepage!
 
-<table style="border-collapse: collapse;">
-  <tr>
-    <td style="vertical-align: top; padding-right: 30px;">
-      <img src="/assets/images/chaewon1.JPG" width="180" style="border-radius: 15px;" />
+<table style="border-collapse: collapse; border: none; width: 100%;">
+  <tr style="border: none;">
+    <!-- Photo column -->
+    <td style="border: none; vertical-align: top; padding-right: 40px; width: 250px;">
+      <img src="/assets/images/chaewon1.JPG" style="border-radius: 15px; width: 230px; height: auto; border: none;" />
     </td>
-    <td style="vertical-align: top;">
+
+    <!-- Text column -->
+    <td style="border: none; vertical-align: top;">
+
       <p>
         I am Chaewon Lee, a quantitative psychologist, data scientist, and statistician.<br>
         I am currently a Ph.D. candidate in the Quantitative Psychology program, housed within the L.L. Thurstone Psychometric Laboratory in the Department of Psychology and Neuroscience at the University of North Carolina at Chapel Hill.
       </p>
+
       <p>
         My research focuses on developing and disseminating advanced statistical methods to address unique methodological challenges in psychological science. Specifically, I work on:
       </p>
-      <ul>
+
+      <ul style="margin-top: 12px;">
         <li>Machine learning and deep learning</li>
         <li>Time-series analysis</li>
         <li>Dynamic network modeling</li>
         <li>Structural equation modeling</li>
         <li>Fuzzy statistical modeling</li>
       </ul>
+
     </td>
   </tr>
 </table>
