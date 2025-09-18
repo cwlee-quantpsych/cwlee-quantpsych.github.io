@@ -9,8 +9,6 @@ permalink: /home
   :root {
     --tab-accent:#0a84ff;
     --site-header-h:56px;
-
-    /* UNC-inspired palette */
     --unc-dark: #13294B;       /* UNC navy */
     --unc-gray: #4B4F54;       /* medium gray */
     --unc-bg-light: #A7C7E7;   /* pastel blue 1 */
@@ -32,77 +30,41 @@ permalink: /home
     padding: 0 32px;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', system-ui, sans-serif;
-    font-weight: 700;
-    color: var(--unc-dark);
-  }
+  h1, h2, h3, h4, h5, h6 { font-weight: 700; color: var(--unc-dark); }
 
   p, li { color: var(--unc-gray); font-size: 17px; line-height: 1.65; }
 
-  /* Make any auto-rendered page title navy & strong (if present) */
-  h1.page-title, .page-title { color: var(--unc-dark) !important; font-weight: 900; }
-
-  /* Hide theme footer; use custom one below */
-  .site-footer, .page__footer { display: none !important; }
+  /* ── Hide the theme’s auto page title completely ─────────────────────────── */
+  .page__header,
+  .page__title,
+  .page-title,
+  .page__header h1 { display: none !important; }
+  /* (If your theme uses a different wrapper, this covering set removes it.) */
 
   /* Custom copyright footer */
-  .custom-copy {
-    max-width: 1200px;
-    margin: 40px auto 24px;
-    padding: 16px 32px 0;
-    text-align: center;
-    color: var(--unc-dark);
-    font-size: 14px;
-    opacity: .9;
-    border-top: 1px solid rgba(19,41,75,.15);
+  .custom-copy{
+    max-width:1200px;margin:40px auto 24px;padding:16px 32px 0;
+    text-align:center;color:var(--unc-dark);font-size:14px;opacity:.9;
+    border-top:1px solid rgba(19,41,75,.15);
   }
 
   /* Tabs bar — clean, light look */
-  .tabs {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background: #ffffffdd;                 /* light, translucent */
-    border-bottom: 1px solid rgba(19,41,75,.15);
-    backdrop-filter: blur(6px);
-    padding: 10px 0;
-    margin: 0 0 20px 0;
+  .tabs{
+    position:sticky;top:0;z-index:10;
+    background:#ffffffdd;border-bottom:1px solid rgba(19,41,75,.15);
+    backdrop-filter:blur(6px);padding:10px 0;margin:0 0 20px 0;
   }
-
-  .tabs ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 22px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  .tabs ul{display:flex;flex-wrap:wrap;justify-content:center;gap:22px;list-style:none;margin:0;padding:0;}
+  .tabs a{
+    display:inline-block;padding:6px 10px;font-weight:600;color:var(--unc-dark);
+    text-decoration:none;border-radius:6px;transition:all .18s ease;
   }
+  .tabs a:hover{background:var(--tab-accent);color:#fff;}
+  .tabs a.active{background:var(--unc-dark);color:#fff;}
 
-  .tabs a {
-    display: inline-block;
-    padding: 6px 10px;
-    font-weight: 600;
-    color: var(--unc-dark);
-    text-decoration: none;
-    border-radius: 6px;
-    transition: all .18s ease;
-  }
-
-  .tabs a:hover {
-    background: var(--tab-accent);
-    color: #fff;
-  }
-
-  .tabs a.active {
-    background: var(--unc-dark);
-    color: #fff;
-  }
-
-  html { scroll-behavior: smooth; }
-  h2[id], h3[id] { scroll-margin-top: calc(var(--site-header-h, 0px) + 60px); }
-  .top-spacer { clear: both; margin-top: 20px; }
+  html{scroll-behavior:smooth;}
+  h2[id], h3[id]{scroll-margin-top:calc(var(--site-header-h, 0px) + 60px);}
+  .top-spacer{clear:both;margin-top:20px;}
 </style>
 
 <nav class="tabs" aria-label="Section navigation">
@@ -118,7 +80,6 @@ permalink: /home
 </nav>
 
 <script>
-  // Blur links after click to avoid persistent focus outline on Safari
   document.querySelectorAll('.tabs a').forEach(a=>{
     a.addEventListener('click', ()=>a.blur(), {passive:true});
   });
@@ -185,6 +146,7 @@ I have collaborated on multiple interdisciplinary research projects, including:
 **M.S. in Applied Statistics** — University of Michigan, Ann Arbor, MI, USA  
 **M.A. in Economics** — Yonsei University, Seoul, South Korea  
 **B.S. in Biology** — Yonsei University, Seoul, South Korea  
+
 ---
 
 ## Teaching & Instruction {#teaching}
