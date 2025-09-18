@@ -97,6 +97,7 @@ Before embarking on my Ph.D. training, I earned an M.S. in Applied Statistics fr
 ## Teaching & Instruction
 
 At UNC Chapel Hill, I have served as a teaching assistant for PSYC 210 (Statistical Principles of Psychological Research) across multiple semesters since 2020. In this role, I led recitation sessions, assisted students with SPSS- and Jamovi-based data analysis, and provided individualized support. I was recognized with the Departmental Undergraduate Teaching Commendation twice, based on student evaluations.
+
 ---
 
 ## Academic Conferences
