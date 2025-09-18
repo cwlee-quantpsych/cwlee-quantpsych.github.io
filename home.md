@@ -81,6 +81,7 @@ My research focuses on developing and disseminating advanced statistical methods
        style="max-width:1100px; width:100%; height:auto; border-radius:15px; display:block; margin:0;" />
 </div>
 <br>
+
 My methodological work unfolds through three core pipelines:
 
 1. Adapting deep learning techniques to enhance traditional psychological methods and meet the demands of research using passive sensing and large-scale behavioral and physiological data;
