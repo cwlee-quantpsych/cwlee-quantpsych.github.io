@@ -26,15 +26,12 @@ permalink: /home
     font-size:16px; line-height:1.65; color:var(--unc-gray);
     background:linear-gradient(180deg,var(--unc-bg-lighter) 0%,var(--unc-bg-light) 100%);
   }
-
-  /* WIDER CONTENT: expand to 1600px or 92vw on large screens */
-  main,.page-content{
-    overflow:visible;
-    max-width:min(92vw, 1600px);
-    margin:0 auto;
-    padding:0 40px;
+  main,.page-content{ 
+    overflow:visible; 
+    max-width:1600px;   /* expanded from 1200px */
+    margin:0 auto; 
+    padding:0 40px; 
   }
-
   h1,h2,h3,h4,h5,h6{ font-weight:700; color:var(--unc-dark); }
   p,li{ color:var(--unc-gray); font-size:17px; line-height:1.65; }
 
@@ -47,7 +44,6 @@ permalink: /home
     box-shadow:none !important;
     border-bottom:0 !important;
   }
-  /* Make the built-in site title quiet (we provide our own hero below) */
   a.site-title, .site-title, .masthead__title, .header__title, .navbar-brand{
     color:transparent !important;
     text-shadow:none !important;
@@ -55,32 +51,42 @@ permalink: /home
   }
   a.site-title::after, .site-title::after, .masthead__title::after, .header__title::after, .navbar-brand::after{ content:none !important; }
 
-  /* -------- HERO: Name + right-aligned tabs (sticky) -------- */
+  /* -------- HERO: Name + right-aligned tabs -------- */
   .hero-nav-wrap{
     position:sticky; top:0; z-index:15;
     backdrop-filter: blur(6px);
     padding: 10px 0 18px 0;
   }
   .hero-nav{
-    max-width:min(92vw, 1600px);
-    margin:0 auto; padding:10px 20px;
+    max-width:1600px;   /* expanded */
+    margin:0 auto; 
+    padding:14px 28px;
     background:var(--card-bg);
     border:1px solid var(--card-bd);
     border-radius:14px;
-    display:flex; align-items:center; gap:16px;
+    display:flex; 
+    align-items:center; 
+    justify-content:space-between;  /* name left, tabs right */
+    gap:24px;
+    flex-wrap:nowrap;   /* keep all on one line */
   }
   .hero-title{
-    margin:0; flex:1 1 auto;
-    font-weight:900; line-height:1.05;
+    margin:0; 
+    font-weight:900; 
+    line-height:1.05;
     color:var(--unc-dark);
-    font-size: clamp(28px, 3.6vw, 46px);
-    letter-spacing:-.2px;
+    font-size: clamp(32px, 3vw, 44px);
+    letter-spacing:-0.2px;
+    white-space:nowrap;  /* keep “Chaewon Lee” on one line */
   }
 
-  .tabs{ flex:0 1 auto; }
   .tabs ul{
-    display:flex; flex-wrap:wrap; justify-content:flex-end;
-    gap:16px 20px; list-style:none; margin:0; padding:0;
+    display:flex; 
+    flex-wrap:nowrap;  /* keep tabs on one line */
+    gap:20px; 
+    list-style:none; 
+    margin:0; 
+    padding:0;
   }
   .tabs a{
     display:inline-block; padding:6px 10px;
@@ -92,18 +98,11 @@ permalink: /home
   .tabs a:hover{ background:var(--tab-accent); color:#fff; transform:translateY(-1px); }
   .tabs a.active{ background:var(--unc-dark); color:#fff; }
 
-  /* When the row gets tight, stack neatly */
+  /* Responsive fallback */
   @media (max-width: 860px){
     .hero-nav{ flex-wrap:wrap; row-gap:10px; }
     .tabs{ width:100%; }
-    .tabs ul{ justify-content:flex-start; }
-  }
-
-  /* Slightly tighten paragraph width on ultra-wide for readability */
-  @media (min-width: 1700px){
-    .page-content > *:not(.hero-nav-wrap):not(.hero-nav){
-      max-width: 1500px;
-    }
+    .tabs ul{ justify-content:flex-start; flex-wrap:wrap; }
   }
 
   html{ scroll-behavior:smooth; }
