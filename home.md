@@ -6,15 +6,43 @@ permalink: /home
 ---
 
 <style>
-  :root { --tab-accent:#0a84ff; --site-header-h:56px; }
+  :root {
+    --tab-accent:#0a84ff;
+    --site-header-h:56px;
+
+    /* UNC-inspired palette */
+    --unc-dark: #13294B;  /* UNC navy */
+    --unc-gray: #4B4F54;  /* medium gray */
+    --unc-bg-light: #A7C7E7; /* pastel blue 1 */
+    --unc-bg-lighter: #D4E6F9; /* pastel blue 2 */
+  }
+
   main, .page-content { overflow: visible; }
 
-  /* Tabs bar (not sticky) */
+  body {
+    font-family: 'Lato', system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--unc-gray);
+    background: linear-gradient(180deg, var(--unc-bg-lighter) 0%, var(--unc-bg-light) 100%);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', system-ui, sans-serif;
+    font-weight: 700;
+    color: var(--unc-dark);
+  }
+
+  p, li {
+    color: var(--unc-gray);
+  }
+
+  /* Tabs bar */
   .tabs {
     position: static;
     z-index: 1;
-    background: #2a2f33;
-    border-bottom: 1px solid rgba(127,127,127,.2);
+    background: var(--unc-dark);
+    border-bottom: 1px solid rgba(255,255,255,.2);
     padding: 12px 0;
     margin: 0 0 16px 0;
   }
@@ -29,36 +57,19 @@ permalink: /home
     align-items: center;
   }
 
-  .tabs li {
-    display: flex;
-    align-items: center;
-    margin: 0;
-  }
-  
+  .tabs li { margin: 0; }
+
   .tabs a {
-    display: inline-block;        /* simpler, consistent layout */
+    display: inline-block;
     padding: 0 12px;
-    height: 32px;                 /* same height for all tabs */
-    line-height: 32px;            /* centers text vertically */
-    vertical-align: middle;       /* align with neighbors */
+    height: 32px;
+    line-height: 32px;
     font-weight: 700;
     color: var(--tab-accent);
     text-decoration: none;
-    border: 0;
-    box-shadow: none;
-    outline: none;
-    -webkit-tap-highlight-color: transparent;
   }
   .tabs a:hover { text-decoration: underline; }
-
-  /* No pill/outline */
-  .tabs a.active { background: none; border: 0; text-decoration: underline; }
-  .tabs a:focus,
-  .tabs a:focus-visible,
-  .tabs a:active {
-    outline: none !important;
-    box-shadow: none !important;
-  }
+  .tabs a.active { text-decoration: underline; }
 
   html { scroll-behavior: smooth; }
   h2[id], h3[id] { scroll-margin-top: calc(var(--site-header-h, 0px) + 26px); }
