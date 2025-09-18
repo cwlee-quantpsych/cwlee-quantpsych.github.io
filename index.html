@@ -8,13 +8,26 @@ layout: null
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Chaewon Lee</title>
+
+  <!-- Meta (nice for link previews/SEO) -->
+  <meta name="description" content="Chaewon Lee — Quantitative Psychology • Data Science • Statistics" />
+  <meta property="og:title" content="Chaewon Lee" />
+  <meta property="og:description" content="Quantitative Psychology • Data Science • Statistics" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/images/chaewon1.JPG" />
+  <link rel="canonical" href="{{ '/' | absolute_url }}" />
+
   <style>
     :root {
       --bg: #0f1418;        /* page background (dark) */
       --fg: #e8eef2;        /* text color */
-      --muted: #a9b5bd;
-      --accent: #61dafb;    /* button accent */
-      --card: #161b20;
+      --muted: #a9b5bd;     /* secondary text */
+      --accent: #61dafb;    /* main accent for CTAs */
+      --accent-ink: #0b1114;
+      --card: #161b20;      /* card surface */
+      --pill: rgba(97,218,251,.12);  /* quick links background */
+      --pill-border: rgba(97,218,251,.25);
+      --focus: #ffbf47;     /* focus ring color */
     }
     html, body { height:100%; margin:0; }
     body {
@@ -50,7 +63,7 @@ layout: null
       margin-top: 18px;
       display:inline-block;
       background: var(--accent);
-      color: #0b1114;
+      color: var(--accent-ink);
       text-decoration:none;
       padding: 10px 16px;
       border-radius: 10px;
@@ -59,15 +72,50 @@ layout: null
       box-shadow: 0 6px 16px rgba(97,218,251,.25);
     }
     .cta:hover { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(97,218,251,.32); }
+    .cta:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    /* Quick section pills */
+    .quick {
+      margin-top: 14px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .pill {
+      display:inline-block;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: var(--pill);
+      border: 1px solid var(--pill-border);
+      color: var(--fg);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      transition: transform .06s ease, background .06s ease, border-color .06s ease;
+    }
+    .pill:hover { transform: translateY(-1px); }
+    .pill:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
     @media (max-width: 760px) {
       .wrap { grid-template-columns: 1fr; padding: 22px; }
+    }
+
+    /* Respect reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      .cta, .pill { transition: none; }
     }
   </style>
 </head>
 <body>
   <main class="wrap">
     <div>
-      <img class="photo" src="/assets/images/chaewon1.JPG" alt="Chaewon Lee" />
+      <img class="photo" src="/assets/images/chaewon1.JPG" alt="Portrait of Chaewon Lee" />
     </div>
     <div>
       <h1>Hello! I’m Chaewon Lee.</h1>
@@ -75,11 +123,38 @@ layout: null
         I’m a quantitative psychologist, data scientist, and statistician.
         I am currently a Ph.D. candidate in the Quantitative Psychology program,
         housed within the L.L. Thurstone Psychometric Laboratory in the
-        Department of Psychology and Neuroscience at the University of North
-        Carolina at Chapel Hill.
-      </p>
-      <a class="cta" href="/home">Enter site →</a>
+        Department of Psychology and Neuroscience at the University of
+        North Carolina at Chapel Hill. 
+      <p> If you’d like to learn more about my work and background, please click below:</p>
+      <a class="cta" href="/home" aria-label="Enter site to view all sections on one page">Enter site →</a>
+
+      <!-- Quick jump pills to specific sections on /home -->
+      <nav class="quick" aria-label="Quick links to site sections">
+        <a class="pill" href="/home#research">Research</a>
+        <a class="pill" href="/home#publications">Publications</a>
+        <a class="pill" href="/home#collaborations">Collaborations</a>
+        <a class="pill" href="/home#education">Education</a>
+        <a class="pill" href="/home#teaching">Teaching</a>
+        <a class="pill" href="/home#conferences">Conferences</a>
+        <a class="pill" href="/home#life">Life Before the Lab</a>
+      </nav>
     </div>
   </main>
+
+  <!-- Optional: minimal Person schema for better previews -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Chaewon Lee",
+    "jobTitle": "Quantitative Psychologist",
+    "image": "/assets/images/chaewon1.JPG",
+    "url": "{{ '/' | absolute_url }}",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of North Carolina at Chapel Hill"
+    }
+  }
+  </script>
 </body>
 </html>
