@@ -1,0 +1,85 @@
+---
+layout: null
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chaewon Lee</title>
+  <style>
+    :root {
+      --bg: #0f1418;        /* page background (dark) */
+      --fg: #e8eef2;        /* text color */
+      --muted: #a9b5bd;
+      --accent: #61dafb;    /* button accent */
+      --card: #161b20;
+    }
+    html, body { height:100%; margin:0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      display:flex; align-items:center; justify-content:center;
+      padding: 32px 18px;
+    }
+    .wrap {
+      max-width: 980px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 28px;
+      background: var(--card);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    .photo {
+      width: 100%;
+      border-radius: 14px;
+      display:block;
+    }
+    h1 {
+      margin: 0 0 6px 0;
+      font-size: 28px;
+      letter-spacing:.2px;
+    }
+    p { margin: 10px 0 0 0; color: var(--muted); font-size: 18px; }
+    .cta {
+      margin-top: 18px;
+      display:inline-block;
+      background: var(--accent);
+      color: #0b1114;
+      text-decoration:none;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-weight: 600;
+      transition: transform .06s ease, box-shadow .06s ease;
+      box-shadow: 0 6px 16px rgba(97,218,251,.25);
+    }
+    .cta:hover { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(97,218,251,.32); }
+    @media (max-width: 760px) {
+      .wrap { grid-template-columns: 1fr; padding: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div>
+      <img class="photo" src="/assets/images/chaewon1.JPG" alt="Chaewon Lee" />
+    </div>
+    <div>
+      <h1>Hello! I’m Chaewon Lee.</h1>
+      <p>
+        I’m a quantitative psychologist, data scientist, and statistician.
+        I am currently a Ph.D. candidate in the Quantitative Psychology program,
+        housed within the L.L. Thurstone Psychometric Laboratory in the
+        Department of Psychology and Neuroscience at the University of North
+        Carolina at Chapel Hill.
+      </p>
+      <a class="cta" href="/home">Enter site →</a>
+    </div>
+  </main>
+</body>
+</html>
