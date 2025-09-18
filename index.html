@@ -16,47 +16,113 @@ layout: null
   <meta property="og:image" content="{{ '/assets/images/chaewon1.JPG' | relative_url }}" />
   <link rel="canonical" href="{{ '/' | absolute_url }}" />
 
-  <style>
-    :root {
-      --bg: #0f1418; --fg: #e8eef2; --muted: #a9b5bd;
-      --accent: #61dafb; --accent-ink: #0b1114;
-      --card: #161b20; --pill: rgba(97,218,251,.12);
-      --pill-border: rgba(97,218,251,.25); --focus: #ffbf47;
-    }
-    html, body { height:100%; margin:0; }
-    body {
-      background: var(--bg); color: var(--fg);
-      font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      display:flex; align-items:center; justify-content:center; padding: 32px 18px;
-    }
-    .wrap {
-      max-width: 980px; width: 100%;
-      display: grid; grid-template-columns: 240px 1fr; gap: 28px;
-      background: var(--card); border-radius: 16px; padding: 28px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.35);
-    }
-    .photo { width: 100%; border-radius: 14px; display:block; }
-    h1 { margin: 0 0 6px 0; font-size: 28px; letter-spacing:.2px; }
-    p { margin: 10px 0 0 0; color: var(--muted); font-size: 18px; }
-    .cta {
-      margin-top: 18px; display:inline-block; background: var(--accent); color: var(--accent-ink);
-      text-decoration:none; padding: 10px 16px; border-radius: 10px; font-weight: 600;
-      transition: transform .06s ease, box-shadow .06s ease; box-shadow: 0 6px 16px rgba(97,218,251,.25);
-    }
-    .cta:hover { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(97,218,251,.32); }
-    .cta:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
-    .quick { margin-top: 14px; display: flex; gap: 8px; flex-wrap: wrap; }
-    .pill {
-      display:inline-block; padding: 7px 12px; border-radius: 999px;
-      background: var(--pill); border: 1px solid var(--pill-border);
-      color: var(--fg); text-decoration: none; font-weight: 600; font-size: 14px;
-      transition: transform .06s ease, background .06s ease, border-color .06s ease;
-    }
-    .pill:hover { transform: translateY(-1px); }
-    .pill:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
-    @media (max-width: 760px) { .wrap { grid-template-columns: 1fr; padding: 22px; } }
-    @media (prefers-reduced-motion: reduce) { .cta, .pill { transition: none; } }
-  </style>
+<style>
+  :root {
+    --bg: #4B9CD3;         /* UNC Carolina Blue */
+    --fg: #ffffff;         /* White text for contrast */
+    --muted: #dbe8f2;      /* Softer light blue for secondary text */
+    --accent: #13294B;     /* UNC Navy for buttons/accents */
+    --accent-ink: #ffffff; /* Text on accent buttons */
+    --card: #ffffff;       /* White card surface */
+    --pill: rgba(19,41,75,.12);   /* Navy tint for pills */
+    --pill-border: rgba(19,41,75,.25);
+    --focus: #ffbf47;      /* Optional gold focus ring */
+  }
+
+  html, body { height:100%; margin:0; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 32px 18px;
+  }
+
+  .wrap {
+    max-width: 980px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 28px;
+    background: var(--card);
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    color: #13294B; /* ensure body text inside card is navy */
+  }
+
+  .photo { width: 100%; border-radius: 14px; display:block; }
+
+  h1 {
+    margin: 0 0 6px 0;
+    font-size: 28px;
+    letter-spacing:.2px;
+    color: #13294B; /* headings in UNC navy */
+  }
+
+  p {
+    margin: 10px 0 0 0;
+    color: #444; /* darker gray for body text inside cards */
+    font-size: 18px;
+  }
+
+  .cta {
+    margin-top: 18px;
+    display:inline-block;
+    background: var(--accent);
+    color: var(--accent-ink);
+    text-decoration:none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: transform .06s ease, box-shadow .06s ease;
+    box-shadow: 0 6px 16px rgba(19,41,75,.25);
+  }
+  .cta:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(19,41,75,.32);
+  }
+  .cta:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 3px;
+  }
+
+  .quick {
+    margin-top: 14px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .pill {
+    display:inline-block;
+    padding: 7px 12px;
+    border-radius: 999px;
+    background: var(--pill);
+    border: 1px solid var(--pill-border);
+    color: #13294B; /* pill text navy */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: transform .06s ease, background .06s ease, border-color .06s ease;
+  }
+  .pill:hover { transform: translateY(-1px); }
+  .pill:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 3px;
+  }
+
+  @media (max-width: 760px) {
+    .wrap { grid-template-columns: 1fr; padding: 22px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cta, .pill { transition: none; }
+  }
+</style>
+
 </head>
 <body>
   <main class="wrap">
