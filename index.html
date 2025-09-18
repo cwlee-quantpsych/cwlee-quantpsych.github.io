@@ -39,14 +39,21 @@ layout: null
       background: var(--bg);
       color: var(--ink);
       font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      font-size: 15px;       /* slightly smaller base */
+      font-size: 15px;
       line-height: 1.55;
+
+      /* Center the main content vertically & horizontally */
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     /* Layout shell */
     .hero {
       max-width: 1100px;
-      margin: 64px auto;
+      width: 100%;
+      margin: 0 auto;
       padding: 0 22px;
       display: grid;
       grid-template-columns: 1.1fr 1fr;
@@ -56,28 +63,27 @@ layout: null
 
     /* Left column */
     .eyebrow {
-      font-weight: 700;
-      letter-spacing: .15em;
+      font-weight: 800;
+      letter-spacing: .18em;
       text-transform: uppercase;
       color: var(--accent-deep);
-      opacity: .85;
-      font-size: 11px;
-      margin-bottom: 14px;
+      opacity: .9;
+      font-size: 14px;      /* increased size */
+      margin-bottom: 16px;
     }
 
     h1 {
       margin: 0 0 12px 0;
-      font-size: clamp(28px, 4vw, 44px); /* smaller headline */
-      line-height: 1.1;
+      font-size: clamp(32px, 5vw, 52px); /* slightly larger headline */
+      line-height: 1.08;
       font-weight: 900;
       letter-spacing: .2px;
       color: var(--accent-deep);
     }
-    h1 .dim { color: var(--muted); font-weight: 600; }
 
     .subtitle {
       font-weight: 600;
-      font-size: clamp(15px, 2vw, 19px); /* reduced */
+      font-size: clamp(15px, 2vw, 19px);
       color: var(--accent-deep);
       margin: 6px 0 12px 0;
     }
@@ -85,7 +91,7 @@ layout: null
     p {
       margin: 10px 0 0 0;
       color: var(--muted);
-      font-size: 15px;       /* reduced */
+      font-size: 15px;
       font-weight: 400;
       line-height: 1.55;
     }
@@ -147,7 +153,7 @@ layout: null
 
     /* Responsive */
     @media (max-width: 960px) {
-      .hero { grid-template-columns: 1fr; gap: 24px; margin: 48px auto; }
+      .hero { grid-template-columns: 1fr; gap: 24px; }
     }
   </style>
 </head>
@@ -157,18 +163,18 @@ layout: null
     <!-- Left: text -->
     <div>
       <div class="eyebrow">Hello — I’m</div>
-      <h1><span class="dim">Chaewon</span> Lee</h1>
+      <h1>Chaewon Lee</h1>
       <div class="subtitle">Quantitative Psychologist · Data Scientist · Statistician</div>
 
       <p>
-      I’m a Ph.D. candidate in the Quantitative Psychology program housed within 
-      the L.L. Thurstone Psychometric Laboratory in the Department of Psychology 
-      and Neuroscience at the University of North Carolina at Chapel Hill. 
-      My research focuses on developing and disseminating advanced statistical 
-      methods to address the unique methodological challenges of psychological, behavioral, and neural 
-      sciences. If you’d like to learn more about my background and research, please 
-      click below:
-     </p>
+        I’m a Ph.D. candidate in the Quantitative Psychology program housed within
+        the L.L. Thurstone Psychometric Laboratory in the Department of Psychology
+        and Neuroscience at the University of North Carolina at Chapel Hill.
+        My research focuses on developing and disseminating advanced statistical
+        methods to address the unique methodological challenges of psychological, behavioral, and neural
+        sciences. If you’d like to learn more about my background and research, please
+        click below:
+      </p>
 
       <div class="ctarow">
         <a class="btn" href="{{ '/home' | relative_url }}" aria-label="Enter site to view all sections on one page">
@@ -184,8 +190,8 @@ layout: null
       <div class="chips" aria-label="Social links">
         <a class="chip" href="mailto:{{ site.email | default: 'chaewonhelena@gmail.com' }}" title="Email">✉️</a>
         <a class="chip" href="https://osf.io/6vuqb" target="_blank" rel="noopener" title="OSF">
-  <img src="{{ '/assets/images/osf-logo.png' | relative_url }}" alt="OSF" style="width:18px; height:18px;" />
-</a>
+          <img src="{{ '/assets/images/osf-logo.png' | relative_url }}" alt="OSF" style="width:18px; height:18px;" />
+        </a>
         <a class="chip" href="https://www.linkedin.com/in/cwlee-quantpsych/" target="_blank" rel="noopener" title="LinkedIn">🔗</a>
       </div>
     </div>
