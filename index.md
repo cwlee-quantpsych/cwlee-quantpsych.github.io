@@ -10,7 +10,7 @@ tagline: Quantitative Psychology • Data Science • Statistics
   <img src="/assets/images/chaewon1.JPG" alt="Chaewon Lee" width="200" align="left"
        style="margin-right: 40px; margin-bottom: 10px; border-radius: 15px;" />
 
-  <div style="margin-left: 220px;"> <!-- 사진보다 오른쪽에서 시작하도록 밀기 -->
+  <div style="margin-left: 220px;"> 
 
     <p>
       I am Chaewon Lee, a quantitative psychologist, data scientist, and statistician.
