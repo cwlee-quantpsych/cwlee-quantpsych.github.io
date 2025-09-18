@@ -6,7 +6,7 @@ tagline: Quantitative Psychology • Data Science • Statistics
 
 # Welcome to my personal homepage!
 
-<table border="0">
+<table style="border-collapse: collapse; border: none;">
   <tr>
     <td width="200px" style="vertical-align: top;">
       <img src="/assets/images/chaewon1.JPG" width="180" style="border-radius: 15px;" />
