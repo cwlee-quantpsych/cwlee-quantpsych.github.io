@@ -39,36 +39,36 @@ layout: null
       background: var(--bg);
       color: var(--ink);
       font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      font-size: 16px;
-      line-height: 1.6;
+      font-size: 15px;       /* slightly smaller base */
+      line-height: 1.55;
     }
 
     /* Layout shell */
     .hero {
-      max-width: 1200px;
-      margin: 72px auto;
-      padding: 0 24px;
+      max-width: 1100px;
+      margin: 64px auto;
+      padding: 0 22px;
       display: grid;
-      grid-template-columns: 1.15fr 1fr; /* text / image */
-      gap: 48px;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 40px;
       align-items: center;
     }
 
     /* Left column */
     .eyebrow {
       font-weight: 700;
-      letter-spacing: .18em;
+      letter-spacing: .15em;
       text-transform: uppercase;
       color: var(--accent-deep);
       opacity: .85;
-      font-size: 12px;
-      margin-bottom: 18px;
+      font-size: 11px;
+      margin-bottom: 14px;
     }
 
     h1 {
-      margin: 0 0 14px 0;
-      font-size: clamp(36px, 5vw, 56px);
-      line-height: 1.05;
+      margin: 0 0 12px 0;
+      font-size: clamp(28px, 4vw, 44px); /* smaller headline */
+      line-height: 1.1;
       font-weight: 900;
       letter-spacing: .2px;
       color: var(--accent-deep);
@@ -77,23 +77,24 @@ layout: null
 
     .subtitle {
       font-weight: 600;
-      font-size: clamp(16px, 2.2vw, 22px);
+      font-size: clamp(15px, 2vw, 19px); /* reduced */
       color: var(--accent-deep);
-      margin: 8px 0 14px 0;
+      margin: 6px 0 12px 0;
     }
 
     p {
-      margin: 12px 0 0 0;
+      margin: 10px 0 0 0;
       color: var(--muted);
-      font-size: 18px;
+      font-size: 15px;       /* reduced */
       font-weight: 400;
+      line-height: 1.55;
     }
 
     /* CTA row */
     .ctarow {
-      margin-top: 22px;
+      margin-top: 20px;
       display: flex;
-      gap: 14px;
+      gap: 12px;
       flex-wrap: wrap;
       align-items: center;
     }
@@ -101,9 +102,10 @@ layout: null
       display: inline-flex; align-items: center; gap: 10px;
       background: var(--accent);
       color: #fff; text-decoration: none; font-weight: 600;
-      padding: 12px 16px; border-radius: 12px;
+      padding: 10px 14px; border-radius: 10px;
       box-shadow: var(--shadow);
       transition: transform .06s ease, box-shadow .06s ease, opacity .12s ease;
+      font-size: 14px;
     }
     .btn:hover { transform: translateY(-1px); box-shadow: 0 14px 34px rgba(75,156,211,.28); }
     .btn:active { transform: translateY(0); opacity: .9; }
@@ -111,29 +113,31 @@ layout: null
     .link {
       display: inline-flex; align-items: center; gap: 8px;
       text-decoration: none; font-weight: 600; color: var(--accent-deep);
-      padding: 8px 10px; border-radius: 10px;
+      padding: 7px 9px; border-radius: 8px;
       background: var(--chip-bg); border: 1px solid var(--chip-bd);
+      font-size: 14px;
     }
     .link:hover { background: #e3f0fb; }
 
     /* Icon chips */
     .chips {
-      margin-top: 22px;
-      display: flex; gap: 10px; flex-wrap: wrap;
+      margin-top: 20px;
+      display: flex; gap: 8px; flex-wrap: wrap;
     }
     .chip {
       display: inline-flex; align-items: center; justify-content: center;
-      width: 40px; height: 40px; border-radius: 999px;
+      width: 36px; height: 36px; border-radius: 999px;
       background: var(--chip-bg); border: 1px solid var(--chip-bd);
       color: var(--accent-deep); text-decoration: none;
       transition: transform .06s ease, background .12s ease;
+      font-size: 15px;
     }
     .chip:hover { transform: translateY(-1px); background: #e3f0fb; }
 
     /* Right column image */
     .portrait {
-      width: 85%;
-      max-width: 320px;
+      width: 80%;
+      max-width: 300px;
       border-radius: var(--radius);
       display: block;
       box-shadow: var(--shadow);
@@ -143,7 +147,7 @@ layout: null
 
     /* Responsive */
     @media (max-width: 960px) {
-      .hero { grid-template-columns: 1fr; gap: 28px; margin: 56px auto; }
+      .hero { grid-template-columns: 1fr; gap: 24px; margin: 48px auto; }
     }
   </style>
 </head>
@@ -161,9 +165,7 @@ layout: null
       the L.L. Thurstone Psychometric Laboratory in the Department of Psychology 
       and Neuroscience at the University of North Carolina at Chapel Hill. 
       My research focuses on developing and disseminating advanced statistical 
-      methods—primarily drawing on deep learning, structural equation modeling, time series 
-      analysis, dynamic network methods, and fuzzy statistical modeling—to address 
-      the unique methodological challenges of psychological, behavioral, and neural 
+      methods to address the unique methodological challenges of psychological, behavioral, and neural 
       sciences. If you’d like to learn more about my background and research, please 
       click below:
      </p>
@@ -181,7 +183,9 @@ layout: null
       <!-- Social / quick icons -->
       <div class="chips" aria-label="Social links">
         <a class="chip" href="mailto:{{ site.email | default: 'chaewonhelena@gmail.com' }}" title="Email">✉️</a>
-        <a class="chip" href="osf.io/6vuqb" target="_blank" rel="noopener" title="OSF">🐙</a>
+        <a class="chip" href="https://osf.io/6vuqb" target="_blank" rel="noopener" title="OSF">
+  <img src="{{ '/assets/images/osf-logo.png' | relative_url }}" alt="OSF" style="width:18px; height:18px;" />
+</a>
         <a class="chip" href="https://www.linkedin.com/in/cwlee-quantpsych/" target="_blank" rel="noopener" title="LinkedIn">🔗</a>
       </div>
     </div>
