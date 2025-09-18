@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Chaewon Lee
+title: Chaewon Chloe Lee
 permalink: /home
 ---
 
@@ -37,11 +37,15 @@ permalink: /home
   .tabs a:hover { text-decoration: underline; }
 
   /* Keep keyboard accessibility without mouse glow */
-  .tabs a:focus { outline:none; box-shadow:none; }
-  .tabs a:focus-visible {
-    outline: 2px solid rgba(10,132,255,.6);
-    outline-offset: 3px; border-radius: 10px;
-  }
+  .tabs a.active {
+  background: none;     /* no background highlight */
+  border: none;         /* remove border box */
+  text-decoration: underline; /* optional highlight instead */
+}
+.tabs a:focus, .tabs a:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
 
   html { scroll-behavior: smooth; }
   /* offset for in-page anchors if you have a site header */
