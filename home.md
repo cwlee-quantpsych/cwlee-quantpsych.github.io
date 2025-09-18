@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Chaewon Chloe Lee
+title: "Chaewon Chloe Lee"
+description: ""
 permalink: /home
 ---
 
