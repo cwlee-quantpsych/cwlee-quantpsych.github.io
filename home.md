@@ -24,16 +24,16 @@ permalink: /home
   /* -------- Base -------- */
   body{
     font-family:'Lato',system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    font-size:16px; line-height:1.65; color:var(--unc-gray);
+    font-size:16px; line-height:1.7; color:var(--unc-gray);
     background:linear-gradient(180deg,var(--unc-bg-lighter) 0%,var(--unc-bg-light) 100%);
   }
 
   /* WIDER page: longer lines */
-  main, .page-content {
-    overflow: visible;
-    max-width: 96vw;     /* use up almost the whole viewport */
-    margin: 0 auto;
-    padding: 0 60px;     /* comfortable left/right padding */
+  main, .page-content{
+    overflow:visible;
+    max-width:96vw;          /* nearly full width of screen */
+    margin:0 auto;
+    padding:0 60px;          /* breathing room left & right */
   }
 
   h1,h2,h3,h4,h5,h6{ font-weight:700; color:var(--unc-dark); }
@@ -43,83 +43,87 @@ permalink: /home
   .page__header,.page__title,.page-title,.page__header h1{ display:none !important; }
 
   /* Remove theme chrome */
-  .masthead,.site-header,header[role="banner"]{ background:transparent !important; box-shadow:none !important; border-bottom:0 !important; }
-  a.site-title,.site-title,.masthead__title,.header__title,.navbar-brand{ color:transparent !important; text-shadow:none !important; pointer-events:none; }
-  a.site-title::after,.site-title::after,.masthead__title::after,.header__title::after,.navbar-brand::after{ content:none !important; }
+  .masthead,.site-header,header[role="banner"]{
+    background:transparent !important;
+    box-shadow:none !important;
+    border-bottom:0 !important;
+  }
+  a.site-title,.site-title,.masthead__title,.header__title,.navbar-brand{
+    color:transparent !important;
+    text-shadow:none !important;
+    pointer-events:none;
+  }
+  a.site-title::after,.site-title::after,.masthead__title::after,
+  .header__title::after,.navbar-brand::after{ content:none !important; }
 
-  /* -------- HERO (split boxes) -------- */
-  .hero-nav-wrap{
-    position:sticky; top:0; z-index:15;
-    backdrop-filter: blur(6px);
-    padding:12px 0 18px 0;
+  /* -------- HEADER (two separate pills) -------- */
+  .hero-wrap{
+    position:sticky; top:0; z-index:20;
+    padding:14px 0 18px;
+    backdrop-filter:blur(6px);
+  }
+  .hero-grid{
+    max-width:96vw; margin:0 auto; padding:0 12px;
+    display:grid; grid-template-columns:auto 1fr; gap:18px;
+    align-items:center;
   }
 
-  /* container spans wide */
-  .hero-nav{
-    max-width:min(96vw, 1800px);
-    margin:0 auto;
-    padding:0 12px;
-    display:flex; align-items:center; gap:18px;
-  }
-
-  /* left pill: NAME */
-  .hero-title{
+  /* Name pill */
+  .name-card{
     margin:0;
-    font-weight:900; line-height:1.05; color:var(--unc-dark);
-    font-size: clamp(34px, 3.3vw, 52px);
-    letter-spacing:-.2px;
-    white-space:nowrap;                 /* keep on one line */
+    padding:12px 22px;
+    font-weight:900; line-height:1.05; letter-spacing:-.2px;
+    font-size:clamp(34px, 3.3vw, 52px);
+    color:var(--unc-dark);
     background:var(--card-bg);
     border:1px solid var(--card-bd);
-    border-radius:16px;
+    border-radius:18px;
     box-shadow:var(--card-shadow);
-    padding:12px 18px;
-    flex:0 0 auto;                      /* size to content */
+    white-space:nowrap; /* keep on one line */
   }
 
-  /* right pill: TABS */
-  .tabs{
+  /* Tabs pill */
+  .tabs-card{
     background:var(--card-bg);
     border:1px solid var(--card-bd);
-    border-radius:16px;
+    border-radius:18px;
     box-shadow:var(--card-shadow);
-    padding:12px 16px;
-    flex:1 1 auto;                      /* grow to take remaining width */
-    overflow:hidden;                    /* clip hover raise */
+    padding:12px 20px;
+    overflow:hidden;
   }
-
-  .tabs ul{
-    display:flex; align-items:center; justify-content:flex-start;
-    flex-wrap:nowrap;                   /* keep in one line */
-    gap:22px; list-style:none; margin:0; padding:0;
+  .tabs-list{
+    display:flex; align-items:center; gap:24px;
+    list-style:none; margin:0; padding:0;
+    flex-wrap:nowrap; /* keep in one line on wide screens */
   }
-  .tabs a{
-    display:inline-block; padding:6px 10px;
+  .tabs-list a{
+    display:inline-block; padding:8px 10px;
     font-weight:700; color:var(--unc-dark); text-decoration:none;
-    border-radius:8px; white-space:nowrap;
+    border-radius:10px; white-space:nowrap;
     transition:background .15s ease, color .15s ease, transform .08s ease;
   }
-  .tabs a:hover{ background:var(--tab-accent); color:#fff; transform:translateY(-1px); }
-  .tabs a.active{ background:var(--unc-dark); color:#fff; }
+  .tabs-list a:hover{ background:var(--tab-accent); color:#fff; transform:translateY(-1px); }
+  .tabs-list a.active{ background:var(--unc-dark); color:#fff; }
 
-  /* Responsive fallback: stack pills when very narrow */
+  /* Responsive: stack pills on smaller screens */
   @media (max-width: 980px){
-    .hero-nav{ flex-wrap:wrap; }
-    .tabs{ width:100%; order:2; }
-    .tabs ul{ flex-wrap:wrap; gap:14px 18px; }
+    .hero-grid{ grid-template-columns:1fr; gap:10px; }
+    .tabs-list{ flex-wrap:wrap; gap:14px 18px; }
   }
 
+  /* Smooth anchors */
   html{ scroll-behavior:smooth; }
   h2[id], h3[id]{ scroll-margin-top: calc(var(--site-header-h,0px) + 90px); }
   .top-spacer{ clear:both; margin-top:14px; }
 </style>
 
-<!-- ONE stylish header row: name left, tabs right -->
-<div class="hero-nav-wrap" role="navigation" aria-label="Section navigation">
-  <div class="hero-nav">
-    <h1 class="hero-title">Chaewon Lee</h1>
-    <nav class="tabs">
-      <ul>
+<!-- HEADER: separate pill for name + pill for tabs -->
+<div class="hero-wrap" role="navigation" aria-label="Section navigation">
+  <div class="hero-grid">
+    <h1 class="name-card">Chaewon&nbsp;Lee</h1>
+
+    <nav class="tabs-card" aria-label="Primary">
+      <ul class="tabs-list">
         <li><a href="#research">Research</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#collaborations">Collaborations</a></li>
@@ -133,8 +137,8 @@ permalink: /home
 </div>
 
 <script>
-  // Blur links after click to avoid Safari’s lingering outline
-  document.querySelectorAll('.tabs a').forEach(a=>{
+  // Blur links after click to avoid lingering focus outline
+  document.querySelectorAll('.tabs-list a').forEach(a=>{
     a.addEventListener('click', ()=>a.blur(), {passive:true});
   });
 </script>
@@ -149,7 +153,7 @@ My research focuses on developing and disseminating advanced statistical methods
 <div style="margin-top:14px;">
   <img src="{{ '/assets/images/research2.jpg' | relative_url }}"
        alt="Research approaches"
-       style="max-width:1100px; width:100%; height:auto; border-radius:15px; display:block; margin:0;" />
+       style="width:100%; height:auto; max-width:1600px; border-radius:15px; display:block; margin:0;" />
 </div>
 <br>
 
@@ -224,11 +228,11 @@ At UNC Chapel Hill, I have served as a teaching/instructional assistant for PSYC
 ---
 
 ## Academic Talks {#talks}
-- **No Single Approach Fits All: Testing Two Generations of Structural Equation Modeling Estimation** — 23rd Annual Society of Multivariate Experimental Psychology (SMEP) Conference, University of Notre Dame, IN, USA. *Oct 2025*  
-- **Chaotic Behaviors in Opinion Dynamics Models Influenced by External Forces** — 25th International Symposium on Advanced Intelligent Systems (ISIS 2024), Himeji, Japan. *Nov 2024*  
-- **Integrative Classification Framework in Machine Learning for Small Samples and High-Dimensional Imbalanced Data** — Quant Forum, Department of Psychology and Neuroscience, UNC Chapel Hill. *Apr 2023*  
-- **Sequence Analysis for Classification: Proposing a New Hybrid Markov Model – Machine Learning Approach** — Quant Forum, Department of Psychology and Neuroscience, UNC Chapel Hill. *Apr 2022*  
-- **Prediction of Suicide Attempt by Bipolar Disorder Patients with Machine Learning Algorithms** — Quant Forum, Department of Psychology and Neuroscience, UNC Chapel Hill. *May 2021*
+- **No single approach fits all: Testing two generations of structural equation modeling estimation** — 23rd Annual Society of Multivariate Experimental Psychology (SMEP) Conference, University of Notre Dame, IN, USA. *Oct 2025*  
+- **Chaotic behaviors in opinion dynamics models influenced by external forces** — 25th International Symposium on Advanced Intelligent Systems (ISIS 2024), Himeji, Japan. *Nov 2024*  
+- **Integrative classification framework in machine learning for small samples and high-dimensional imbalanced data** — Quant Forum, Department of Psychology and Neuroscience, UNC Chapel Hill. *Apr 2023*  
+- **Sequence analysis for classification: Proposing a new hybrid Markov model–machine learning approach** — Quant Forum, Department of Psychology and Neuroscience, UNC Chapel Hill. *Apr 2022*  
+- **Prediction of suicide attempt by bipolar disorder patients with machine learning algorithms** — Quant Forum, Department of Psychology and Neuroscience, UNC Chapel Hill. *May 2021*
 
 ---
 
@@ -243,6 +247,6 @@ I began playing the piano at the age of 3 and pursued professional training at Y
 **Former Investment Banker and Economist**  
 Before entering academia, I worked at Korea Investment & Securities in Yeouido, Seoul, widely recognized as Korea’s wall street. I first served as a junior investment banker in the Equity Capital Market Department, where I worked on IPOs for KOSPI and KOSDAQ, conducting due diligence, accounting analysis, and preparing listing applications. I later transitioned to the Research Center as a junior economist, where I authored analytical reports on global macroeconomic trends and financial markets, and led forecasting for indicators such as exchange rates, crude oil prices, and international policy rates.
 
-<div class="custom-copy">
+<div class="custom-copy" style="max-width:96vw;margin:40px auto 24px;padding:16px 32px 0;text-align:center;color:var(--unc-dark);font-size:14px;opacity:.9;border-top:1px solid rgba(19,41,75,.15);">
   © 2025 Chaewon Lee. All rights reserved.
 </div>
