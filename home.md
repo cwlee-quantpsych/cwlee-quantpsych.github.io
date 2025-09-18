@@ -6,21 +6,14 @@ permalink: /home
 ---
 
 <style>
-  :root { --tab-accent:#0a84ff; --site-header-h:0px; } /* header hidden, so offset = 0 */
+  :root { --tab-accent:#0a84ff; --site-header-h:56px; }
   main, .page-content { overflow: visible; }
-
-  /* HIDE the theme header/title ONLY on this page */
-  .site-header,
-  .site-title,
-  .site-title a {
-    display: none !important;
-  }
 
   /* Tabs bar (not sticky) */
   .tabs {
     position: static;
     z-index: 1;
-    background: #2a2f33; /* solid, avoids odd blending artifacts */
+    background: #2a2f33;
     border-bottom: 1px solid rgba(127,127,127,.2);
     padding: 12px 0;
     margin: 0 0 16px 0;
@@ -29,28 +22,25 @@ permalink: /home
   .tabs ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 22px 40px;         /* a bit more spacing like your screenshot */
+    gap: 22px 40px;
     list-style: none;
     margin: 0;
     padding: 8px 18px;
-    align-items: center;    /* vertical alignment for all items */
+    align-items: center;
   }
 
   .tabs li {
     display: flex;
     align-items: center;
-    margin: 0;              /* ensure no stray margins */
-  }
-
-  /* Normalize link boxes so every tab sits on the same baseline */
-  .tabs a {
-    display: flex;               /* not inline-flex — avoids baseline quirks */
-    align-items: center;
-    justify-content: center;
-    height: 32px;                /* fixed box height = identical vertical alignment */
-    line-height: 1;              /* tight line-height so glyph metrics don’t shift */
-    padding: 0 12px;
     margin: 0;
+  }
+  
+  .tabs a {
+    display: inline-block;        /* simpler, consistent layout */
+    padding: 0 12px;
+    height: 32px;                 /* same height for all tabs */
+    line-height: 32px;            /* centers text vertically */
+    vertical-align: middle;       /* align with neighbors */
     font-weight: 700;
     color: var(--tab-accent);
     text-decoration: none;
@@ -61,7 +51,7 @@ permalink: /home
   }
   .tabs a:hover { text-decoration: underline; }
 
-  /* Remove any active/focus “pill” or outline */
+  /* No pill/outline */
   .tabs a.active { background: none; border: 0; text-decoration: underline; }
   .tabs a:focus,
   .tabs a:focus-visible,
@@ -69,13 +59,9 @@ permalink: /home
     outline: none !important;
     box-shadow: none !important;
   }
-  .tabs a::-moz-focus-inner { border: 0; }
 
   html { scroll-behavior: smooth; }
-
-  /* Anchor offset (header is hidden, so 18px is enough to avoid clipping) */
-  h2[id], h3[id] { scroll-margin-top: 18px; }
-
+  h2[id], h3[id] { scroll-margin-top: calc(var(--site-header-h, 0px) + 26px); }
   .top-spacer { clear: both; margin-top: 18px; }
 </style>
 
@@ -91,14 +77,15 @@ permalink: /home
   </ul>
 </nav>
 
-<!-- Blur links after click to prevent Safari focus ring reappearing -->
 <script>
+  // Blur links after click to prevent Safari focus ring lingering
   document.querySelectorAll('.tabs a').forEach(a=>{
     a.addEventListener('click', ()=>a.blur(), {passive:true});
   });
 </script>
 
 <div class="top-spacer"></div>
+
 
 
 ## Research Focus {#research}
