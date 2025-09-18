@@ -107,7 +107,7 @@ permalink: /home
 <div class="top-spacer"></div>
 
 ## Research Focus {#research}
-**Methodological Innovation
+**Methodological Innovation**
 My research focuses on developing and disseminating advanced statistical methods to address the unique methodological challenges of psychological, behavioral, and social sciences. I primarily work across five statistical frameworks, often integrating them to create synergistic solutions that advance the field:
 
 <div style="margin-top:14px;">
@@ -123,7 +123,7 @@ My methodological work unfolds through three core pipelines:
 - Drawing robust inference on intraindividual dynamic processes from limited samples and sparse time points  
 - Rethinking imprecision in psychological scales — not merely as measurement error to minimize, but as a source of information to be actively leveraged in statistical modeling
 
-**Substantive Translation
+**Substantive Translation**
 <em>Precision psychology</em> is the motivating aim behind translating my core modeling frameworks and methodological innovations into meaningful applications across psychological, behavioral, and social sciences. This includes advancing individualized diagnosis and treatment of mental health conditions, uncovering brain–behavior dynamics, and supporting adaptive interventions in clinical and educational settings. 
 
 ## Publications {#publications}
@@ -137,25 +137,23 @@ My methodological work unfolds through three core pipelines:
 - **Lee, C.\*** (2023). An integrative machine learning approach for small samples and high-dimensional imbalanced data in psychological experiment [Master’s thesis, University of North Carolina at Chapel Hill].
 
 **Software**  
-- **Lee, C.\*** (2025). <em>flex: Fuzzy least squares estimation with explicit formula</em> (Version 0.1.0) [R package]. CRAN. [DOI](https://doi.org/10.32614/CRAN.package.flex)  
----
+- **Lee, C.\*** (2025). <em>flex: Fuzzy least squares estimation with explicit formula</em> (Version 0.1.0) [R package]. CRAN. [DOI](https://doi.org/10.32614/CRAN.package.flex)
+
 
 ### Accepted  
 - **Lee, C.\***, & Gates, K. M. (publication expected May 7, 2026). Group-iterative multiple model estimation in clinical science. <em>Annual Review of Clinical Psychology</em>.
 
----
 
 ### Under Review  
 - Rodebaugh, T. L., **Lee, C.\***, Gates, K. M., Frumkin, M. R., …, & Piccirillo, J. Modeling psychological processes in tinnitus disorder.  
 - Yoon, J. H.\*, **Lee, C.\***, Kwon, S., & Bae, Y. C. Nonlinear and chaotic dynamics in generalized fuzzy opinion model.  
 
----
 
 ### Submission Pending
 - **Lee, C.\*** No single approach fits all: Testing two generations of structural equation modeling estimation.  
 - **Lee, C.\*** Modeling imprecision in psychological data: Fuzzy set theory and its application with fuzzy least squares regression.  
 - **Lee, C.\*** FLEX: An R package for fuzzy numbers and fuzzy least squares regression.
----
+
 
 ## Research Collaborations {#collaborations}
 I have collaborated on multiple interdisciplinary research projects, including:
@@ -188,14 +186,14 @@ At UNC Chapel Hill, I have served as a teaching/instructional assistant for PSYC
 ---
 
 ## Life Before the Lab {#life}
-**Professionally Trained Classical Pianist
+**Professionally Trained Classical Pianist**
 I began playing the piano at the age of 3 and pursued professional training at Yewon School and Seoul Arts High School, two of Korea’s most prestigious arts institutions. During my teenage years, I won several major national music competitions and performed extensively as both a soloist and an accompanist for violinists, cellists, and vocalists in concert and competition settings. I also collaborated with the Seoul Symphony Orchestra in a performance of Grieg’s Piano Concerto in A minor. At the age of 14, I was prestigiously selected as a musical prodigy by the Kumho Asiana Group—one of Korea’s leading conglomerates—which led to my own solo debut recital. My favorite repertoire includes Bach–Busoni’s *Chaconne*, Mendelssohn’s *Variations sérieuses*, Chopin’s Ballades, and more. 
 
 <div align="center" style="margin: 20px 0;">
   <img src="{{ '/assets/images/chaewon2.JPG' | relative_url }}" alt="Chaewon Lee performing" width="400" style="border-radius: 12px;" />
 </div>
 
-**Former Investment Banker and Economist
+**Former Investment Banker and Economist**
 Before entering academia, I worked at Korea Investment & Securities in Yeouido, Seoul, widely recognized as Korea’s wall street. I first served as a junior investment banker in the Equity Capital Market Department, where I worked on IPOs for KOSPI and KOSDAQ, conducting due diligence, accounting analysis, and preparing listing applications. I later transitioned to the Research Center as a junior economist, where I authored analytical reports on global macroeconomic trends and financial markets, and led forecasting for indicators such as exchange rates, crude oil prices, and international policy rates.
 
 <div class="custom-copy">
