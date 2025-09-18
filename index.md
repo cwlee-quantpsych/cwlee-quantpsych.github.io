@@ -6,33 +6,36 @@ tagline: Quantitative Psychology • Data Science • Statistics
 
 # Welcome to my personal homepage!
 
-<img src="/assets/images/chaewon1.JPG" alt="Chaewon Lee" width="200" align="left"
-     style="margin-right: 40px; border-radius: 15px;" />
-
 <div style="overflow: hidden;">
+  <img src="/assets/images/chaewon1.JPG" alt="Chaewon Lee" width="200" align="left"
+       style="margin-right: 40px; margin-bottom: 10px; border-radius: 15px;" />
 
-  <p>
-    I am Chaewon Lee, a quantitative psychologist, data scientist, and statistician.
-    I am currently a Ph.D. candidate in the Quantitative Psychology program, housed within the L.L. Thurstone
-    Psychometric Laboratory in the Department of Psychology and Neuroscience at the University of North Carolina at Chapel Hill.
-  </p>
+  <div style="margin-left: 220px;"> <!-- 사진보다 오른쪽에서 시작하도록 밀기 -->
 
-  <p>
-    My research focuses on developing and disseminating advanced statistical methods to address unique
-    methodological challenges in psychological science. Specifically, I work on:
-  </p>
+    <p>
+      I am Chaewon Lee, a quantitative psychologist, data scientist, and statistician.
+      I am currently a Ph.D. candidate in the Quantitative Psychology program, housed within the L.L. Thurstone
+      Psychometric Laboratory in the Department of Psychology and Neuroscience at the University of North Carolina at Chapel Hill.
+    </p>
 
-  <ul style="padding-left: 20px; margin-left: 20px;">
-    <li>Machine learning and deep learning</li>
-    <li>Time-series analysis</li>
-    <li>Dynamic network modeling</li>
-    <li>Structural equation modeling</li>
-    <li>Fuzzy modeling</li>
-  </ul>
+    <p>
+      My research focuses on developing and disseminating advanced statistical methods to address unique
+      methodological challenges in psychological science. Specifically, I work on:
+    </p>
 
+    <ul>
+      <li>Machine learning and deep learning</li>
+      <li>Time-series analysis</li>
+      <li>Dynamic network modeling</li>
+      <li>Structural equation modeling</li>
+      <li>Fuzzy modeling</li>
+    </ul>
+
+  </div>
 </div>
 
 <div style="clear: both; margin-top: 30px;"></div>
+
 
 My work is guided by three grand pillars:
 
