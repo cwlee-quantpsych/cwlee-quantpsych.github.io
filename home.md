@@ -126,7 +126,7 @@ My methodological work unfolds through three core pipelines:
 
 ### Under Review  
 - Rodebaugh, T. L., Lee, C.*, Gates, K. M., Frumkin, M. R., …, & Piccirillo, J. Modeling psychological processes in tinnitus disorder.  
-- Yoon, J. H.*, Lee, C.*, Kwon, S., & Bae, Y. C. Nonlinear and chaotic dynamics in generalized fuzzy opinion model.  
+- Yoon, J. H.\*, Lee, C.\*, Kwon, S., & Bae, Y. C. Nonlinear and chaotic dynamics in generalized fuzzy opinion model.  
 
 ---
 
