@@ -10,7 +10,7 @@ permalink: /home
     --tab-accent:#0a84ff;
     --site-header-h:56px;
 
-    /* paler UNC palette */
+    /* Paler UNC palette */
     --unc-dark:#13294B;
     --unc-gray:#4B4F54;
     --unc-bg-lighter:#F5FAFF; /* very light top */
@@ -21,7 +21,7 @@ permalink: /home
     --card-shadow:0 8px 14px rgba(19,41,75,.08);
   }
 
-  *{ box-sizing:border-box; }
+  *{ box-sizing:border-box }
 
   body{
     font-family:'Lato',system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
@@ -30,73 +30,84 @@ permalink: /home
     overflow-x:hidden;
   }
 
-  /* center 70% (≈15% margin on both ends) */
+  /* Center content at 70% (≈15% margin each side) */
   main,.page-content,
   .initial-content,.page,.page__inner-wrap,.page__content,
-  .wrapper,.container,.page__hero--overlay .wrapper,
-  .hero-grid{
+  .wrapper,.container,.page__hero--overlay .wrapper{
     max-width:70vw !important; width:70vw !important;
     margin-left:auto !important; margin-right:auto !important;
   }
   main,.page-content,.page__content{ padding:0 40px !important; }
 
-  h1,h2,h3,h4,h5,h6{ font-weight:700; color:var(--unc-dark); }
-  p,li{ color:var(--unc-gray); font-size:17px; line-height:1.7; }
+  h1,h2,h3,h4,h5,h6{ font-weight:700; color:var(--unc-dark) }
+  p,li{ color:var(--unc-gray); font-size:17px; line-height:1.7 }
 
-  /* remove theme title/header/footer */
-  .page__header,.page__title,.page-title,.page__header h1{ display:none !important; }
-  .masthead,.site-header,header[role="banner"]{ background:transparent !important; box-shadow:none !important; border-bottom:0 !important; }
-  a.site-title,.site-title,.masthead__title,.header__title,.navbar-brand{ color:transparent !important; text-shadow:none !important; pointer-events:none; }
-  a.site-title::after,.site-title::after,.masthead__title::after,.header__title::after,.navbar-brand::after{ content:none !important; }
-  .page__footer,.site-footer,footer,.page__footer *,.site-footer *,footer *{ display:none !important; height:0 !important; padding:0 !important; margin:0 !important; border:0 !important; }
+  /* Hide theme’s auto title/header/footer */
+  .page__header,.page__title,.page-title,.page__header h1{ display:none !important }
+  .masthead,.site-header,header[role="banner"]{ background:transparent !important; box-shadow:none !important; border-bottom:0 !important }
+  a.site-title,.site-title,.masthead__title,.header__title,.navbar-brand{ color:transparent !important; text-shadow:none !important; pointer-events:none }
+  a.site-title::after,.site-title::after,.masthead__title::after,.header__title::after,.navbar-brand::after{ content:none !important }
+  .page__footer,.site-footer,footer,.page__footer *,.site-footer *,footer *{ display:none !important; height:0 !important; padding:0 !important; margin:0 !important; border:0 !important }
 
-  /* ---------- HEADER: big pill that wraps + centered ---------- */
-  .hero-wrap{ position:sticky; top:0; z-index:20; padding:14px 0 18px; backdrop-filter:blur(6px); }
-  .hero-grid{ display:block; padding:0 12px; }
+  /* ===== HEADER: single big pill, perfectly centered ===== */
+  .hero-wrap{ position:sticky; top:0; z-index:20; padding:14px 0 18px; backdrop-filter:blur(6px) }
+
+  /* Let the pill size to its content and center it on the page */
+  .hero-grid{
+    max-width:unset !important; width:100% !important;  /* not limited by 70vw */
+    padding:0;
+    display:block;
+  }
 
   .tabs-card{
+    display:block;
+    width:max-content;                /* shrink to fit the tabs row */
+    max-width:95vw;                   /* keep inside viewport */
+    margin:0 auto;                    /* HARD center */
     background:var(--card-bg);
     border:1px solid var(--card-bd);
     border-radius:22px;
     box-shadow:var(--card-shadow);
-    padding:16px 24px;               /* comfy padding so long labels stay inside */
+    padding:16px 28px;
+    overflow-x:auto;                  /* single line + scroll if ever wider than viewport */
+    -webkit-overflow-scrolling:touch;
   }
 
   .tabs-list{
     display:flex;
-    flex-wrap:wrap;                  /* <-- allow wrapping inside the pill */
-    justify-content:center;          /* <-- center the whole row */
+    flex-wrap:nowrap;                 /* ONE line */
+    white-space:nowrap;
+    justify-content:center;           /* center the items inside */
     align-items:center;
-    gap:16px 28px;                   /* row/column gaps */
+    gap:0 36px;                       /* horizontal gap between tabs */
     list-style:none; margin:0; padding:0;
-    white-space:normal;              /* ensure wrapping works */
   }
 
   .tabs-list a{
     display:inline-block;
-    font-weight:800; color:var(--unc-dark);
-    text-decoration:none;
-    letter-spacing:.2px;
-    padding:4px 6px;                 /* subtle hit area (not separate pills) */
+    font-weight:800; letter-spacing:.2px;
+    color:var(--unc-dark); text-decoration:none;
+    padding:4px 6px;                  /* subtle hit area (not mini-pills) */
     border-radius:8px;
     transition:background .15s ease,color .15s ease,transform .08s ease;
   }
-  .tabs-list a:hover{ background:var(--tab-accent); color:#fff; transform:translateY(-1px); }
-  .tabs-list a.active{ background:var(--unc-dark); color:#fff; }
+  .tabs-list a:hover{ background:var(--tab-accent); color:#fff; transform:translateY(-1px) }
+  .tabs-list a.active{ background:var(--unc-dark); color:#fff }
 
-  /* responsive tweeks so long labels fit before wrapping */
+  /* Slightly tighten spacing on medium screens */
   @media (max-width:1280px){
-    .tabs-list{ gap:14px 22px; }
+    .tabs-list{ gap:0 26px }
   }
   @media (max-width:980px){
-    .tabs-list a{ font-size:.95rem; }
+    .tabs-list a{ font-size:.95rem }
   }
 
-  /* smooth anchor offset */
-  html{ scroll-behavior:smooth; }
-  h2[id],h3[id]{ scroll-margin-top:calc(var(--site-header-h,0px) + 90px); }
-  .top-spacer{ clear:both; margin-top:14px; }
+  /* Smooth anchor offset */
+  html{ scroll-behavior:smooth }
+  h2[id],h3[id]{ scroll-margin-top:calc(var(--site-header-h,0px) + 90px) }
+  .top-spacer{ clear:both; margin-top:14px }
 </style>
+
 
 <!-- HEADER: tabs only -->
 <div class="hero-wrap" role="navigation" aria-label="Section navigation">
