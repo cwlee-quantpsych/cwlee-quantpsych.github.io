@@ -135,7 +135,6 @@ permalink: /home
         <li><a href="#collaborations">Collaborations</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#teaching">Teaching</a></li>
-        <li><a href="#talks">Research Talks</a></li>
         <li><a href="#life">Preludes to the Lab</a></li>
       </ul>
     </nav>
