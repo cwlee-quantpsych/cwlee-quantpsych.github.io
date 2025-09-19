@@ -6,36 +6,48 @@ permalink: /home
 ---
 
 <style>
-  /* ===== HEADER: single big pill, centered to content column ===== */
+  /* Hide theme header/site-title entirely */
+  header[role="banner"], .masthead, .site-header,
+  header[role="banner"] *, .masthead * , .site-header * ,
+  a.site-title, .site-title, .masthead__title, .header__title, .navbar-brand {
+    display:none !important; visibility:hidden !important;
+    pointer-events:none !important; height:0 !important;
+    margin:0 !important; padding:0 !important; border:0 !important;
+    color:transparent !important; text-shadow:none !important;
+  }
+
+  /* ===== HEADER: single big pill, wider than content, centered ===== */
   .hero-wrap{
-    position:sticky; top:0; z-index:20;
+    position:sticky; top:0; z-index:50;
     padding:14px 0 18px;
     backdrop-filter:blur(6px);
   }
 
+  /* Center relative to viewport so pill can exceed content width */
   .hero-grid{
-    max-width:70vw;            /* match content width */
-    margin:0 auto;             /* center in the content column */
+    width:100vw !important; max-width:100vw !important;
+    margin:0 auto;
     display:flex; justify-content:center;
+    padding:0;
   }
 
   .tabs-card{
     display:block;
-    width:max-content;          /* shrink to tabs width */
-    max-width:100%;             /* never overflow parent */
+    width:min(88vw, 1400px);   /* wider than 70vw content; tweak if desired */
     margin:0 auto;
     background:var(--card-bg);
     border:1px solid var(--card-bd);
     border-radius:22px;
     box-shadow:var(--card-shadow);
     padding:16px 28px;
-    overflow-x:auto;
+    overflow-x:auto;           /* keep one line; allow scroll if still too long */
     -webkit-overflow-scrolling:touch;
+    scrollbar-width:thin;
   }
 
   .tabs-list{
     display:flex;
-    flex-wrap:nowrap; white-space:nowrap;
+    flex-wrap:nowrap; white-space:nowrap;   /* ONE line */
     justify-content:center; align-items:center;
     gap:0 36px;
     list-style:none; margin:0; padding:0;
@@ -45,15 +57,19 @@ permalink: /home
     display:inline-block;
     font-weight:800; letter-spacing:.2px;
     color:var(--unc-dark); text-decoration:none;
-    padding:4px 6px;
-    border-radius:8px;
+    padding:4px 6px; border-radius:8px;
     transition:background .15s ease,color .15s ease,transform .08s ease;
   }
-  .tabs-list a:hover{ background:var(--tab-accent); color:#fff; transform:translateY(-1px) }
-  .tabs-list a.active{ background:var(--unc-dark); color:#fff }
+  .tabs-list a:hover{ background:var(--tab-accent); color:#fff; transform:translateY(-1px); }
+  .tabs-list a.active{ background:var(--unc-dark); color:#fff; }
 
-  @media(max-width:1280px){ .tabs-list{ gap:0 26px } }
-  @media(max-width:980px){ .tabs-list a{ font-size:.95rem } }
+  @media (max-width:1280px){ .tabs-list{ gap:0 26px; } }
+  @media (max-width:980px){  .tabs-list a{ font-size:.95rem; } }
+
+  /* Optional: anchor offset for sticky header */
+  html{ scroll-behavior:smooth; }
+  h2[id], h3[id]{ scroll-margin-top: 90px; }
+  .top-spacer{ clear:both; margin-top:14px; }
 </style>
 
 <!-- HEADER: tabs only -->
@@ -75,10 +91,13 @@ permalink: /home
 
 <script>
   // remove lingering focus outline after click
-  document.querySelectorAll('.tabs-list a').forEach(a=>a.addEventListener('click',()=>a.blur(),{passive:true}));
+  document.querySelectorAll('.tabs-list a').forEach(a =>
+    a.addEventListener('click', () => a.blur(), { passive: true })
+  );
 </script>
 
 <div class="top-spacer"></div>
+
 
 ## Research Focus {#research}
 **Methodological Innovation**  
