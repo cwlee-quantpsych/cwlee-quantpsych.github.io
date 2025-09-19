@@ -7,77 +7,76 @@ permalink: /home
 
 <style>
   :root {
-    --tab-accent:#0a84ff;
-    --unc-navy:#13294B;         /* official UNC navy */
-    --unc-gray:#4B4F54;         /* medium gray */
-    --unc-light-blue:#A7C7E7;   /* pastel blue */
-    --unc-lighter-blue:#D4E6F9; /* even lighter */
-    --card-bg:#fff;
-    --card-bd:rgba(19,41,75,.14);
-    --card-shadow:0 8px 14px rgba(19,41,75,.08);
-  }
+    --tab-accent: #0a84ff;
+    --site-header-h: 56px;
 
-  /* Remove Jekyll theme header/footer completely */
-  header[role="banner"], .masthead, .site-header, .site-title,
-  .page__header, footer, .site-footer, .page__footer {
-    display:none !important; visibility:hidden !important;
-    margin:0 !important; padding:0 !important; height:0 !important;
+    /* UNC-inspired palette */
+    --unc-navy: #13294B;      /* dark navy for text */
+    --unc-gray: #4B4F54;      /* softer gray */
+    --unc-sky: #E6F1FB;       /* pale sky blue background */
   }
 
   body {
-    font-family: "Helvetica Neue", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-    font-weight:400;
-    font-size:16px;
-    line-height:1.7;
-    color:var(--unc-gray);
-    background:linear-gradient(180deg, var(--unc-lighter-blue) 0%, var(--unc-light-blue) 100%);
-    overflow-x:hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Lato', system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--unc-gray);
+    background: var(--unc-sky);
   }
 
-  h1,h2,h3,h4,h5,h6 {
-    color:var(--unc-navy);
-    font-weight:700;
-    letter-spacing:-0.2px;
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--unc-navy);
+    font-weight: 800;
   }
 
-  /* ===== WIDE CENTERED PILL NAV ===== */
-  .hero-wrap {
-    position:sticky; top:0; z-index:50;
+  p, li {
+    color: var(--unc-gray);
+  }
+
+  /* ===== HEADER: Pill centered on template but wider ===== */
+  .hero-wrap{
+    position:sticky;
+    top:0;
+    z-index:50;
     padding:14px 0 18px;
     backdrop-filter:blur(6px);
   }
 
-  .hero-grid {
-    width:100vw;
+  .hero-grid{
+    max-width:70vw;       /* match content width */
     margin:0 auto;
-    display:flex; justify-content:center;
+    position:relative;
   }
 
-  .tabs-card {
-    display:block;
-    width:min(88vw, 1400px);
-    margin:0 auto;
-    background:var(--card-bg);
-    border:1px solid var(--card-bd);
+  .tabs-card{
+    position:relative;
+    left:50%;
+    transform:translateX(-50%);  /* align to center of template */
+    width:calc(100% + 18vw);     /* extend wider than template */
+    max-width:min(88vw, 1400px); /* cap for ultrawide screens */
+    background:#fff;
+    border:1px solid rgba(19,41,75,.14);
     border-radius:28px;
-    box-shadow:var(--card-shadow);
+    box-shadow:0 8px 14px rgba(19,41,75,.08);
     padding:18px 36px;
     overflow-x:auto;
     -webkit-overflow-scrolling:touch;
     scrollbar-width:none;
   }
 
-  .tabs-list {
+  .tabs-list{
     display:flex;
-    flex-wrap:nowrap; white-space:nowrap;
-    justify-content:center; align-items:center;
+    flex-wrap:nowrap;
+    white-space:nowrap;
+    justify-content:center;
+    align-items:center;
     gap:0 40px;
-    list-style:none; margin:0; padding:0;
+    list-style:none;
+    margin:0;
+    padding:0;
   }
 
-  .tabs-list a {
+  .tabs-list a{
     font-weight:700;
     color:var(--unc-navy);
     text-decoration:none;
@@ -85,13 +84,26 @@ permalink: /home
     border-radius:8px;
     transition:background .15s ease,color .15s ease,transform .08s ease;
   }
-  .tabs-list a:hover { background:var(--tab-accent); color:#fff; transform:translateY(-1px); }
-  .tabs-list a.active { background:var(--unc-navy); color:#fff; }
 
-  @media(max-width:1280px){ .tabs-list{ gap:0 28px } }
-  @media(max-width:980px){ .tabs-list a{ font-size:.95rem } }
+  .tabs-list a:hover{
+    background:var(--tab-accent);
+    color:#fff;
+    transform:translateY(-1px);
+  }
 
-  .top-spacer{ margin-top:14px; }
+  .tabs-list a.active{
+    background:var(--unc-navy);
+    color:#fff;
+  }
+
+  @media (max-width:1280px){
+    .tabs-list{ gap:0 28px; }
+  }
+
+  @media (max-width:980px){
+    .tabs-card{ width:calc(100% + 10vw); } /* reduce overhang */
+    .tabs-list a{ font-size:.95rem; }
+  }
 </style>
 
 <!-- HEADER: centered pill -->
