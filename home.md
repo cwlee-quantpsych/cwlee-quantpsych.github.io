@@ -195,7 +195,7 @@ permalink: /home
 <br>
 
 ### Methodological Innovation
-From a methodological standpoint, my research aim is to create statistical innovations that move psychological, behavioral, and neural research forward. I primarily work across **five statistical frameworks**, often integrating them to create synergistic solutions that advance the field, as illustrated in the figure below:
+From a methodological standpoint, my research aim is to create statistical innovations that move psychological, behavioral, and neural research forward. I primarily work across **five statistical frameworks**, often integrating them to create synergistic solutions that advance the field:
 
 <div style="margin-top:14px;">
   <img src="{{ '/assets/images/research2.jpg' | relative_url }}"
