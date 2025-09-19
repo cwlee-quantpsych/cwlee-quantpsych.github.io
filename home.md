@@ -9,20 +9,12 @@ permalink: /home
   :root{
     --tab-accent:#0a84ff;
     --site-header-h:56px;
-
-    /* UNC palette */
-    --unc-dark:#13294B;
-    --unc-gray:#4B4F54;
-    --unc-bg-light:#A7C7E7;
-    --unc-bg-lighter:#D4E6F9;
-
-    --card-bg:#fff;
-    --card-bd:rgba(19,41,75,.14);
+    --unc-dark:#13294B; --unc-gray:#4B4F54;
+    --unc-bg-light:#A7C7E7; --unc-bg-lighter:#D4E6F9;
+    --card-bg:#fff; --card-bd:rgba(19,41,75,.14);
     --card-shadow:0 10px 18px rgba(19,41,75,.10);
   }
-
-  *{ box-sizing:border-box; }
-
+  *{box-sizing:border-box}
   body{
     font-family:'Lato',system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size:16px; line-height:1.7; color:var(--unc-gray);
@@ -30,69 +22,29 @@ permalink: /home
     overflow-x:hidden;
   }
 
-  /* === Content & header width: center 70% (15% margin each side) === */
-  main, .page-content,
-  .initial-content,
-  .page,
-  .page__inner-wrap,
-  .page__content,
-  .wrapper,
-  .container,
-  .page__hero--overlay .wrapper,
-  .hero-grid {
-    max-width:70vw !important;
-    width:70vw !important;
-    margin-left:auto !important;
-    margin-right:auto !important;
-  }
-
-  main, .page-content, .page__content {
-    padding-left:40px !important;
-    padding-right:40px !important;
-  }
-
-  h1,h2,h3,h4,h5,h6{ font-weight:700; color:var(--unc-dark); }
-  p,li{ color:var(--unc-gray); font-size:17px; line-height:1.7; }
-
-  /* Hide auto titles */
-  .page__header,.page__title,.page-title,.page__header h1{ display:none !important; }
-
-  /* Remove theme chrome */
-  .masthead,.site-header,header[role="banner"]{
-    background:transparent !important; box-shadow:none !important; border-bottom:0 !important;
-  }
-  a.site-title,.site-title,.masthead__title,.header__title,.navbar-brand{
-    color:transparent !important; text-shadow:none !important; pointer-events:none;
-  }
-  a.site-title::after,.site-title::after,.masthead__title::after,.header__title::after,.navbar-brand::after{
-    content:none !important;
-  }
-
-  /* -------- HEADER (two separate pills) -------- */
-  .hero-wrap{
-    position:sticky; top:0; z-index:20;
-    padding:14px 0 18px;
-    backdrop-filter:blur(6px);
-  }
+  /* 15% margins each side => center 70% */
+  main,.page-content,
+  .initial-content,.page,.page__inner-wrap,.page__content,
+  .wrapper,.container,.page__hero--overlay .wrapper,
   .hero-grid{
-    display:grid; grid-template-columns:auto 1fr; gap:18px; align-items:center;
-    padding:0 12px;
+    max-width:70vw !important; width:70vw !important;
+    margin-left:auto !important; margin-right:auto !important;
   }
+  main,.page-content,.page__content{ padding:0 40px !important; }
 
-  /* Name pill */
-  .name-card{
-    margin:0; padding:12px 22px;
-    font-weight:900; line-height:1.05; letter-spacing:-.2px;
-    font-size:clamp(34px, 3.3vw, 54px);
-    color:var(--unc-dark);
-    background:var(--card-bg);
-    border:1px solid var(--card-bd);
-    border-radius:18px;
-    box-shadow:var(--card-shadow);
-    white-space:nowrap;
-  }
+  h1,h2,h3,h4,h5,h6{font-weight:700;color:var(--unc-dark)}
+  p,li{color:var(--unc-gray);font-size:17px;line-height:1.7}
+  .page__header,.page__title,.page-title,.page__header h1{display:none !important}
 
-  /* Tabs pill */
+  /* remove theme header chrome */
+  .masthead,.site-header,header[role="banner"]{background:transparent !important;box-shadow:none !important;border-bottom:0 !important}
+  a.site-title,.site-title,.masthead__title,.header__title,.navbar-brand{color:transparent !important;text-shadow:none !important;pointer-events:none}
+  a.site-title::after,.site-title::after,.masthead__title::after,.header__title::after,.navbar-brand::after{content:none !important}
+
+  /* ===== HEADER: tabs only (no name pill) ===== */
+  .hero-wrap{ position:sticky; top:0; z-index:20; padding:14px 0 18px; backdrop-filter:blur(6px); }
+  .hero-grid{ display:block; padding:0 12px; }  /* single block now */
+
   .tabs-card{
     background:var(--card-bg);
     border:1px solid var(--card-bd);
@@ -109,34 +61,39 @@ permalink: /home
   .tabs-list a{
     display:inline-block; padding:8px 10px;
     font-weight:700; color:var(--unc-dark); text-decoration:none;
-    border-radius:10px; transition:background .15s ease, color .15s ease, transform .08s ease;
+    border-radius:10px; transition:background .15s ease,color .15s ease,transform .08s ease;
   }
   .tabs-list a:hover{ background:var(--tab-accent); color:#fff; transform:translateY(-1px); }
   .tabs-list a.active{ background:var(--unc-dark); color:#fff; }
-
-  /* Responsive tabs */
   @media (max-width:1280px){
     .tabs-card{ overflow-x:auto; -webkit-overflow-scrolling:touch; }
-    .tabs-list{ flex-wrap:nowrap; white-space:nowrap; gap:20px; }
+    .tabs-list{ gap:20px; }
   }
-  @media (max-width:980px){
-    .name-card{ font-size:clamp(28px, 4.6vw, 40px); }
-    .tabs-list a{ font-size:0.95rem; }
+  @media (max-width:980px){ .tabs-list a{ font-size:0.95rem } }
+
+  /* smooth anchor offset */
+  html{scroll-behavior:smooth}
+  h2[id],h3[id]{scroll-margin-top:calc(var(--site-header-h,0px) + 90px)}
+  .top-spacer{clear:both;margin-top:14px}
+
+  /* ===== HARD HIDE THE THEME FOOTER ===== */
+  .page__footer,
+  .page__footer * ,
+  .site-footer,
+  .site-footer * ,
+  footer,
+  footer * {
+    display:none !important;
+    height:0 !important;
+    padding:0 !important;
+    margin:0 !important;
+    border:0 !important;
   }
-
-  /* Smooth anchors */
-  html{ scroll-behavior:smooth; }
-  h2[id], h3[id]{ scroll-margin-top: calc(var(--site-header-h,0px) + 90px); }
-  .top-spacer{ clear:both; margin-top:14px; }
-
-  /* === Remove footer === */
-  .page__footer, .site-footer, footer { display:none !important; }
 </style>
 
-<!-- HEADER -->
+<!-- HEADER: tabs only -->
 <div class="hero-wrap" role="navigation" aria-label="Section navigation">
   <div class="hero-grid">
-    <h1 class="name-card">Chaewon&nbsp;Lee</h1>
     <nav class="tabs-card" aria-label="Primary">
       <ul class="tabs-list">
         <li><a href="#research">Research</a></li>
@@ -152,13 +109,11 @@ permalink: /home
 </div>
 
 <script>
-  document.querySelectorAll('.tabs-list a').forEach(a=>{
-    a.addEventListener('click', ()=>a.blur(), {passive:true});
-  });
+  // remove lingering focus outline after click
+  document.querySelectorAll('.tabs-list a').forEach(a=>a.addEventListener('click',()=>a.blur(),{passive:true}));
 </script>
 
 <div class="top-spacer"></div>
-
 
 ## Research Focus {#research}
 **Methodological Innovation**  
