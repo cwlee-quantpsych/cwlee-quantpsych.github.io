@@ -220,23 +220,23 @@ Ultimately, this line of work seeks to bridge the gap between methodological inn
 **Psychopathology**
 <br>
 ***Example: Bipolar disorder***
-- Aim: Personalized treatment
-- Context: Bipolar disorder is characterized by recurrent episodes, a precision approach would aim to predict when symptoms are likely to recur so that interventions—such as medication adjustment, behavioral therapy, or sleep regulation—can be implemented at the most effective time. Equally important, pharmacological responses differ across individuals: some patients respond best to lithium, others to valproate, and side effects vary widely.
-- Data to use: clinical records, genetic profiles, ecological momentary assessments (EMA), and passive digital data (e.g., smartphone usage patterns, actigraphy, sleep data), and self-assessment reports
+- **Aim**: Personalized treatment
+- **Context**: Bipolar disorder is characterized by recurrent episodes, a precision approach would aim to predict when symptoms are likely to recur so that interventions—such as medication adjustment, behavioral therapy, or sleep regulation—can be implemented at the most effective time. Equally important, pharmacological responses differ across individuals: some patients respond best to lithium, others to valproate, and side effects vary widely.
+- **Data to use**: clinical records, genetic profiles, ecological momentary assessments (EMA), and passive digital data (e.g., smartphone usage patterns, actigraphy, sleep data), and self-assessment reports
 
 **Translational Neuroscience**
 <br>
 ***Example: Individualized brain networks***
-- Aim: Person-specific mapping of brain dynamics and their links to cognition and behavior.
-- Context: Brain connectivity fluctuates across time and between individuals, influencing cognitive states and behavioral outcomes. A precision approach would identify these dynamic, person-specific patterns to guide both basic neuroscience and clinical applications (e.g., neurofeedback, brain stimulation therapies).
-- Data to use: Neuroimaging (fMRI, DTI), electrophysiological signals (EEG, MEG), digital behavioral measures, longitudinal cognitive testing, and multimodal integration of brain–behavior data.
+- **Aim**: Person-specific mapping of brain dynamics and their links to cognition and behavior.
+- **Context**: Brain connectivity fluctuates across time and between individuals, influencing cognitive states and behavioral outcomes. A precision approach would identify these dynamic, person-specific patterns to guide both basic neuroscience and clinical applications (e.g., neurofeedback, brain stimulation therapies).
+- **Data to use**: Neuroimaging (fMRI, DTI), electrophysiological signals (EEG, MEG), digital behavioral measures, longitudinal cognitive testing, and multimodal integration of brain–behavior data.
 
 **Social Science**
 <br>
 ***Example: STEM education supports***
-- Aim: Tailored, adaptive support for individual learning success.
-- Context: Students vary widely in how they progress through STEM curricula. Precision methods can forecast learning outcomes and identify at-risk students, enabling timely and individualized interventions that foster mastery and persistence in STEM fields.
-- Data to use: Learning management system (LMS) clickstream data, homework and test performance, response times, classroom participation logs, and longitudinal academic records
+- **Aim**: Tailored, adaptive support for individual learning success.
+- **Context**: Students vary widely in how they progress through STEM curricula. Precision methods can forecast learning outcomes and identify at-risk students, enabling timely and individualized interventions that foster mastery and persistence in STEM fields.
+- **Data to use**: Learning management system (LMS) clickstream data, homework and test performance, response times, classroom participation logs, and longitudinal academic records
 
 The trajectory of my current research has been naturally shaped by past projects and experiences, many of which are documented in published work. A comprehensive list of publications is provided below.
 
