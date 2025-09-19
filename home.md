@@ -16,7 +16,7 @@ permalink: /home
     --unc-sky:  #E6F1FB;      /* pale sky blue background */
 
     /* Layout widths */
-    --content-w: 100vw;        /* template text width (a bit wider than before) */
+    --content-w: 120vw;        /* template text width (a bit wider than before) */
     --pill-overhang: 30vw;    /* how much wider the pill is than the content */
   }
 
@@ -250,7 +250,7 @@ The trajectory of my current research has been naturally shaped by past projects
 - **Lee, C.\***, Luo, L., Kuhlmann, S. L., Plumley, R. D., Panter, A. T., Bernacki, M. L., Greene, J. A., & Gates, K. M. (2025). Interpretable predictive analytics for online learning: A Markov-based machine learning approach. <em>Journal of Learning Analytics</em>, 12(2), 259–278. [DOI](https://doi.org/10.18608/jla.2025.8375)  
 - **Lee, C.\***, Gates, K. M., Chun, J., Al Kontar, R., Kamali, M., McInnis, M. G., & Deldin, P. (2025). Suicide risk estimation in bipolar disorder using N200 and P300 event-related potentials and machine learning: A pilot study. <em>Journal of Affective Disorders Reports</em>, 20, 100875. [DOI](https://doi.org/10.1016/j.jadr.2025.100875)
 - **Lee, C.\*** (2025). <em>flex: Fuzzy least squares estimation with explicit formula</em> (Version 0.1.0) [R package]. Comprehensive R Archive Network (CRAN). [DOI](https://doi.org/10.32614/CRAN.package.flex)
-- Plumley, R. D., Bernacki, M. L., Greene, J. A., …, **Lee, C.\***, Panter, A. T., & Gates, K. M. (2024). Co-designing enduring learning analytics prediction and support tools in undergraduate biology courses. <em>British Journal of Educational Technology</em>, 55(5), 1860–1883. [DOI](https://doi.org/10.1111/bjet.13472)  
+- Plumley, R. D., Bernacki, M. L., Greene, J. A., …, **Lee, C.**, Panter, A. T., & Gates, K. M. (2024). Co-designing enduring learning analytics prediction and support tools in undergraduate biology courses. <em>British Journal of Educational Technology</em>, 55(5), 1860–1883. [DOI](https://doi.org/10.1111/bjet.13472)  
 - **Lee, C.\*** (2023). An integrative machine learning approach for small samples and high-dimensional imbalanced data in psychological experiment [Master’s thesis, University of North Carolina at Chapel Hill].
 
 **Accepted**  
@@ -258,7 +258,7 @@ The trajectory of my current research has been naturally shaped by past projects
 
 **Under Review**  
 - Rodebaugh, T. L., **Lee, C.**, Gates, K. M., Frumkin, M. R., …, & Piccirillo, J. Modeling psychological processes in tinnitus disorder.  
-- Yoon, J. H.\*, **Lee, C.\***, Kwon, S., & Bae, Y. C. Nonlinear and chaotic dynamics in generalized fuzzy opinion model.  
+- Yoon, J. H.\*, **Lee, C.\***, Kwon, S.H., & Bae, Y. C. Nonlinear and chaotic dynamics in generalized fuzzy opinion model.  
 
 **Submission Pending**
 - **Lee, C.\*** No single approach fits all: Testing two generations of structural equation modeling estimation.  
