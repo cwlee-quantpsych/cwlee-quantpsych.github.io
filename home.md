@@ -135,7 +135,7 @@ permalink: /home
         <li><a href="#collaborations">Collaborations</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#teaching">Teaching</a></li>
-        <li><a href="#talks">Academic Talks</a></li>
+        <li><a href="#talks">Research Talks</a></li>
         <li><a href="#life">Preludes to the Lab</a></li>
       </ul>
     </nav>
@@ -187,7 +187,8 @@ permalink: /home
 <div class="top-spacer"></div>
 
 
-## Scholarly Commitments {#research}
+## ResaerchCommitments {#research}
+---
 ### Methodological Innovation
 My research focuses on developing and disseminating advanced statistical methods to address the unique methodological challenges of psychological, behavioral, and social sciences. I primarily work across five statistical frameworks, often integrating them to create synergistic solutions that advance the field:
 
@@ -209,6 +210,7 @@ My research focuses on developing and disseminating advanced statistical methods
 <br>
 
 ## Publications {#publications}
+---
 ### Published  
 
 **Research Articles**  
@@ -234,6 +236,7 @@ My research focuses on developing and disseminating advanced statistical methods
 - **Lee, C.\*** FLEX: An R package for fuzzy numbers and fuzzy linear regression.
 
 ## Research Collaborations {#collaborations}
+---
 I have collaborated on multiple interdisciplinary research projects, including:
 
 - **EPICS Mood and Schizophrenia Lab (PI: Deldin, P.J., University of Michigan):**  
@@ -252,13 +255,14 @@ I have collaborated on multiple interdisciplinary research projects, including:
   Explored applications of fuzzy set theory and chaos theory to model complex dynamics in social opinion formation.  
 
 ## Education {#education}
+---
 **M.S. in Applied Statistics**  University of Michigan, Ann Arbor, MI, USA  
 **M.A. in Economics**  Yonsei University, Seoul, South Korea  
 **B.S. in Biology**  Yonsei University, Seoul, South Korea  
 
 ## Teaching {#teaching}
-
-**University of North Carolina at Chapel Hill**
+---
+**University of North Carolina at Chapel Hill**<br>
 ***PSYC 210: Statistical Principles of Psychological Research***
 - Instructional Assistant<br>
     May 2025 – Present; May 2022 – May 2024<br>
@@ -269,28 +273,30 @@ I have collaborated on multiple interdisciplinary research projects, including:
 I have served as a teaching/instructional assistant for an undergraduate-level introductory statistics course in the Department of Psychology and Neuroscience, across multiple semesters since 2020. My responsibilities included leading recitation sessions, providing hands-on support with data analysis using SPSS and Jamovi, and offering individualized guidance to help students develop statistical reasoning.
 
 ## Research Talks {#talks}
-- **23rd Annual Society of Multivariate Experimental Psychology (SMEP) Conference**
-***No single approach fits all: Testing two generations of structural equation modeling estimation***
+---
+- **23rd Annual Society of Multivariate Experimental Psychology (SMEP) Conference**<br>
+***No single approach fits all: Testing two generations of structural equation modeling estimation***<br>
 Graduate Student Poster Presentation, University of Notre Dame, IN, USA (Oct 2025)
-- **Quant Forum**, UNC Chapel Hill, NC, USA
-***Integrative classification framework in machine learning for small samples and high-dimensional imbalanced data*** (Apr 2023)
-***Sequence analysis for classification: A hybrid Markov–machine learning approach*** (Apr 2022)
-***Predicting suicide attempt in bipolar disorder with machine learning*** (May 2021)
+- **Quant Forum**, UNC Chapel Hill, NC, USA<br>
+***Integrative classification framework in machine learning for small samples and high-dimensional imbalanced data*** (Apr 2023)<br>
+***Sequence analysis for classification: A hybrid Markov–machine learning approach*** (Apr 2022)<br>
+***Predicting suicide attempt in bipolar disorder with machine learning*** (May 2021)<br>
 
 ## Peer-Reviewed Abstracts
+---
 - **Lee, C.\***, Yoon, J. H., & Bae, Y. C. (2024, November). Chaotic behaviors in opinion dynamics models
 influenced by external forces. Abstract accepted at the 25th International Symposium on Advanced
-Intelligent Systems (ISIS), Himeji, Japan. (presented by co-author)
+Intelligent Systems (ISIS), Himeji, Japan. (presented by co-author)<br><br>
 
-### *Preludes to the Lab* {#life}
-***Professionally Trained Classical Pianist***
+## *Preludes to the Lab* {#life}
+***Professionally Trained Classical Pianist***<br>
 I began playing the piano at the age of 3 and pursued professional training at Yewon School and Seoul Arts High School, two of Korea’s most prestigious arts institutions. During my teenage years, I won several major national music competitions and performed extensively as both a soloist and an accompanist for violinists, cellists, and vocalists in recital and competition settings. I also collaborated with the Seoul Symphony Orchestra in a performance of Grieg’s Piano Concerto in a minor. At the age of 14, I was prestigiously selected as a musical prodigy by the Kumho Asiana Group—one of Korea’s leading conglomerates—which led to my own solo debut recital. My favorite repertoire includes Bach–Busoni’s *Chaconne*, Mendelssohn’s *Variations sérieuses*, Chopin’s Ballades, and more. 
 
 <div align="center" style="margin: 20px 0;">
   <img src="{{ '/assets/images/chaewon2.JPG' | relative_url }}" alt="Chaewon Lee performing" width="400" style="border-radius: 12px;" />
 </div>
 
-***Former Investment Banker and Economist***
+***Former Investment Banker and Economist***<br>
 Prior to academia, I worked at Korea Investment & Securities, one of Korea’s top-tier securities firms headquartered in Yeouido, Seoul—often referred to as Korea’s Wall Street. I first served as a junior investment banker in the Equity Capital Market Department, where I worked on IPOs for KOSPI and KOSDAQ, conducting due diligence, accounting analysis, and preparing listing applications. I later transitioned to the Research Center as a junior economist, where I authored economic reports on global macro-financial trends and led forecasts for key indicators such as exchange rates, oil prices, and international policy rates.
 
 <div class="custom-copy" style="max-width:96vw;margin:40px auto 24px;padding:16px 32px 0;text-align:center;color:var(--unc-dark);font-size:14px;opacity:.9;border-top:1px solid rgba(19,41,75,.15);">
