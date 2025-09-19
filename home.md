@@ -6,73 +6,95 @@ permalink: /home
 ---
 
 <style>
-  /* Hide theme header/site-title entirely */
-  header[role="banner"], .masthead, .site-header,
-  header[role="banner"] *, .masthead * , .site-header * ,
-  a.site-title, .site-title, .masthead__title, .header__title, .navbar-brand {
-    display:none !important; visibility:hidden !important;
-    pointer-events:none !important; height:0 !important;
-    margin:0 !important; padding:0 !important; border:0 !important;
-    color:transparent !important; text-shadow:none !important;
+  :root {
+    --tab-accent:#0a84ff;
+    --unc-navy:#13294B;         /* official UNC navy */
+    --unc-gray:#4B4F54;         /* medium gray */
+    --unc-light-blue:#A7C7E7;   /* pastel blue */
+    --unc-lighter-blue:#D4E6F9; /* even lighter */
+    --card-bg:#fff;
+    --card-bd:rgba(19,41,75,.14);
+    --card-shadow:0 8px 14px rgba(19,41,75,.08);
   }
 
-  /* ===== HEADER: single big pill, wider than content, centered ===== */
-  .hero-wrap{
+  /* Remove Jekyll theme header/footer completely */
+  header[role="banner"], .masthead, .site-header, .site-title,
+  .page__header, footer, .site-footer, .page__footer {
+    display:none !important; visibility:hidden !important;
+    margin:0 !important; padding:0 !important; height:0 !important;
+  }
+
+  body {
+    font-family: "Helvetica Neue", "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-weight:400;
+    font-size:16px;
+    line-height:1.7;
+    color:var(--unc-gray);
+    background:linear-gradient(180deg, var(--unc-lighter-blue) 0%, var(--unc-light-blue) 100%);
+    overflow-x:hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    color:var(--unc-navy);
+    font-weight:700;
+    letter-spacing:-0.2px;
+  }
+
+  /* ===== WIDE CENTERED PILL NAV ===== */
+  .hero-wrap {
     position:sticky; top:0; z-index:50;
     padding:14px 0 18px;
     backdrop-filter:blur(6px);
   }
 
-  /* Center relative to viewport so pill can exceed content width */
-  .hero-grid{
-    width:100vw !important; max-width:100vw !important;
+  .hero-grid {
+    width:100vw;
     margin:0 auto;
     display:flex; justify-content:center;
-    padding:0;
   }
 
-  .tabs-card{
+  .tabs-card {
     display:block;
-    width:min(88vw, 1400px);   /* wider than 70vw content; tweak if desired */
+    width:min(88vw, 1400px);
     margin:0 auto;
     background:var(--card-bg);
     border:1px solid var(--card-bd);
-    border-radius:22px;
+    border-radius:28px;
     box-shadow:var(--card-shadow);
-    padding:16px 28px;
-    overflow-x:auto;           /* keep one line; allow scroll if still too long */
+    padding:18px 36px;
+    overflow-x:auto;
     -webkit-overflow-scrolling:touch;
-    scrollbar-width:thin;
+    scrollbar-width:none;
   }
 
-  .tabs-list{
+  .tabs-list {
     display:flex;
-    flex-wrap:nowrap; white-space:nowrap;   /* ONE line */
+    flex-wrap:nowrap; white-space:nowrap;
     justify-content:center; align-items:center;
-    gap:0 36px;
+    gap:0 40px;
     list-style:none; margin:0; padding:0;
   }
 
-  .tabs-list a{
-    display:inline-block;
-    font-weight:800; letter-spacing:.2px;
-    color:var(--unc-dark); text-decoration:none;
-    padding:4px 6px; border-radius:8px;
+  .tabs-list a {
+    font-weight:700;
+    color:var(--unc-navy);
+    text-decoration:none;
+    padding:6px 8px;
+    border-radius:8px;
     transition:background .15s ease,color .15s ease,transform .08s ease;
   }
-  .tabs-list a:hover{ background:var(--tab-accent); color:#fff; transform:translateY(-1px); }
-  .tabs-list a.active{ background:var(--unc-dark); color:#fff; }
+  .tabs-list a:hover { background:var(--tab-accent); color:#fff; transform:translateY(-1px); }
+  .tabs-list a.active { background:var(--unc-navy); color:#fff; }
 
-  @media (max-width:1280px){ .tabs-list{ gap:0 26px; } }
-  @media (max-width:980px){  .tabs-list a{ font-size:.95rem; } }
+  @media(max-width:1280px){ .tabs-list{ gap:0 28px } }
+  @media(max-width:980px){ .tabs-list a{ font-size:.95rem } }
 
-  /* Optional: anchor offset for sticky header */
-  html{ scroll-behavior:smooth; }
-  h2[id], h3[id]{ scroll-margin-top: 90px; }
-  .top-spacer{ clear:both; margin-top:14px; }
+  .top-spacer{ margin-top:14px; }
 </style>
 
-<!-- HEADER: tabs only -->
+<!-- HEADER: centered pill -->
 <div class="hero-wrap" role="navigation" aria-label="Section navigation">
   <div class="hero-grid">
     <nav class="tabs-card" aria-label="Primary">
@@ -90,13 +112,12 @@ permalink: /home
 </div>
 
 <script>
-  // remove lingering focus outline after click
-  document.querySelectorAll('.tabs-list a').forEach(a =>
-    a.addEventListener('click', () => a.blur(), { passive: true })
-  );
+  document.querySelectorAll('.tabs-list a')
+    .forEach(a => a.addEventListener('click', ()=>a.blur(), {passive:true}));
 </script>
 
 <div class="top-spacer"></div>
+
 
 
 ## Research Focus {#research}
