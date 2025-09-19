@@ -216,8 +216,8 @@ My research focuses on developing and disseminating advanced statistical methods
 ---
 <br>
 
-### Published  
-
+**Published**
+<br>
 ***Research Articles***  
 - **Lee, C.\***, & Gates, K. M. (2025). Automated machine learning for classification and regression: A tutorial for psychologists. <em>Behavior Research Methods</em>, 57(2), 262. [DOI](https://doi.org/10.3758/s13428-025-02684-5)  
 - **Lee, C.\***, Luo, L., Kuhlmann, S. L., Plumley, R. D., Panter, A. T., Bernacki, M. L., Greene, J. A., & Gates, K. M. (2025). Interpretable predictive analytics for online learning: A Markov-based machine learning approach. <em>Journal of Learning Analytics</em>, 12(2), 259–278. [DOI](https://doi.org/10.18608/jla.2025.8375)  
@@ -228,14 +228,14 @@ My research focuses on developing and disseminating advanced statistical methods
 ***Software Program*** 
 - **Lee, C.\*** (2025). <em>flex: Fuzzy least squares estimation with explicit formula</em> (Version 0.1.0) [R package]. CRAN. [DOI](https://doi.org/10.32614/CRAN.package.flex)
 
-### Accepted  
+**Accepted**  
 - **Lee, C.\***, & Gates, K. M. (publication expected May 7, 2026). Group-iterative multiple model estimation in clinical science. <em>Annual Review of Clinical Psychology</em>.
 
-### Under Review  
+**Under Review**  
 - Rodebaugh, T. L., **Lee, C.\***, Gates, K. M., Frumkin, M. R., …, & Piccirillo, J. Modeling psychological processes in tinnitus disorder.  
 - Yoon, J. H.\*, **Lee, C.\***, Kwon, S., & Bae, Y. C. Nonlinear and chaotic dynamics in generalized fuzzy opinion model.  
 
-### Submission Pending
+**Submission Pending**
 - **Lee, C.\*** No single approach fits all: Testing two generations of structural equation modeling estimation.  
 - **Lee, C.\*** Modeling imprecision in psychological data: Least squares estimation with fuzzy numbers
 - **Lee, C.\*** FLEX: An R package for fuzzy numbers and fuzzy linear regression.
@@ -283,25 +283,9 @@ I have collaborated on multiple interdisciplinary research projects, including:
 <br>
 I have served as a teaching/instructional assistant for an undergraduate-level introductory statistics course in the Department of Psychology and Neuroscience, across multiple semesters since 2020. My responsibilities included leading recitation sessions, providing hands-on support with data analysis using SPSS and Jamovi, and offering individualized guidance to help students develop statistical reasoning.<br><br> 
 
-## Research Talks {#talks}
+## Preludes to the Lab {#life}
 ---
 <br>
-- **23rd Annual Society of Multivariate Experimental Psychology (SMEP) Conference**<br>
-***No single approach fits all: Testing two generations of structural equation modeling estimation***<br>
-Graduate Student Poster Presentation, University of Notre Dame, IN, USA (Oct 2025)
-- **Quant Forum**, UNC Chapel Hill, NC, USA<br>
-***Integrative classification framework in machine learning for small samples and high-dimensional imbalanced data*** (Apr 2023)<br>
-***Sequence analysis for classification: A hybrid Markov–machine learning approach*** (Apr 2022)<br>
-***Predicting suicide attempt in bipolar disorder with machine learning*** (May 2021)<br><br>
-
-## Peer-Reviewed Abstracts
----
-<br>
-- **Lee, C.\***, Yoon, J. H., & Bae, Y. C. (2024, November). Chaotic behaviors in opinion dynamics models
-influenced by external forces. Abstract accepted at the 25th International Symposium on Advanced
-Intelligent Systems (ISIS), Himeji, Japan. (presented by co-author)<br><br>
-
-## *Preludes to the Lab* {#life}
 ***Professionally Trained Classical Pianist***<br>
 I began playing the piano at the age of 3 and pursued professional training at Yewon School and Seoul Arts High School, two of Korea’s most prestigious arts institutions. During my teenage years, I won several major national music competitions and performed extensively as both a soloist and an accompanist for violinists, cellists, and vocalists in recital and competition settings. I also collaborated with the Seoul Symphony Orchestra in a performance of Grieg’s Piano Concerto in a minor. At the age of 14, I was prestigiously selected as a musical prodigy by the Kumho Asiana Group—one of Korea’s leading conglomerates—which led to my own solo debut recital. My favorite repertoire includes Bach–Busoni’s *Chaconne*, Mendelssohn’s *Variations sérieuses*, Chopin’s Ballades, and more. 
 
