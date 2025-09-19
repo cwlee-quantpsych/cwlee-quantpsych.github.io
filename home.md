@@ -30,13 +30,13 @@ permalink: /home
     overflow-x:hidden;
   }
 
-  /* === Full-width feel with a bit of side breathing room === */
+  /* === Wide but with comfortable side margins === */
   main, .page-content{
     overflow:visible;
-    max-width:96vw;          /* use ~96% of viewport width */
-    width:96vw;
+    max-width:90vw;          /* narrower than 96vw */
+    width:90vw;
     margin:0 auto;
-    padding:0 40px;          /* consistent side padding */
+    padding:0 60px;          /* more padding on both ends */
   }
 
   h1,h2,h3,h4,h5,h6{ font-weight:700; color:var(--unc-dark); }
@@ -56,7 +56,7 @@ permalink: /home
     content:none !important;
   }
 
-  /* === Force theme wrappers to match the wider template === */
+  /* === Force theme wrappers to match this width === */
   .initial-content,
   .page,
   .page__inner-wrap,
@@ -64,20 +64,20 @@ permalink: /home
   .wrapper,
   .container,
   .page__hero--overlay .wrapper{
-    max-width:96vw !important;
-    width:96vw !important;
+    max-width:90vw !important;
+    width:90vw !important;
     margin-left:auto !important;
     margin-right:auto !important;
   }
   .page__content{
-    padding-left:40px !important;
-    padding-right:40px !important;
+    padding-left:60px !important;
+    padding-right:60px !important;
   }
   .page .archive,
   .page .entries,
   .page .grid__wrapper{
-    max-width:96vw !important;
-    width:96vw !important;
+    max-width:90vw !important;
+    width:90vw !important;
   }
   .page__content img{ max-width:100% !important; height:auto !important; }
 
@@ -88,7 +88,7 @@ permalink: /home
     backdrop-filter:blur(6px);
   }
   .hero-grid{
-    max-width:96vw; margin:0 auto; padding:0 12px;
+    max-width:90vw; margin:0 auto; padding:0 12px;
     display:grid; grid-template-columns:auto 1fr; gap:18px; align-items:center;
   }
 
@@ -112,12 +112,12 @@ permalink: /home
     border-radius:18px;
     box-shadow:var(--card-shadow);
     padding:12px 20px;
-    overflow:visible;                 /* don’t clip */
+    overflow:visible;
   }
   .tabs-list{
     display:flex; align-items:center; gap:24px;
     list-style:none; margin:0; padding:0;
-    flex-wrap:nowrap; white-space:nowrap; /* single line on wide screens */
+    flex-wrap:nowrap; white-space:nowrap;
   }
   .tabs-list a{
     display:inline-block; padding:8px 10px;
@@ -127,7 +127,7 @@ permalink: /home
   .tabs-list a:hover{ background:var(--tab-accent); color:#fff; transform:translateY(-1px); }
   .tabs-list a.active{ background:var(--unc-dark); color:#fff; }
 
-  /* Narrow screens: keep tabs intact via horizontal scroll (no cutting) */
+  /* Narrow screens: horizontal scroll for tabs */
   @media (max-width:1280px){
     .tabs-card{ overflow-x:auto; -webkit-overflow-scrolling:touch; }
     .tabs-list{ flex-wrap:nowrap; white-space:nowrap; gap:20px; }
@@ -163,13 +163,13 @@ permalink: /home
 </div>
 
 <script>
-  // remove lingering focus outline after click
   document.querySelectorAll('.tabs-list a').forEach(a=>{
     a.addEventListener('click', ()=>a.blur(), {passive:true});
   });
 </script>
 
 <div class="top-spacer"></div>
+
 
 ## Research Focus {#research}
 **Methodological Innovation**  
