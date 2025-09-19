@@ -191,7 +191,8 @@ permalink: /home
 <br>
 
 ### Methodological Innovation
-My research focuses on developing and disseminating advanced statistical methods to address the unique methodological challenges of psychological, behavioral, and social sciences. I primarily work across five statistical frameworks, often integrating them to create synergistic solutions that advance the field:
+From a methodological standpoint, my goal is to create statistical innovations that move psychological, behavioral, and neural research forward.<br>
+I primarily work across five statistical frameworks, often integrating them to create synergistic solutions that advance the field:
 
 <div style="margin-top:14px;">
   <img src="{{ '/assets/images/research2.jpg' | relative_url }}"
@@ -202,14 +203,40 @@ My research focuses on developing and disseminating advanced statistical methods
 
 **My methodological work unfolds through three core pipelines:**
 
-- Adapting deep learning techniques to enhance traditional psychological methods and meet the demands of research using passive sensing and large-scale behavioral and physiological data  
-- Drawing robust inference on intraindividual dynamic processes from limited samples and sparse time points  
+- Adapting deep learning techniques to enhance traditional psychological methods and meet the demands of research using passive sensing and large-scale behavioral and physiological data;  
+- Drawing robust inference on intraindividual dynamic processes from limited samples and sparse time points; 
 - Rethinking imprecision in psychological scales — not merely as measurement error to minimize, but as a source of information to be actively leveraged in statistical modeling
 
 ### Substantive Translation
 
-***Precision psychology*** is the motivating aim behind translating my core modeling frameworks and methodological innovations into meaningful applications across psychological, behavioral, and social sciences. This includes advancing individualized diagnosis and treatment of mental health conditions, uncovering brain–behavior dynamics, and supporting adaptive interventions in clinical, cognitive, and educational domains. 
-<br><br>
+From a substantive standpoint, ***Precision psychology*** is the motivating aim behind translating my core modeling frameworks and methodological innovations into meaningful applications. This includes:
+
+- the advancement of individualized diagnosis and treatment of mental health conditions;
+- the investigation of person-specific brain–behavior dynamics;
+- the development of adaptive interventions in clinical, cognitive, and educational contexts
+<br>
+
+Ultimately, this line of work seeks to bridge the gap between methodological innovation and real-world impact. I hope this vision not only advances scientific understanding but also supports more effective, personalized solutions to pressing challenges in psychopathology, translational neuroscience, social science, and beyond.<br>
+
+**Psychopathology**
+<br>
+***Example: Bipolar disorder***
+- Aim: Personalized treatment
+- Context: Bipolar disorder is characterized by recurrent episodes, a precision approach would aim to predict when symptoms are likely to recur so that interventions—such as medication adjustment, behavioral therapy, or sleep regulation—can be implemented at the most effective time. Equally important, pharmacological responses differ across individuals: some patients respond best to lithium, others to valproate, and side effects vary widely.
+- Data to use: clinical records, genetic profiles, ecological momentary assessments (EMA), and passive digital data (e.g., smartphone usage patterns, actigraphy, sleep data), and self-assessment reports
+
+**Translational Neuroscience**
+<br>
+***Example: Individualized brain network***
+- Aim: Person-specific mapping of brain dynamics and their links to cognition and behavior.
+- Context: Brain connectivity fluctuates across time and between individuals, influencing cognitive states and behavioral outcomes. A precision approach would identify these dynamic, person-specific patterns to guide both basic neuroscience and clinical applications (e.g., neurofeedback, brain stimulation therapies).
+- Data to use: Neuroimaging (fMRI, DTI), electrophysiological signals (EEG, MEG), digital behavioral measures, longitudinal cognitive testing, and multimodal integration of brain–behavior data.
+
+**Social Science**
+***Example: STEM education support***
+- Aim: Tailored, adaptive support for individual learning trajectories.
+- Context: Students vary widely in how they progress through STEM curricula. Precision methods can forecast learning outcomes and identify at-risk students, enabling timely and individualized interventions that foster mastery and persistence in STEM fields.
+- Data to use: Learning management system (LMS) clickstream data, homework and test performance, response times, classroom participation logs, and longitudinal academic records.
 
 ## Publications {#publications}
 ---
@@ -228,7 +255,7 @@ My research focuses on developing and disseminating advanced statistical methods
 - **Lee, C.\***, & Gates, K. M. (publication expected May 7, 2026). Group-iterative multiple model estimation in clinical science. <em>Annual Review of Clinical Psychology</em>.
 
 **Under Review**  
-- Rodebaugh, T. L., **Lee, C.\***, Gates, K. M., Frumkin, M. R., …, & Piccirillo, J. Modeling psychological processes in tinnitus disorder.  
+- Rodebaugh, T. L., **Lee, C.**, Gates, K. M., Frumkin, M. R., …, & Piccirillo, J. Modeling psychological processes in tinnitus disorder.  
 - Yoon, J. H.\*, **Lee, C.\***, Kwon, S., & Bae, Y. C. Nonlinear and chaotic dynamics in generalized fuzzy opinion model.  
 
 **Submission Pending**
@@ -244,17 +271,17 @@ I have collaborated on multiple interdisciplinary research projects, including:
 - **EPICS Mood and Schizophrenia Lab (PI: Deldin, P.J., University of Michigan):**  
   Analyzed event-related potentials (ERP) to classify psychiatric patients and predict suicidality in individuals diagnosed with bipolar disorder, using deep learning and feature selection.  
 
-- **PROACTIVE Project (PI: T. Manschreck, Harvard Medical School / Beth Israel Deaconess Medical Center):**  
+- **PROACTIVE Project (PI: Manschreck, T.C., Harvard Medical School / Beth Israel Deaconess Medical Center):**  
   Investigated relationships between patients’ metabolic features and the effectiveness of schizophrenia treatments, including long-acting injectable Risperidone and oral antipsychotics.  
 
-- **NSF IUSE Student Success Project (PIs: Gates, K., & Greene, J., UNC School of Education / Department of Psychology and Neuroscience):**  
-  Applied machine learning and Markov modeling to learning management system (LMS) data to forecast student performance in undergraduate biology courses.  
+- **NSF IUSE Student Success Project (PIs: Gates, K.M., & Greene, J.A., UNC School of Education / Department of Psychology and Neuroscience):**  
+  Developed a novel hybrid framework, the sequence-based Markov machine learning approach (**seqMAC**), to forecast end-of-course performance from early clickstream data in online learning environments.
 
-- **Clinical Psychology Collaborations (PI: Rodebaugh, T.L., UNC Chapel Hill):**  
-  Modeled dynamic time series of tinnitus symptoms using Group Iterative Multiple Model Estimation (GIMME).  
+- **Tinnitus Disorder Research (PI: Rodebaugh, T.L., UNC Chapel Hill):**  
+  Modeled multi-subject time series of tinnitus symptoms using Group Iterative Multiple Model Estimation (GIMME).  
 
-- **Mathematics and Engineering Collaborations (South Korea):**  
-  Explored applications of fuzzy set theory and chaos theory to model complex dynamics in social opinion formation.<br><br>  
+- **Collaborations with Korean Research Teams:**  
+  Currently engaged in projects applying fuzzy statistics and chaos theory to model non-linear dynamics in social opinion formation.<br><br>  
 
 ## Education {#education}
 ---
