@@ -30,13 +30,13 @@ permalink: /home
     overflow-x:hidden;
   }
 
-  /* === TRUE full-width template (consistent) === */
+  /* === Full-width feel with a bit of side breathing room === */
   main, .page-content{
     overflow:visible;
-    max-width:100vw;       /* use full viewport width */
-    width:100vw;
+    max-width:96vw;          /* use ~96% of viewport width */
+    width:96vw;
     margin:0 auto;
-    padding:0 24px;        /* small side padding; tweak if you want tighter */
+    padding:0 40px;          /* consistent side padding */
   }
 
   h1,h2,h3,h4,h5,h6{ font-weight:700; color:var(--unc-dark); }
@@ -56,7 +56,7 @@ permalink: /home
     content:none !important;
   }
 
-  /* === Force theme wrappers to be wide on Markdown pages === */
+  /* === Force theme wrappers to match the wider template === */
   .initial-content,
   .page,
   .page__inner-wrap,
@@ -64,20 +64,20 @@ permalink: /home
   .wrapper,
   .container,
   .page__hero--overlay .wrapper{
-    max-width:100vw !important;
-    width:100vw !important;
+    max-width:96vw !important;
+    width:96vw !important;
     margin-left:auto !important;
     margin-right:auto !important;
   }
   .page__content{
-    padding-left:24px !important;
-    padding-right:24px !important;
+    padding-left:40px !important;
+    padding-right:40px !important;
   }
   .page .archive,
   .page .entries,
   .page .grid__wrapper{
-    max-width:100vw !important;
-    width:100vw !important;
+    max-width:96vw !important;
+    width:96vw !important;
   }
   .page__content img{ max-width:100% !important; height:auto !important; }
 
@@ -88,7 +88,7 @@ permalink: /home
     backdrop-filter:blur(6px);
   }
   .hero-grid{
-    max-width:100vw; margin:0 auto; padding:0 12px;
+    max-width:96vw; margin:0 auto; padding:0 12px;
     display:grid; grid-template-columns:auto 1fr; gap:18px; align-items:center;
   }
 
