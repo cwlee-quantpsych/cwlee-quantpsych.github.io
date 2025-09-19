@@ -187,7 +187,7 @@ permalink: /home
 <div class="top-spacer"></div>
 
 
-## Resaerch Commitments {#research}
+## Research Commitments {#research}
 ---
 <br>
 
