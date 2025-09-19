@@ -208,7 +208,6 @@ My research focuses on developing and disseminating advanced statistical methods
 - Rethinking imprecision in psychological scales — not merely as measurement error to minimize, but as a source of information to be actively leveraged in statistical modeling
 
 ### Substantive Translation
-<br>
 
 ***Precision psychology*** is the motivating aim behind translating my core modeling frameworks and methodological innovations into meaningful applications across psychological, behavioral, and social sciences. This includes advancing individualized diagnosis and treatment of mental health conditions, uncovering brain–behavior dynamics, and supporting adaptive interventions in clinical, cognitive, and educational domains. 
 <br><br>
