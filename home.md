@@ -6,80 +6,38 @@ permalink: /home
 ---
 
 <style>
-  :root{
-    --tab-accent:#0a84ff;
-    --site-header-h:56px;
-
-    /* Paler UNC palette */
-    --unc-dark:#13294B;
-    --unc-gray:#4B4F54;
-    --unc-bg-lighter:#F5FAFF; /* very light top */
-    --unc-bg-light:#E6F0FF;   /* light bottom */
-
-    --card-bg:#fff;
-    --card-bd:rgba(19,41,75,.14);
-    --card-shadow:0 8px 14px rgba(19,41,75,.08);
+  /* ===== HEADER: single big pill, centered to content column ===== */
+  .hero-wrap{
+    position:sticky; top:0; z-index:20;
+    padding:14px 0 18px;
+    backdrop-filter:blur(6px);
   }
 
-  *{ box-sizing:border-box }
-
-  body{
-    font-family:'Lato',system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    font-size:16px; line-height:1.7; color:var(--unc-gray);
-    background:linear-gradient(180deg,var(--unc-bg-lighter) 0%,var(--unc-bg-light) 100%);
-    overflow-x:hidden;
-  }
-
-  /* Center content at 70% (≈15% margin each side) */
-  main,.page-content,
-  .initial-content,.page,.page__inner-wrap,.page__content,
-  .wrapper,.container,.page__hero--overlay .wrapper{
-    max-width:70vw !important; width:70vw !important;
-    margin-left:auto !important; margin-right:auto !important;
-  }
-  main,.page-content,.page__content{ padding:0 40px !important; }
-
-  h1,h2,h3,h4,h5,h6{ font-weight:700; color:var(--unc-dark) }
-  p,li{ color:var(--unc-gray); font-size:17px; line-height:1.7 }
-
-  /* Hide theme’s auto title/header/footer */
-  .page__header,.page__title,.page-title,.page__header h1{ display:none !important }
-  .masthead,.site-header,header[role="banner"]{ background:transparent !important; box-shadow:none !important; border-bottom:0 !important }
-  a.site-title,.site-title,.masthead__title,.header__title,.navbar-brand{ color:transparent !important; text-shadow:none !important; pointer-events:none }
-  a.site-title::after,.site-title::after,.masthead__title::after,.header__title::after,.navbar-brand::after{ content:none !important }
-  .page__footer,.site-footer,footer,.page__footer *,.site-footer *,footer *{ display:none !important; height:0 !important; padding:0 !important; margin:0 !important; border:0 !important }
-
-  /* ===== HEADER: single big pill, perfectly centered ===== */
-  .hero-wrap{ position:sticky; top:0; z-index:20; padding:14px 0 18px; backdrop-filter:blur(6px) }
-
-  /* Let the pill size to its content and center it on the page */
   .hero-grid{
-    max-width:unset !important; width:100% !important;  /* not limited by 70vw */
-    padding:0;
-    display:block;
+    max-width:70vw;            /* match content width */
+    margin:0 auto;             /* center in the content column */
+    display:flex; justify-content:center;
   }
 
   .tabs-card{
     display:block;
-    width:max-content;                /* shrink to fit the tabs row */
-    max-width:95vw;                   /* keep inside viewport */
-    margin:0 auto;                    /* HARD center */
+    width:max-content;          /* shrink to tabs width */
+    max-width:100%;             /* never overflow parent */
+    margin:0 auto;
     background:var(--card-bg);
     border:1px solid var(--card-bd);
     border-radius:22px;
     box-shadow:var(--card-shadow);
     padding:16px 28px;
-    overflow-x:auto;                  /* single line + scroll if ever wider than viewport */
+    overflow-x:auto;
     -webkit-overflow-scrolling:touch;
   }
 
   .tabs-list{
     display:flex;
-    flex-wrap:nowrap;                 /* ONE line */
-    white-space:nowrap;
-    justify-content:center;           /* center the items inside */
-    align-items:center;
-    gap:0 36px;                       /* horizontal gap between tabs */
+    flex-wrap:nowrap; white-space:nowrap;
+    justify-content:center; align-items:center;
+    gap:0 36px;
     list-style:none; margin:0; padding:0;
   }
 
@@ -87,27 +45,16 @@ permalink: /home
     display:inline-block;
     font-weight:800; letter-spacing:.2px;
     color:var(--unc-dark); text-decoration:none;
-    padding:4px 6px;                  /* subtle hit area (not mini-pills) */
+    padding:4px 6px;
     border-radius:8px;
     transition:background .15s ease,color .15s ease,transform .08s ease;
   }
   .tabs-list a:hover{ background:var(--tab-accent); color:#fff; transform:translateY(-1px) }
   .tabs-list a.active{ background:var(--unc-dark); color:#fff }
 
-  /* Slightly tighten spacing on medium screens */
-  @media (max-width:1280px){
-    .tabs-list{ gap:0 26px }
-  }
-  @media (max-width:980px){
-    .tabs-list a{ font-size:.95rem }
-  }
-
-  /* Smooth anchor offset */
-  html{ scroll-behavior:smooth }
-  h2[id],h3[id]{ scroll-margin-top:calc(var(--site-header-h,0px) + 90px) }
-  .top-spacer{ clear:both; margin-top:14px }
+  @media(max-width:1280px){ .tabs-list{ gap:0 26px } }
+  @media(max-width:980px){ .tabs-list a{ font-size:.95rem } }
 </style>
-
 
 <!-- HEADER: tabs only -->
 <div class="hero-wrap" role="navigation" aria-label="Section navigation">
