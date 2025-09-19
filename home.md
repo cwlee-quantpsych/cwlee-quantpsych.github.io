@@ -17,7 +17,7 @@ permalink: /home
 
     /* Layout widths */
     --content-w: 76vw;        /* template text width (a bit wider than before) */
-    --pill-overhang: 12vw;    /* how much wider the pill is than the content */
+    --pill-overhang: 22vw;    /* how much wider the pill is than the content */
   }
 
   /* Kill theme header/footer completely */
