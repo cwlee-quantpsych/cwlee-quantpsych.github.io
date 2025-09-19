@@ -16,7 +16,7 @@ permalink: /home
     --unc-sky:  #E6F1FB;      /* pale sky blue background */
 
     /* Layout widths */
-    --content-w: 80vw;        /* template text width (a bit wider than before) */
+    --content-w: 90vw;        /* template text width (a bit wider than before) */
     --pill-overhang: 30vw;    /* how much wider the pill is than the content */
   }
 
@@ -187,8 +187,10 @@ permalink: /home
 <div class="top-spacer"></div>
 
 
-## ResaerchCommitments {#research}
+## Resaerch Commitments {#research}
 ---
+<br>
+
 ### Methodological Innovation
 My research focuses on developing and disseminating advanced statistical methods to address the unique methodological challenges of psychological, behavioral, and social sciences. I primarily work across five statistical frameworks, often integrating them to create synergistic solutions that advance the field:
 
@@ -206,21 +208,25 @@ My research focuses on developing and disseminating advanced statistical methods
 - Rethinking imprecision in psychological scales — not merely as measurement error to minimize, but as a source of information to be actively leveraged in statistical modeling
 
 ### Substantive Translation
-***Precision psychology*** is the motivating aim behind translating my core modeling frameworks and methodological innovations into meaningful applications across psychological, behavioral, and social sciences. This includes advancing individualized diagnosis and treatment of mental health conditions, uncovering brain–behavior dynamics, and supporting adaptive interventions in clinical, cognitive, and educational domains. 
 <br>
+
+***Precision psychology*** is the motivating aim behind translating my core modeling frameworks and methodological innovations into meaningful applications across psychological, behavioral, and social sciences. This includes advancing individualized diagnosis and treatment of mental health conditions, uncovering brain–behavior dynamics, and supporting adaptive interventions in clinical, cognitive, and educational domains. 
+<br><br>
 
 ## Publications {#publications}
 ---
+<br>
+
 ### Published  
 
-**Research Articles**  
+***Research Articles***  
 - **Lee, C.\***, & Gates, K. M. (2025). Automated machine learning for classification and regression: A tutorial for psychologists. <em>Behavior Research Methods</em>, 57(2), 262. [DOI](https://doi.org/10.3758/s13428-025-02684-5)  
 - **Lee, C.\***, Luo, L., Kuhlmann, S. L., Plumley, R. D., Panter, A. T., Bernacki, M. L., Greene, J. A., & Gates, K. M. (2025). Interpretable predictive analytics for online learning: A Markov-based machine learning approach. <em>Journal of Learning Analytics</em>, 12(2), 259–278. [DOI](https://doi.org/10.18608/jla.2025.8375)  
 - **Lee, C.\***, Gates, K. M., Chun, J., Al Kontar, R., Kamali, M., McInnis, M. G., & Deldin, P. (2025). Suicide risk estimation in bipolar disorder using N200 and P300 event-related potentials and machine learning: A pilot study. <em>Journal of Affective Disorders Reports</em>, 20, 100875. [DOI](https://doi.org/10.1016/j.jadr.2025.100875)  
 - Plumley, R. D., Bernacki, M. L., Greene, J. A., …, **Lee, C.\***, Panter, A. T., & Gates, K. M. (2024). Co-designing enduring learning analytics prediction and support tools in undergraduate biology courses. <em>British Journal of Educational Technology</em>, 55(5), 1860–1883. [DOI](https://doi.org/10.1111/bjet.13472)  
 - **Lee, C.\*** (2023). An integrative machine learning approach for small samples and high-dimensional imbalanced data in psychological experiment [Master’s thesis, University of North Carolina at Chapel Hill].
 
-**Software**  
+***Software Program*** 
 - **Lee, C.\*** (2025). <em>flex: Fuzzy least squares estimation with explicit formula</em> (Version 0.1.0) [R package]. CRAN. [DOI](https://doi.org/10.32614/CRAN.package.flex)
 
 ### Accepted  
@@ -235,8 +241,11 @@ My research focuses on developing and disseminating advanced statistical methods
 - **Lee, C.\*** Modeling imprecision in psychological data: least squares estimation with fuzzy numbers
 - **Lee, C.\*** FLEX: An R package for fuzzy numbers and fuzzy linear regression.
 
+<br><br>
+
 ## Research Collaborations {#collaborations}
 ---
+<br>
 I have collaborated on multiple interdisciplinary research projects, including:
 
 - **EPICS Mood and Schizophrenia Lab (PI: Deldin, P.J., University of Michigan):**  
@@ -252,16 +261,19 @@ I have collaborated on multiple interdisciplinary research projects, including:
   Modeled dynamic time series of tinnitus symptoms using Group Iterative Multiple Model Estimation (GIMME).  
 
 - **Mathematics and Engineering Collaborations (South Korea):**  
-  Explored applications of fuzzy set theory and chaos theory to model complex dynamics in social opinion formation.  
+  Explored applications of fuzzy set theory and chaos theory to model complex dynamics in social opinion formation.<br><br>  
 
 ## Education {#education}
 ---
+<br>
 **M.S. in Applied Statistics**  University of Michigan, Ann Arbor, MI, USA  
 **M.A. in Economics**  Yonsei University, Seoul, South Korea  
-**B.S. in Biology**  Yonsei University, Seoul, South Korea  
+**B.S. in Biology**  Yonsei University, Seoul, South Korea
+<br><br> 
 
 ## Teaching {#teaching}
 ---
+<br>
 **University of North Carolina at Chapel Hill**<br>
 ***PSYC 210: Statistical Principles of Psychological Research***
 - Instructional Assistant<br>
@@ -269,21 +281,23 @@ I have collaborated on multiple interdisciplinary research projects, including:
 - Teaching Assistant<br>
     Aug 2020 – Apr 2021<br>
     Awarded Departmental Undergraduate Teaching Commendation (both semesters)<br>
-
-I have served as a teaching/instructional assistant for an undergraduate-level introductory statistics course in the Department of Psychology and Neuroscience, across multiple semesters since 2020. My responsibilities included leading recitation sessions, providing hands-on support with data analysis using SPSS and Jamovi, and offering individualized guidance to help students develop statistical reasoning.
+<br>
+I have served as a teaching/instructional assistant for an undergraduate-level introductory statistics course in the Department of Psychology and Neuroscience, across multiple semesters since 2020. My responsibilities included leading recitation sessions, providing hands-on support with data analysis using SPSS and Jamovi, and offering individualized guidance to help students develop statistical reasoning.<br><br> 
 
 ## Research Talks {#talks}
 ---
+<br>
 - **23rd Annual Society of Multivariate Experimental Psychology (SMEP) Conference**<br>
 ***No single approach fits all: Testing two generations of structural equation modeling estimation***<br>
 Graduate Student Poster Presentation, University of Notre Dame, IN, USA (Oct 2025)
 - **Quant Forum**, UNC Chapel Hill, NC, USA<br>
 ***Integrative classification framework in machine learning for small samples and high-dimensional imbalanced data*** (Apr 2023)<br>
 ***Sequence analysis for classification: A hybrid Markov–machine learning approach*** (Apr 2022)<br>
-***Predicting suicide attempt in bipolar disorder with machine learning*** (May 2021)<br>
+***Predicting suicide attempt in bipolar disorder with machine learning*** (May 2021)<br><br>
 
 ## Peer-Reviewed Abstracts
 ---
+<br>
 - **Lee, C.\***, Yoon, J. H., & Bae, Y. C. (2024, November). Chaotic behaviors in opinion dynamics models
 influenced by external forces. Abstract accepted at the 25th International Symposium on Advanced
 Intelligent Systems (ISIS), Himeji, Japan. (presented by co-author)<br><br>
