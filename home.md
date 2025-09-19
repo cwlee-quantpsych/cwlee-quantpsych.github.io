@@ -188,7 +188,7 @@ permalink: /home
 
 
 ## Research Focus {#research}
-**Methodological Innovation**  
+### Methodological Innovation
 My research focuses on developing and disseminating advanced statistical methods to address the unique methodological challenges of psychological, behavioral, and social sciences. I primarily work across five statistical frameworks, often integrating them to create synergistic solutions that advance the field:
 
 <div style="margin-top:14px;">
@@ -198,13 +198,13 @@ My research focuses on developing and disseminating advanced statistical methods
 </div>
 <br>
 
-My methodological work unfolds through three core pipelines:
+**My methodological work unfolds through three core pipelines:**
 
 - Adapting deep learning techniques to enhance traditional psychological methods and meet the demands of research using passive sensing and large-scale behavioral and physiological data  
 - Drawing robust inference on intraindividual dynamic processes from limited samples and sparse time points  
 - Rethinking imprecision in psychological scales — not merely as measurement error to minimize, but as a source of information to be actively leveraged in statistical modeling
 
-**Substantive Translation**  
+## Substantive Translation
 <em>Precision psychology</em> is the motivating aim behind translating my core modeling frameworks and methodological innovations into meaningful applications across psychological, behavioral, and social sciences. This includes advancing individualized diagnosis and treatment of mental health conditions, uncovering brain–behavior dynamics, and supporting adaptive interventions in clinical and educational settings. 
 
 ---
@@ -263,29 +263,44 @@ I have collaborated on multiple interdisciplinary research projects, including:
 
 ---
 
-## Teaching & Instruction {#teaching}
-At UNC Chapel Hill, I have served as a teaching/instructional assistant for PSYC 210 (Statistical Principles of Psychological Research) across multiple semesters since 2020. In this role, I led recitation sessions, assisted students with SPSS- and Jamovi-based data analysis, and provided individualized support. In recognition of strong student evaluations, I was honored twice with the Departmental Teaching Assistant Commendation.
+## Teaching {#teaching}
+
+**University of North Carolina at Chapel Hill**
+***PSYC 210: Statistical Principles of Psychological Research***
+- Instructional Assistant
+    May 2025 – Present; May 2022 – May 2024
+- Teaching Assistant
+    Aug 2020 – Apr 2021
+    Awarded Departmental Undergraduate Teaching Commendation (both semesters)
+
+I have served as a teaching/instructional assistant for an undergraduate-level introductory statistics course in the Department of Psychology and Neuroscience, across multiple semesters since 2020. My responsibilities included leading recitation sessions, providing hands-on support with data analysis using SPSS and Jamovi, and offering individualized guidance to help students develop statistical reasoning.
 
 ---
 
 ## Academic Talks {#talks}
 - **No single approach fits all: Testing two generations of structural equation modeling estimation** — 23rd Annual Society of Multivariate Experimental Psychology (SMEP) Conference, University of Notre Dame, IN, USA. *Oct 2025*  
-- **Chaotic behaviors in opinion dynamics models influenced by external forces** — 25th International Symposium on Advanced Intelligent Systems (ISIS 2024), Himeji, Japan. *Nov 2024*  
 - **Integrative classification framework in machine learning for small samples and high-dimensional imbalanced data** — Quant Forum, Department of Psychology and Neuroscience, UNC Chapel Hill. *Apr 2023*  
 - **Sequence analysis for classification: Proposing a new hybrid Markov model–machine learning approach** — Quant Forum, Department of Psychology and Neuroscience, UNC Chapel Hill. *Apr 2022*  
 - **Prediction of suicide attempt by bipolar disorder patients with machine learning algorithms** — Quant Forum, Department of Psychology and Neuroscience, UNC Chapel Hill. *May 2021*
 
 ---
 
+## Peer-Reviewed Abstracts
+- **Lee, C.\***, Yoon, J. H., & Bae, Y. C. (2024, November). Chaotic behaviors in opinion dynamics models
+influenced by external forces. Abstract accepted at the 25th International Symposium on Advanced
+Intelligent Systems (ISIS), Himeji, Japan. (presented by co-author)
+
+---
+
 ## Life Before the Lab {#life}
-**Professionally Trained Classical Pianist**  
+### Professionally Trained Classical Pianist
 I began playing the piano at the age of 3 and pursued professional training at Yewon School and Seoul Arts High School, two of Korea’s most prestigious arts institutions. During my teenage years, I won several major national music competitions and performed extensively as both a soloist and an accompanist for violinists, cellists, and vocalists in recital and competition settings. I also collaborated with the Seoul Symphony Orchestra in a performance of Grieg’s Piano Concerto in a minor. At the age of 14, I was prestigiously selected as a musical prodigy by the Kumho Asiana Group—one of Korea’s leading conglomerates—which led to my own solo debut recital. My favorite repertoire includes Bach–Busoni’s *Chaconne*, Mendelssohn’s *Variations sérieuses*, Chopin’s Ballades, and more. 
 
 <div align="center" style="margin: 20px 0;">
   <img src="{{ '/assets/images/chaewon2.JPG' | relative_url }}" alt="Chaewon Lee performing" width="400" style="border-radius: 12px;" />
 </div>
 
-**Former Investment Banker and Economist**  
+### Former Investment Banker and Economist
 Before entering academia, I worked at Korea Investment & Securities in Yeouido, Seoul, widely recognized as Korea’s wall street. I first served as a junior investment banker in the Equity Capital Market Department, where I worked on IPOs for KOSPI and KOSDAQ, conducting due diligence, accounting analysis, and preparing listing applications. I later transitioned to the Research Center as a junior economist, where I authored analytical reports on global macroeconomic trends and financial markets, and led forecasting for indicators such as exchange rates, crude oil prices, and international policy rates.
 
 <div class="custom-copy" style="max-width:96vw;margin:40px auto 24px;padding:16px 32px 0;text-align:center;color:var(--unc-dark);font-size:14px;opacity:.9;border-top:1px solid rgba(19,41,75,.15);">
