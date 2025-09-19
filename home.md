@@ -238,7 +238,7 @@ My research focuses on developing and disseminating advanced statistical methods
 
 ### Submission Pending
 - **Lee, C.\*** No single approach fits all: Testing two generations of structural equation modeling estimation.  
-- **Lee, C.\*** Modeling imprecision in psychological data: least squares estimation with fuzzy numbers
+- **Lee, C.\*** Modeling imprecision in psychological data: Least squares estimation with fuzzy numbers
 - **Lee, C.\*** FLEX: An R package for fuzzy numbers and fuzzy linear regression.
 
 <br><br>
