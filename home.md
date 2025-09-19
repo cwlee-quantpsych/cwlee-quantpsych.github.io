@@ -203,20 +203,20 @@ I primarily work across five statistical frameworks, often integrating them to c
 
 **My methodological work unfolds through three core pipelines:**
 
-- Adapting deep learning techniques to enhance traditional psychological methods and meet the demands of research using passive sensing and large-scale behavioral and physiological data;  
-- Drawing robust inference on intraindividual dynamic processes from limited samples and sparse time points; 
+- Adapting deep learning techniques to enhance traditional psychological methods and big data research;  
+- Drawing robust inferences on individual dynamic processes from limited samples and sparse time points; 
 - Rethinking imprecision in psychological scales — not merely as measurement error to minimize, but as a source of information to be actively leveraged in statistical modeling
 
 ### Substantive Translation
 
 From a substantive standpoint, ***Precision psychology*** is the motivating aim behind translating my core modeling frameworks and methodological innovations into meaningful applications. This includes:
 
-- the advancement of individualized diagnosis and treatment of mental health conditions;
-- the investigation of person-specific brain–behavior dynamics;
-- the development of adaptive interventions in clinical, cognitive, and educational contexts
+- Advancement of individualized diagnosis and treatment of mental health conditions;
+- Investigation of person-specific brain–behavior dynamics;
+- Development of adaptive interventions in clinical, cognitive, and educational contexts
 <br>
 
-Ultimately, this line of work seeks to bridge the gap between methodological innovation and real-world impact. I hope this vision not only advances scientific understanding but also supports more effective, personalized solutions to pressing challenges in psychopathology, translational neuroscience, social science, and beyond.<br>
+Ultimately, this line of work seeks to bridge the gap between methodological innovation and real-world impact. My vision is not only to advance scientific understanding but also to deliver more effective, personalized solutions to pressing questions in psychopathology, translational neuroscience, social science, and beyond.<br>
 
 **Psychopathology**
 <br>
@@ -227,16 +227,19 @@ Ultimately, this line of work seeks to bridge the gap between methodological inn
 
 **Translational Neuroscience**
 <br>
-***Example: Individualized brain network***
+***Example: Individualized brain networks***
 - Aim: Person-specific mapping of brain dynamics and their links to cognition and behavior.
 - Context: Brain connectivity fluctuates across time and between individuals, influencing cognitive states and behavioral outcomes. A precision approach would identify these dynamic, person-specific patterns to guide both basic neuroscience and clinical applications (e.g., neurofeedback, brain stimulation therapies).
 - Data to use: Neuroimaging (fMRI, DTI), electrophysiological signals (EEG, MEG), digital behavioral measures, longitudinal cognitive testing, and multimodal integration of brain–behavior data.
 
 **Social Science**
-***Example: STEM education support***
-- Aim: Tailored, adaptive support for individual learning trajectories.
+<br>
+***Example: STEM education supports***
+- Aim: Tailored, adaptive support for individual learning success.
 - Context: Students vary widely in how they progress through STEM curricula. Precision methods can forecast learning outcomes and identify at-risk students, enabling timely and individualized interventions that foster mastery and persistence in STEM fields.
-- Data to use: Learning management system (LMS) clickstream data, homework and test performance, response times, classroom participation logs, and longitudinal academic records.
+- Data to use: Learning management system (LMS) clickstream data, homework and test performance, response times, classroom participation logs, and longitudinal academic records
+
+The trajectory of my current research has been naturally shaped by past projects and experiences, many of which are documented in published work. A comprehensive list of publications is provided below.
 
 ## Publications {#publications}
 ---
