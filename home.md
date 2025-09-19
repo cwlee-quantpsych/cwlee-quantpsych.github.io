@@ -136,7 +136,7 @@ permalink: /home
         <li><a href="#education">Education</a></li>
         <li><a href="#teaching">Teaching</a></li>
         <li><a href="#talks">Academic Talks</a></li>
-        <li><a href="#life">Life Before the Lab</a></li>
+        <li><a href="#life">Preludes to the Lab</a></li>
       </ul>
     </nav>
   </div>
@@ -205,10 +205,9 @@ My research focuses on developing and disseminating advanced statistical methods
 - Rethinking imprecision in psychological scales — not merely as measurement error to minimize, but as a source of information to be actively leveraged in statistical modeling
 
 ### Substantive Translation
-<em>Precision psychology</em> is the motivating aim behind translating my core modeling frameworks and methodological innovations into meaningful applications across psychological, behavioral, and social sciences. This includes advancing individualized diagnosis and treatment of mental health conditions, uncovering brain–behavior dynamics, and supporting adaptive interventions in clinical and educational settings. 
+***Precision psychology*** is the motivating aim behind translating my core modeling frameworks and methodological innovations into meaningful applications across psychological, behavioral, and social sciences. This includes advancing individualized diagnosis and treatment of mental health conditions, uncovering brain–behavior dynamics, and supporting adaptive interventions in clinical, cognitive, and educational domains. 
 <br>
 
-<br>
 ## Publications {#publications}
 ### Published  
 
@@ -231,8 +230,8 @@ My research focuses on developing and disseminating advanced statistical methods
 
 ### Submission Pending
 - **Lee, C.\*** No single approach fits all: Testing two generations of structural equation modeling estimation.  
-- **Lee, C.\*** Modeling imprecision in psychological data: Fuzzy set theory and its application with fuzzy least squares regression.  
-- **Lee, C.\*** FLEX: An R package for fuzzy numbers and fuzzy least squares regression.
+- **Lee, C.\*** Modeling imprecision in psychological data: least squares estimation with fuzzy numbers
+- **Lee, C.\*** FLEX: An R package for fuzzy numbers and fuzzy linear regression.
 
 ## Research Collaborations {#collaborations}
 I have collaborated on multiple interdisciplinary research projects, including:
@@ -269,18 +268,21 @@ I have collaborated on multiple interdisciplinary research projects, including:
 
 I have served as a teaching/instructional assistant for an undergraduate-level introductory statistics course in the Department of Psychology and Neuroscience, across multiple semesters since 2020. My responsibilities included leading recitation sessions, providing hands-on support with data analysis using SPSS and Jamovi, and offering individualized guidance to help students develop statistical reasoning.
 
-## Academic Talks {#talks}
-- **No single approach fits all: Testing two generations of structural equation modeling estimation** — 23rd Annual Society of Multivariate Experimental Psychology (SMEP) Conference, University of Notre Dame, IN, USA. *Oct 2025*  
-- **Integrative classification framework in machine learning for small samples and high-dimensional imbalanced data** — Quant Forum, Department of Psychology and Neuroscience, UNC Chapel Hill. *Apr 2023*  
-- **Sequence analysis for classification: Proposing a new hybrid Markov model–machine learning approach** — Quant Forum, Department of Psychology and Neuroscience, UNC Chapel Hill. *Apr 2022*  
-- **Prediction of suicide attempt by bipolar disorder patients with machine learning algorithms** — Quant Forum, Department of Psychology and Neuroscience, UNC Chapel Hill. *May 2021*
+## Research Talks {#talks}
+- **23rd Annual Society of Multivariate Experimental Psychology (SMEP) Conference**
+***No single approach fits all: Testing two generations of structural equation modeling estimation***
+Graduate Student Poster Presentation, University of Notre Dame, IN, USA (Oct 2025)
+- **Quant Forum**, UNC Chapel Hill, NC, USA
+***Integrative classification framework in machine learning for small samples and high-dimensional imbalanced data*** (Apr 2023)
+***Sequence analysis for classification: A hybrid Markov–machine learning approach*** (Apr 2022)
+***Predicting suicide attempt in bipolar disorder with machine learning*** (May 2021)
 
 ## Peer-Reviewed Abstracts
 - **Lee, C.\***, Yoon, J. H., & Bae, Y. C. (2024, November). Chaotic behaviors in opinion dynamics models
 influenced by external forces. Abstract accepted at the 25th International Symposium on Advanced
 Intelligent Systems (ISIS), Himeji, Japan. (presented by co-author)
 
-## Life Before the Lab {#life}
+### *Preludes to the Lab* {#life}
 ***Professionally Trained Classical Pianist***
 I began playing the piano at the age of 3 and pursued professional training at Yewon School and Seoul Arts High School, two of Korea’s most prestigious arts institutions. During my teenage years, I won several major national music competitions and performed extensively as both a soloist and an accompanist for violinists, cellists, and vocalists in recital and competition settings. I also collaborated with the Seoul Symphony Orchestra in a performance of Grieg’s Piano Concerto in a minor. At the age of 14, I was prestigiously selected as a musical prodigy by the Kumho Asiana Group—one of Korea’s leading conglomerates—which led to my own solo debut recital. My favorite repertoire includes Bach–Busoni’s *Chaconne*, Mendelssohn’s *Variations sérieuses*, Chopin’s Ballades, and more. 
 
@@ -289,7 +291,7 @@ I began playing the piano at the age of 3 and pursued professional training at Y
 </div>
 
 ***Former Investment Banker and Economist***
-Before entering academia, I worked at Korea Investment & Securities in Yeouido, Seoul, widely recognized as Korea’s wall street. I first served as a junior investment banker in the Equity Capital Market Department, where I worked on IPOs for KOSPI and KOSDAQ, conducting due diligence, accounting analysis, and preparing listing applications. I later transitioned to the Research Center as a junior economist, where I authored analytical reports on global macroeconomic trends and financial markets, and led forecasting for indicators such as exchange rates, crude oil prices, and international policy rates.
+Prior to academia, I worked at Korea Investment & Securities, one of Korea’s top-tier securities firms headquartered in Yeouido, Seoul—often referred to as Korea’s Wall Street. I first served as a junior investment banker in the Equity Capital Market Department, where I worked on IPOs for KOSPI and KOSDAQ, conducting due diligence, accounting analysis, and preparing listing applications. I later transitioned to the Research Center as a junior economist, where I authored economic reports on global macro-financial trends and led forecasts for key indicators such as exchange rates, oil prices, and international policy rates.
 
 <div class="custom-copy" style="max-width:96vw;margin:40px auto 24px;padding:16px 32px 0;text-align:center;color:var(--unc-dark);font-size:14px;opacity:.9;border-top:1px solid rgba(19,41,75,.15);">
   © 2025 Chaewon Lee. All rights reserved.
