@@ -242,7 +242,7 @@ Ultimately, this line of work seeks to bridge the gap between methodological inn
 - **Context**: Students vary widely in how they progress through STEM curricula. Precision methods can forecast learning outcomes and identify at-risk students, enabling timely and individualized interventions that foster mastery and persistence in STEM fields.
 - **Data to use**: Learning management system (LMS) clickstream data, homework and test performance, response times, classroom participation logs, and longitudinal academic records
 
-The trajectory of my current research has been naturally shaped by past projects and experiences, many of which are documented in published work. A comprehensive list of publications is provided below.
+My present line of research has been naturally shaped by prior investigations, many of which are documented in the publications provided below.
 
 ## Publications {#publications}
 ---
