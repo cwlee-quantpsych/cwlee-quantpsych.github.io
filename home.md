@@ -30,13 +30,25 @@ permalink: /home
     overflow-x:hidden;
   }
 
-  /* === Wide but with comfortable side margins === */
-  main, .page-content{
-    overflow:visible;
-    max-width:90vw;          /* narrower than 96vw */
-    width:90vw;
-    margin:0 auto;
-    padding:0 60px;          /* more padding on both ends */
+  /* === Content & header width: center 70% (15% margin each side) === */
+  main, .page-content,
+  .initial-content,
+  .page,
+  .page__inner-wrap,
+  .page__content,
+  .wrapper,
+  .container,
+  .page__hero--overlay .wrapper,
+  .hero-grid {
+    max-width:70vw !important;
+    width:70vw !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+  }
+
+  main, .page-content, .page__content {
+    padding-left:40px !important;
+    padding-right:40px !important;
   }
 
   h1,h2,h3,h4,h5,h6{ font-weight:700; color:var(--unc-dark); }
@@ -56,31 +68,6 @@ permalink: /home
     content:none !important;
   }
 
-  /* === Force theme wrappers to match this width === */
-  .initial-content,
-  .page,
-  .page__inner-wrap,
-  .page__content,
-  .wrapper,
-  .container,
-  .page__hero--overlay .wrapper{
-    max-width:90vw !important;
-    width:90vw !important;
-    margin-left:auto !important;
-    margin-right:auto !important;
-  }
-  .page__content{
-    padding-left:60px !important;
-    padding-right:60px !important;
-  }
-  .page .archive,
-  .page .entries,
-  .page .grid__wrapper{
-    max-width:90vw !important;
-    width:90vw !important;
-  }
-  .page__content img{ max-width:100% !important; height:auto !important; }
-
   /* -------- HEADER (two separate pills) -------- */
   .hero-wrap{
     position:sticky; top:0; z-index:20;
@@ -88,8 +75,8 @@ permalink: /home
     backdrop-filter:blur(6px);
   }
   .hero-grid{
-    max-width:90vw; margin:0 auto; padding:0 12px;
     display:grid; grid-template-columns:auto 1fr; gap:18px; align-items:center;
+    padding:0 12px;
   }
 
   /* Name pill */
@@ -127,7 +114,7 @@ permalink: /home
   .tabs-list a:hover{ background:var(--tab-accent); color:#fff; transform:translateY(-1px); }
   .tabs-list a.active{ background:var(--unc-dark); color:#fff; }
 
-  /* Narrow screens: horizontal scroll for tabs */
+  /* Responsive tabs */
   @media (max-width:1280px){
     .tabs-card{ overflow-x:auto; -webkit-overflow-scrolling:touch; }
     .tabs-list{ flex-wrap:nowrap; white-space:nowrap; gap:20px; }
@@ -141,13 +128,15 @@ permalink: /home
   html{ scroll-behavior:smooth; }
   h2[id], h3[id]{ scroll-margin-top: calc(var(--site-header-h,0px) + 90px); }
   .top-spacer{ clear:both; margin-top:14px; }
+
+  /* === Remove footer === */
+  .page__footer, .site-footer, footer { display:none !important; }
 </style>
 
-<!-- HEADER: separate pill for name + pill for tabs -->
+<!-- HEADER -->
 <div class="hero-wrap" role="navigation" aria-label="Section navigation">
   <div class="hero-grid">
     <h1 class="name-card">Chaewon&nbsp;Lee</h1>
-
     <nav class="tabs-card" aria-label="Primary">
       <ul class="tabs-list">
         <li><a href="#research">Research</a></li>
