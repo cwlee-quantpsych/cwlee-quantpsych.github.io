@@ -11,9 +11,21 @@ permalink: /home
     --site-header-h: 56px;
 
     /* UNC-inspired palette */
-    --unc-navy: #13294B;      /* dark navy for text */
-    --unc-gray: #4B4F54;      /* softer gray */
-    --unc-sky: #E6F1FB;       /* pale sky blue background */
+    --unc-navy: #13294B;      /* headings / emphasis */
+    --unc-gray: #4B4F54;      /* body text */
+    --unc-sky:  #E6F1FB;      /* pale sky blue background */
+
+    /* Layout widths */
+    --content-w: 76vw;        /* template text width (a bit wider than before) */
+    --pill-overhang: 12vw;    /* how much wider the pill is than the content */
+  }
+
+  /* Kill theme header/footer completely */
+  header[role="banner"], .masthead, .site-header, .page__header,
+  .site-title, a.site-title, .masthead__title, .header__title, .navbar-brand,
+  .page__footer, .site-footer, footer {
+    display:none !important; visibility:hidden !important; pointer-events:none !important;
+    margin:0 !important; padding:0 !important; height:0 !important; border:0 !important;
   }
 
   body {
@@ -22,91 +34,98 @@ permalink: /home
     line-height: 1.65;
     color: var(--unc-gray);
     background: var(--unc-sky);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
     color: var(--unc-navy);
     font-weight: 800;
+    letter-spacing: -.2px;
   }
 
-  p, li {
-    color: var(--unc-gray);
-  }
+  p, li { color: var(--unc-gray); }
 
-  /* ===== HEADER: Pill centered on template but wider ===== */
+  /* ===== Tabs-only sticky header ===== */
   .hero-wrap{
-    position:sticky;
-    top:0;
-    z-index:50;
-    padding:14px 0 18px;
-    backdrop-filter:blur(6px);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    padding: 14px 0 18px;
+    backdrop-filter: blur(6px);
   }
 
+  /* This defines the template’s center line */
   .hero-grid{
-    max-width:70vw;       /* match content width */
-    margin:0 auto;
-    position:relative;
+    max-width: var(--content-w);
+    margin: 0 auto;
+    position: relative;
   }
 
+  /* The pill is wider than the template, but center-locked to it */
   .tabs-card{
-    position:relative;
-    left:50%;
-    transform:translateX(-50%);  /* align to center of template */
-    width:calc(100% + 18vw);     /* extend wider than template */
-    max-width:min(88vw, 1400px); /* cap for ultrawide screens */
-    background:#fff;
-    border:1px solid rgba(19,41,75,.14);
-    border-radius:28px;
-    box-shadow:0 8px 14px rgba(19,41,75,.08);
-    padding:18px 36px;
-    overflow-x:auto;
-    -webkit-overflow-scrolling:touch;
-    scrollbar-width:none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);                          /* lock to template center */
+    width: calc(100% + var(--pill-overhang));             /* extend symmetrically */
+    max-width: min(90vw, 1400px);                         /* safety cap */
+    background: #fff;
+    border: 1px solid rgba(19,41,75,.14);
+    border-radius: 28px;
+    box-shadow: 0 8px 14px rgba(19,41,75,.08);
+    padding: 18px 36px;
+    overflow-x: auto;                                     /* keep one line; scroll only if necessary */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
   }
 
   .tabs-list{
-    display:flex;
-    flex-wrap:nowrap;
-    white-space:nowrap;
-    justify-content:center;
-    align-items:center;
-    gap:0 40px;
-    list-style:none;
-    margin:0;
-    padding:0;
+    display: flex;
+    flex-wrap: nowrap; white-space: nowrap;               /* ONE line */
+    justify-content: center; align-items: center;
+    gap: 0 40px;
+    list-style: none; margin: 0; padding: 0;
   }
 
   .tabs-list a{
-    font-weight:700;
-    color:var(--unc-navy);
-    text-decoration:none;
-    padding:6px 8px;
-    border-radius:8px;
-    transition:background .15s ease,color .15s ease,transform .08s ease;
+    font-weight: 700;
+    color: var(--unc-navy);
+    text-decoration: none;
+    padding: 6px 8px;
+    border-radius: 8px;
+    transition: background .15s ease, color .15s ease, transform .08s ease;
   }
-
   .tabs-list a:hover{
-    background:var(--tab-accent);
-    color:#fff;
-    transform:translateY(-1px);
+    background: var(--tab-accent);
+    color: #fff;
+    transform: translateY(-1px);
   }
-
   .tabs-list a.active{
-    background:var(--unc-navy);
-    color:#fff;
+    background: var(--unc-navy);
+    color: #fff;
   }
 
-  @media (max-width:1280px){
-    .tabs-list{ gap:0 28px; }
+  /* Anchor offset so headings don’t hide under sticky pill */
+  :root { --anchor-offset: 120px; } /* tweak to 110–150 if needed */
+  h2[id], h3[id], section[id] { scroll-margin-top: var(--anchor-offset); }
+  html { scroll-behavior: smooth; }
+
+  /* Responsive adjustments */
+  @media (max-width: 1280px){
+    .tabs-list{ gap: 0 28px; }
+  }
+  @media (max-width: 980px){
+    .hero-grid{ max-width: 90vw; }             /* give the template more room on phones */
+    .tabs-card{ width: calc(100% + 8vw); }     /* reduce overhang a bit on narrow screens */
+    .tabs-list a{ font-size: .95rem; }
   }
 
-  @media (max-width:980px){
-    .tabs-card{ width:calc(100% + 10vw); } /* reduce overhang */
-    .tabs-list a{ font-size:.95rem; }
-  }
+  /* Space below header */
+  .top-spacer{ margin-top: 14px; }
 </style>
 
-<!-- HEADER: centered pill -->
+<!-- HEADER: centered wide pill -->
 <div class="hero-wrap" role="navigation" aria-label="Section navigation">
   <div class="hero-grid">
     <nav class="tabs-card" aria-label="Primary">
@@ -124,12 +143,48 @@ permalink: /home
 </div>
 
 <script>
-  document.querySelectorAll('.tabs-list a')
-    .forEach(a => a.addEventListener('click', ()=>a.blur(), {passive:true}));
+  // Precise offset scrolling that adapts to the pill height
+  function getHeaderOffset(extra = 12) {
+    const pill = document.querySelector('.hero-wrap');
+    const h = pill ? pill.getBoundingClientRect().height : 0;
+    return h + extra;
+  }
+
+  function scrollToId(id) {
+    const el = document.querySelector(id);
+    if (!el) return;
+    const y = el.getBoundingClientRect().top + window.pageYOffset - getHeaderOffset();
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+
+  // Intercept tab clicks
+  document.querySelectorAll('.tabs-list a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const id = a.getAttribute('href');
+      history.pushState(null, '', id); // keep URL updated
+      scrollToId(id);
+    }, { passive: false });
+  });
+
+  // Correct initial hash position and on back/forward
+  function handleHashOnLoad() {
+    if (location.hash) scrollToId(location.hash);
+  }
+  window.addEventListener('load', handleHashOnLoad);
+  window.addEventListener('popstate', handleHashOnLoad);
+
+  // Re-nudge after resize (e.g., when fonts load)
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    if (location.hash) {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => scrollToId(location.hash), 150);
+    }
+  });
 </script>
 
 <div class="top-spacer"></div>
-
 
 
 ## Research Focus {#research}
