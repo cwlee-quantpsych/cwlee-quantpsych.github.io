@@ -16,8 +16,8 @@ permalink: /home
     --unc-sky:  #E6F1FB;      /* pale sky blue background */
 
     /* Layout widths */
-    --content-w: 76vw;        /* template text width (a bit wider than before) */
-    --pill-overhang: 22vw;    /* how much wider the pill is than the content */
+    --content-w: 80vw;        /* template text width (a bit wider than before) */
+    --pill-overhang: 30vw;    /* how much wider the pill is than the content */
   }
 
   /* Kill theme header/footer completely */
