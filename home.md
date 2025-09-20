@@ -281,19 +281,19 @@ My present line of research has been naturally shaped by prior investigations, m
 <br>
 I have collaborated on multiple interdisciplinary research projects, including:
 
-**EPICS Mood and Schizophrenia Lab (PI: Deldin, P.J., University of Michigan):**  
+- **EPICS Mood and Schizophrenia Lab (PI: Deldin, P.J., University of Michigan):**  
 Analyzed event-related potentials (ERP) to classify psychiatric patients and predict suicidality in individuals diagnosed with bipolar disorder, using deep learning and feature selection.  
 
-**PROACTIVE Project (PI: Manschreck, T.C., Harvard Medical School / Beth Israel Deaconess Medical Center):**  
+- **PROACTIVE Project (PI: Manschreck, T.C., Harvard Medical School / Beth Israel Deaconess Medical Center):**  
 Investigated relationships between patients’ metabolic features and the effectiveness of schizophrenia treatments, including long-acting injectable Risperidone and oral antipsychotics.  
 
-**NSF IUSE Student Success Project (PIs: Gates, K.M., & Greene, J.A., UNC School of Education / Department of Psychology and Neuroscience):**  
+- **NSF IUSE Student Success Project (PIs: Gates, K.M., & Greene, J.A., UNC School of Education / Department of Psychology and Neuroscience):**  
 Developed a novel hybrid framework, the sequence-based Markov machine learning approach (**seqMAC**), to forecast end-of-course performance from early clickstream data in online learning environments.
 
-**Tinnitus Disorder Research (PI: Rodebaugh, T.L., UNC Chapel Hill):**  
+- **Tinnitus Disorder Research (PI: Rodebaugh, T.L., UNC Chapel Hill):**  
 Modeled multi-subject time series of tinnitus symptoms using Group Iterative Multiple Model Estimation (GIMME).  
 
-**Collaborations with Korean Research Teams:**  
+- **Collaborations with Korean Research Teams:**  
 Currently engaged in projects applying fuzzy statistics and chaos theory to model non-linear dynamics in social opinion formation.<br><br>  
 
 ## Education {#education}
