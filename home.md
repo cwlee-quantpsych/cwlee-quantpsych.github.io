@@ -16,7 +16,7 @@ permalink: /home
     --unc-sky:  #E6F1FB;
 
     /* Layout widths (only change this to widen/narrow the template) */
-    --content-w: 1100px;
+    --content-w: 1200px;
     --pill-overhang: 30vw;
   }
 
@@ -52,6 +52,19 @@ permalink: /home
     padding: 0 32px;
   }
 
+  /* NEW: ensure outer wrappers don't cap the width */
+  .initial-content,
+  .page,
+  .page__content,
+  .page__inner-wrap {
+    max-width: var(--content-w) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 100%;
+  }
+
   p, li {
     color: var(--unc-gray);
     text-align: justify;   /* optional: justify alignment */
@@ -81,7 +94,7 @@ permalink: /home
     left: 50%;
     transform: translateX(-50%);
     width: calc(100% + var(--pill-overhang));
-    max-width: min(90vw, 1400px);
+    max-width: min(95vw, 1600px); /* slightly higher cap so wider content looks balanced */
     background: #fff;
     border: 1px solid rgba(19,41,75,.14);
     border-radius: 28px;
@@ -185,6 +198,7 @@ permalink: /home
 </script>
 
 <div class="top-spacer"></div>
+
 
 ## Research Commitments {#research}
 ---
