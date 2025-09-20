@@ -284,7 +284,7 @@ My present line of research has been naturally shaped by prior investigations, m
 #### Submission Pending
 - **Lee, C.\*** No single approach fits all: Testing two generations of structural equation modeling estimation.  
 - **Lee, C.\*** Modeling imprecision in psychological data: Least squares estimation with fuzzy numbers.  
-- **Lee, C.\*** *FLEX: An R package for fuzzy numbers and fuzzy linear regression.*  
+- **Lee, C.\*** FLEX: An R package for fuzzy numbers and fuzzy linear regression. 
 
 #### In Preparation
 - **Lee, C.\*** Generalizing across studies and persons: Meta-learning in psychology (PhD dissertation).  
