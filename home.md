@@ -30,7 +30,7 @@ permalink: /home
 
   body {
     font-family: 'Lato', system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.65;
     color: var(--unc-gray);
     background: var(--unc-sky);
@@ -202,6 +202,7 @@ permalink: /home
 
 ## Research Commitments {#research}
 ---
+<br>
 
 ### Methodological Innovation
 From a methodological standpoint, my research aim is to create statistical innovations that move psychological, behavioral, and neural research forward. I primarily work across **five statistical frameworks**, often integrating them to create synergistic solutions that advance the field:
@@ -251,10 +252,11 @@ Ultimately, this line of work seeks to bridge the gap between methodological inn
 - **Context**: Students vary widely in how they progress through STEM curricula. Precision methods can forecast learning outcomes and identify at-risk students, enabling timely and individualized interventions that foster mastery and persistence in STEM fields.
 - **Data to use**: Learning management system (LMS) clickstream data, homework and test performance, response times, classroom participation logs, and longitudinal academic records
 
-My present line of research has been naturally shaped by prior investigations, many of which are documented in the publications provided below.
+My present line of research has been naturally shaped by prior investigations, many of which are documented in the publications provided below.<br>
 
 ## Publications
 ---
+<br>
 
 ### Peer-Reviewed Articles
 
@@ -285,11 +287,12 @@ My present line of research has been naturally shaped by prior investigations, m
 - **Master’s Thesis (2017, Yonsei University):** *Impacts of Intellectual Property Rights on the Expansion of Korean Pharmaceutical Industry*  
 
 ### Software Program
-- **Lee, C.\*** (2025). *flex: Fuzzy least squares estimation with explicit formula* (Version 0.1.0) [R package]. Comprehensive R Archive Network (CRAN). [DOI](https://doi.org/10.32614/CRAN.package.flex)  
+- **Lee, C.\*** (2025). *flex: Fuzzy least squares estimation with explicit formula* (Version 0.1.0) [R package]. Comprehensive R Archive Network (CRAN). [DOI](https://doi.org/10.32614/CRAN.package.flex)<br>
 
 
 ## Research Collaborations {#collaborations}
 ---
+<br>
 
 I have collaborated on multiple interdisciplinary research projects, including:
 
@@ -306,18 +309,20 @@ Developed a novel hybrid framework, the sequence-based Markov machine learning a
 Modeled multi-subject time series of tinnitus symptoms using Group Iterative Multiple Model Estimation (GIMME).  
 
 - **Collaborations with Korean Research Teams:**  
-Currently engaged in projects applying fuzzy statistics and chaos theory to model non-linear dynamics in social opinion formation.<br><br>  
+Currently engaged in projects applying fuzzy statistics and chaos theory to model non-linear dynamics in social opinion formation. 
+<br>
 
 ## Education {#education}
 ---
-
+<br>
 **M.S. in Applied Statistics**  University of Michigan, Ann Arbor, MI, USA  
 **M.A. in Economics**  Yonsei University, Seoul, South Korea  
-**B.S. in Biology**  Yonsei University, Seoul, South Korea<br><br>
+**B.S. in Biology**  Yonsei University, Seoul, South Korea
+<br>
 
 ## Teaching {#teaching}
 ---
-
+<br>
 **University of North Carolina at Chapel Hill**<br>
 ***PSYC 210: Statistical Principles of Psychological Research***
 - **Instructional Assistant**
@@ -326,10 +331,12 @@ Currently engaged in projects applying fuzzy statistics and chaos theory to mode
     Aug 2020 – Apr 2021<br>
     Awarded Departmental Undergraduate Teaching Commendation (both semesters)
   
-I have served as a teaching/instructional assistant for an undergraduate-level introductory statistics course in the Department of Psychology and Neuroscience, across multiple semesters since 2020. My responsibilities included leading recitation sessions, providing hands-on support with data analysis using SPSS and Jamovi, and offering individualized guidance to help students develop statistical reasoning.<br><br> 
+I have served as a teaching/instructional assistant for an undergraduate-level introductory statistics course in the Department of Psychology and Neuroscience, across multiple semesters since 2020. My responsibilities included leading recitation sessions, providing hands-on support with data analysis using SPSS and Jamovi, and offering individualized guidance to help students develop statistical reasoning.
+<br>
 
 ## Preludes to the Lab {#life}
 ---
+<br>
 
 ***Professionally Trained Classical Pianist***<br>
 I began playing the piano at the age of 3 and pursued professional training at Yewon School and Seoul Arts High School, two of Korea’s most prestigious arts institutions. During my teenage years, I won several major national music competitions and performed extensively as both a soloist and an accompanist for violinists, cellists, and vocalists in recital and competition settings. I also collaborated with the Seoul Symphony Orchestra in a performance of Grieg’s Piano Concerto in a minor. At the age of 14, I was prestigiously selected as a musical prodigy by the Kumho Asiana Group—one of Korea’s leading conglomerates—which led to my own solo debut recital. My favorite repertoire includes Bach–Busoni’s *Chaconne*, Mendelssohn’s *Variations sérieuses*, Chopin’s Ballades, and more. 
