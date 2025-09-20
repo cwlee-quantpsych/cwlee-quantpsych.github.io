@@ -291,6 +291,7 @@ My present line of research has been naturally shaped by prior investigations, m
 - **Lee, C.\*** (2025). *flex: Fuzzy least squares estimation with explicit formula* (Version 0.1.0) [R package]. Comprehensive R Archive Network (CRAN). [DOI](https://doi.org/10.32614/CRAN.package.flex)
 <br>
 <br>
+
 ## Research Collaborations {#collaborations}
 ---
 <br>
