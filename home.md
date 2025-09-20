@@ -249,6 +249,7 @@ My present line of research has been naturally shaped by prior investigations, m
 <br>
 
 **Peer-Reviewed Articles**
+<br>
 <u><b>Published</b></u>
 <br>
 - **Lee, C.\***, & Gates, K. M. (2025). Automated machine learning for classification and regression: A tutorial for psychologists. <em>Behavior Research Methods</em>, 57(2), 262. [DOI](https://doi.org/10.3758/s13428-025-02684-5)  
