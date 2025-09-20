@@ -143,29 +143,44 @@ permalink: /home
   h2[id], h3[id], section[id] { scroll-margin-top: var(--anchor-offset); }
   html { scroll-behavior: smooth; }
 
-  /* Responsive */
-  @media (max-width: 1280px){
-    .tabs-list{ gap: 0 28px; }
+/* Responsive */
+@media (max-width: 1280px){
+  .tabs-list{ gap: 0 28px; }
+}
+
+@media (max-width: 980px){
+  .hero-grid{
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 0;
   }
-  @media (max-width: 980px){
-    .hero-grid{ max-width: 100vw; margin: 0 auto; padding: 0; }
-    /* Pill stays centered, extends past both sides, and is swipeable */
-    .tabs-card{
-      left: 50%;
-      transform: translateX(-50%);
-      width: 120vw;
-      max-width: none;
-      padding: 14px 20px;
-      overflow-x: auto;
-    }
-    .tabs-list{
-      justify-content: center;
-      flex-wrap: nowrap;
-      white-space: nowrap;
-      gap: 0 28px;
-    }
-    .tabs-list a{ font-size: .95rem; }
+
+  /* Pill stays centered, equal to viewport width, scrolls horizontally */
+  .tabs-card{
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    max-width: 100vw;
+    padding: 12px 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    touch-action: pan-x;
   }
+  .tabs-card::-webkit-scrollbar{ display: none; }
+
+  /* Tabs list is wider than pill so both ends are scrollable */
+  .tabs-list{
+    min-width: 125vw;      /* wider than viewport */
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 0 28px;
+    padding: 0 20px;
+  }
+
+  .tabs-list a{ font-size: .95rem; }
+}
 
   .top-spacer{ margin-top: 14px; }
 </style>
