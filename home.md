@@ -313,8 +313,8 @@ Analyzed event-related potentials (ERP) to classify psychiatric patients and pre
 - **PROACTIVE Project (PI: Manschreck, T.C., Harvard Medical School / Beth Israel Deaconess Medical Center):**  
 Investigated relationships between patients’ metabolic features and the effectiveness of schizophrenia treatments, including long-acting injectable Risperidone and oral antipsychotics.  
 
-- **NSF IUSE Student Success Project (PIs: Gates, K.M., & Greene, J.A., UNC School of Education / Department of Psychology and Neuroscience):**  
-Developed a novel hybrid framework, the sequence-based Markov machine learning approach (**seqMAC**), to forecast end-of-course performance from early clickstream data in online learning environments.
+- **NSF IUSE Student Success Project (PIs: Gates, K.M., & Greene, J.A., UNC School of Education):**  
+Developed a novel hybrid framework, the sequence-based Markov machine learning approach (seqMAC), to forecast end-of-course performance from early clickstream data in online learning environments.
 
 - **Tinnitus Disorder Research (PI: Rodebaugh, T.L., UNC Chapel Hill):**  
 Modeled multi-subject time series of tinnitus symptoms using Group Iterative Multiple Model Estimation (GIMME).  
