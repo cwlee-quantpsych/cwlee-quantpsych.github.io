@@ -40,6 +40,9 @@ permalink: /home
     overflow-x: hidden;
   }
 
+  /* Keep media from overflowing the viewport (prevents forced zooming) */
+  img, video, iframe { max-width: 100%; height: auto; }
+
   h1, h2, h3, h4, h5, h6 {
     color: var(--unc-navy);
     font-weight: 800;
@@ -143,44 +146,61 @@ permalink: /home
   h2[id], h3[id], section[id] { scroll-margin-top: var(--anchor-offset); }
   html { scroll-behavior: smooth; }
 
-/* Responsive */
-@media (max-width: 1280px){
-  .tabs-list{ gap: 0 28px; }
-}
+  /* ---------- Responsive ---------- */
 
-@media (max-width: 980px){
-  .hero-grid{
-    max-width: 100vw;
-    margin: 0 auto;
-    padding: 0;
+  /* Tablet tweaks */
+  @media (max-width: 1280px){
+    .tabs-list{ gap: 0 28px; }
   }
 
-  /* Pill stays centered, equal to viewport width, scrolls horizontally */
-  .tabs-card{
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
-    max-width: 100vw;
-    padding: 12px 0;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    touch-action: pan-x;
-  }
-  .tabs-card::-webkit-scrollbar{ display: none; }
+  /* Phone optimizations to avoid any need to zoom */
+  @media (max-width: 980px){
+    /* Slightly reduce heading sizes for better fit */
+    h1 { font-size: clamp(26px, 7vw, 34px); }
+    h2 { font-size: clamp(22px, 5.8vw, 28px); }
+    p  { font-size: 15.5px; }
+    li { font-size: 15px; }
 
-  /* Tabs list is wider than pill so both ends are scrollable */
-  .tabs-list{
-    min-width: 125vw;      /* wider than viewport */
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-    gap: 0 28px;
-    padding: 0 20px;
-  }
+    /* Tighten inner paddings so content fits visually */
+    main, .page-content,
+    .initial-content, .page, .page__content, .page__inner-wrap {
+      padding-left: 18px !important;
+      padding-right: 18px !important;
+      max-width: 100vw !important;   /* never wider than the screen */
+    }
 
-  .tabs-list a{ font-size: .95rem; }
-}
+    .hero-grid{
+      max-width: 100vw;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    /* Pill stays centered, equal to viewport width, scrolls horizontally */
+    .tabs-card{
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw;
+      max-width: 100vw;
+      padding: 12px 0;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      touch-action: pan-x;
+    }
+    .tabs-card::-webkit-scrollbar{ display: none; }
+
+    /* Tabs list is wider than pill so both ends are scrollable */
+    .tabs-list{
+      min-width: 125vw;      /* wider than viewport */
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      gap: 0 28px;
+      padding: 0 20px;
+    }
+
+    .tabs-list a{ font-size: .95rem; }
+  }
 
   .top-spacer{ margin-top: 14px; }
 </style>
@@ -236,8 +256,6 @@ permalink: /home
 </script>
 
 <div class="top-spacer"></div>
-
-
 
 ## Research Commitments {#research}
 ---
@@ -340,7 +358,7 @@ My present line of research has been naturally shaped by prior investigations, m
 I have collaborated on multiple interdisciplinary research projects, including:
 
 - **EPICS Mood and Schizophrenia Lab (PI: Deldin, P.J., University of Michigan):**  
-Analyzed event-related potentials (ERP) to classify psychiatric patients and predict suicidality in individuals diagnosed with bipolar disorder, using deep learning and feature selection.  
+Analyzed event-related potentials (ERPs) to classify psychiatric patients and predict suicidality in individuals diagnosed with bipolar disorder, using deep learning and feature selection.  
 
 - **PROACTIVE Project (PI: Manschreck, T.C., Harvard Medical School / Beth Israel Deaconess Medical Center):**  
 Investigated relationships between patients’ metabolic features and the effectiveness of schizophrenia treatments, including long-acting injectable Risperidone and oral antipsychotics.  
@@ -359,7 +377,7 @@ Currently engaged in projects applying fuzzy statistics and chaos theory to mode
 ## Education {#education}
 ---
 <br>
-**Ph.D.in Quantitative Psychology**  University of North Carolina, Chapel Hill, NC, USA (May 2026)  
+**Ph.D. in Quantitative Psychology**  University of North Carolina, Chapel Hill, NC, USA (May 2026)  
 **M.S. in Applied Statistics**  University of Michigan, Ann Arbor, MI, USA  
 **M.A. in Economics**  Yonsei University, Seoul, South Korea  
 **B.S. in Biology**  Yonsei University, Seoul, South Korea
