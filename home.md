@@ -16,7 +16,7 @@ permalink: /home
     --unc-sky:  #E6F1FB;      /* pale sky blue background */
 
     /* Layout widths */
-    --content-w: 800px;        /* template text width (a bit wider than before) */
+    --content-w: 1100px;        /* template text width (a bit wider than before) */
     --pill-overhang: 30vw;    /* how much wider the pill is than the content */
   }
 
@@ -44,6 +44,12 @@ permalink: /home
     font-weight: 800;
     letter-spacing: -.2px;
   }
+
+  main, .page-content {
+  max-width: var(--content-w);
+  margin: 0 auto;
+  padding: 0 32px;
+}
 
  p, li {
   color: var(--unc-gray);
