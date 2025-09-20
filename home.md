@@ -142,15 +142,25 @@ li {
   h2[id], h3[id], section[id] { scroll-margin-top: var(--anchor-offset); }
   html { scroll-behavior: smooth; }
 
-  @media (max-width: 1280px){
-    .tabs-list{ gap: 0 28px; }
-  }
-  @media (max-width: 980px){
-    .hero-grid{ max-width: 90vw; }
-    .tabs-card{ width: calc(100% + 8vw); }
-    .tabs-list a{ font-size: .95rem; }
-  }
+@media (max-width: 1280px){
+  .tabs-list{ gap: 0 28px; }
+}
 
+@media (max-width: 980px){
+  .hero-grid{ max-width: 100vw; padding: 0; }
+  .tabs-card{
+    left: 0;
+    transform: none;
+    width: 120vw;        /* 👈 still wider than the viewport */
+    max-width: none;
+    padding: 14px 20px;
+  }
+  .tabs-list{
+    justify-content: flex-start;
+  }
+  .tabs-list a{ font-size: .95rem; }
+}
+  
   .top-spacer{ margin-top: 14px; }
 </style>
 
