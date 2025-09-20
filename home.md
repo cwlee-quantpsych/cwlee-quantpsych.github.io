@@ -201,7 +201,7 @@ permalink: /home
 
 
 ## Research Commitments {#research}
-<br>
+---
 
 ### Methodological Innovation
 From a methodological standpoint, my research aim is to create statistical innovations that move psychological, behavioral, and neural research forward. I primarily work across **five statistical frameworks**, often integrating them to create synergistic solutions that advance the field:
@@ -254,7 +254,7 @@ Ultimately, this line of work seeks to bridge the gap between methodological inn
 My present line of research has been naturally shaped by prior investigations, many of which are documented in the publications provided below.
 
 ## Publications
-<br>
+---
 
 ### Peer-Reviewed Articles
 
@@ -289,7 +289,8 @@ My present line of research has been naturally shaped by prior investigations, m
 
 
 ## Research Collaborations {#collaborations}
-<br>
+---
+
 I have collaborated on multiple interdisciplinary research projects, including:
 
 - **EPICS Mood and Schizophrenia Lab (PI: Deldin, P.J., University of Michigan):**  
@@ -308,13 +309,14 @@ Modeled multi-subject time series of tinnitus symptoms using Group Iterative Mul
 Currently engaged in projects applying fuzzy statistics and chaos theory to model non-linear dynamics in social opinion formation.<br><br>  
 
 ## Education {#education}
-<br>
+---
+
 **M.S. in Applied Statistics**  University of Michigan, Ann Arbor, MI, USA  
 **M.A. in Economics**  Yonsei University, Seoul, South Korea  
 **B.S. in Biology**  Yonsei University, Seoul, South Korea<br><br>
 
 ## Teaching {#teaching}
-<br>
+---
 
 **University of North Carolina at Chapel Hill**<br>
 ***PSYC 210: Statistical Principles of Psychological Research***
@@ -327,7 +329,8 @@ Currently engaged in projects applying fuzzy statistics and chaos theory to mode
 I have served as a teaching/instructional assistant for an undergraduate-level introductory statistics course in the Department of Psychology and Neuroscience, across multiple semesters since 2020. My responsibilities included leading recitation sessions, providing hands-on support with data analysis using SPSS and Jamovi, and offering individualized guidance to help students develop statistical reasoning.<br><br> 
 
 ## Preludes to the Lab {#life}
-<br>
+---
+
 ***Professionally Trained Classical Pianist***<br>
 I began playing the piano at the age of 3 and pursued professional training at Yewon School and Seoul Arts High School, two of Korea’s most prestigious arts institutions. During my teenage years, I won several major national music competitions and performed extensively as both a soloist and an accompanist for violinists, cellists, and vocalists in recital and competition settings. I also collaborated with the Seoul Symphony Orchestra in a performance of Grieg’s Piano Concerto in a minor. At the age of 14, I was prestigiously selected as a musical prodigy by the Kumho Asiana Group—one of Korea’s leading conglomerates—which led to my own solo debut recital. My favorite repertoire includes Bach–Busoni’s *Chaconne*, Mendelssohn’s *Variations sérieuses*, Chopin’s Ballades, and more. 
 
