@@ -344,7 +344,7 @@ Currently engaged in projects applying fuzzy statistics and chaos theory to mode
     Aug 2020 – Apr 2021<br>
     Awarded Departmental Undergraduate Teaching Commendation (both semesters)
   
-I have served as a teaching/instructional assistant for an undergraduate-level introductory statistics course in the Department of Psychology and Neuroscience, across multiple semesters since 2020. My responsibilities included leading recitation sessions, providing hands-on support with data analysis using SPSS and Jamovi, and offering individualized guidance to help students develop statistical reasoning.
+I have served as a teaching/instructional assistant for an undergraduate-level introductory statistics course across multiple semesters since 2020. My responsibilities included leading recitation sessions, providing hands-on support with data analysis using SPSS and Jamovi, and offering individualized guidance to help students develop statistical reasoning.
 <br>
 <br>
 
