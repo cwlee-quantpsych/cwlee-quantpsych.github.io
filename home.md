@@ -243,7 +243,7 @@ Ultimately, this line of work seeks to bridge the gap between methodological inn
 ***Example: Individualized brain networks***
 - **Aim**: Person-specific mapping of brain dynamics and their links to cognition and behavior.
 - **Context**: Brain connectivity fluctuates across time and between individuals, influencing cognitive states and behavioral outcomes. A precision approach would identify these dynamic, person-specific patterns to guide both basic neuroscience and clinical applications (e.g., neurofeedback, brain stimulation therapies).
-- **Data to use**: Neuroimaging (fMRI, DTI), electrophysiological signals (EEG, MEG), digital behavioral measures, longitudinal cognitive testing, and multimodal integration of brain–behavior data.
+- **Data to use**: Neuroimaging (fMRI, DTI), electrophysiological signals (EEG, MEG), digital behavioral measures, longitudinal cognitive testing, and multimodal integration of brain–behavior data
 
 **Social Science**
 <br>
@@ -288,7 +288,8 @@ My present line of research has been naturally shaped by prior investigations, m
 - **Master’s Thesis (2017, Yonsei University):** *Impacts of Intellectual Property Rights on the Expansion of Korean Pharmaceutical Industry*  
 
 ### Software Program
-- **Lee, C.\*** (2025). *flex: Fuzzy least squares estimation with explicit formula* (Version 0.1.0) [R package]. Comprehensive R Archive Network (CRAN). [DOI](https://doi.org/10.32614/CRAN.package.flex)<br>
+- **Lee, C.\*** (2025). *flex: Fuzzy least squares estimation with explicit formula* (Version 0.1.0) [R package]. Comprehensive R Archive Network (CRAN). [DOI](https://doi.org/10.32614/CRAN.package.flex)
+
 <br>
 
 ## Research Collaborations {#collaborations}
