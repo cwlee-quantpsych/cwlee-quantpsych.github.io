@@ -147,25 +147,38 @@ li {
 }
 
 @media (max-width: 980px){
-  .hero-grid{ 
-    max-width: 100vw; 
-    padding: 0; 
+  /* Keep the page/template centered to the screen width */
+  .hero-grid{
+    max-width: 100vw;     /* center relative to the viewport */
+    margin: 0 auto;
+    padding: 0;
   }
+
+  /* Pill: still CENTERED, but wider than the viewport and scrollable */
   .tabs-card{
-    left: 0;                 /* no longer anchored to center */
-    transform: none;
-    width: 120vw;            /* 👈 pill is wider than viewport */
+    left: 50%;
+    transform: translateX(-50%);  /* keep it centered */
+    width: 120vw;                  /* outreaches both sides */
     max-width: none;
     padding: 14px 20px;
+
+    overflow-x: auto;              /* horizontal scroll inside the pill */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;         /* hide scrollbar on Firefox */
   }
+  .tabs-card::-webkit-scrollbar{ display: none; } /* hide on WebKit */
+
+  /* Keep tabs centered; you can still scroll to left/right ends */
   .tabs-list{
-    justify-content: flex-start;   /* align tabs from left */
+    justify-content: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 0 28px;
   }
+
   .tabs-list a{ font-size: .95rem; }
 }
 
-  .top-spacer{ margin-top: 14px; }
-</style>
 
 <!-- HEADER: centered wide pill -->
 <div class="hero-wrap" role="navigation" aria-label="Section navigation">
