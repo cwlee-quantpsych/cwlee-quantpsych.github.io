@@ -243,6 +243,8 @@ Ultimately, this line of work seeks to bridge the gap between methodological inn
 My present line of research has been naturally shaped by prior investigations, many of which are documented in the publications provided below.
 
 ## Publications
+---
+<br>
 
 ### Peer-Reviewed Articles
 
@@ -253,7 +255,7 @@ My present line of research has been naturally shaped by prior investigations, m
 - Plumley, R. D., Bernacki, M. L., Greene, J. A., …, **Lee, C.**, Panter, A. T., & Gates, K. M. (2024). Co‐designing enduring learning analytics prediction and support tools in undergraduate biology courses. *British Journal of Educational Technology, 55*(5), 1860–1883. [DOI](https://doi.org/10.1111/bjet.13472)  
 
 #### Accepted
-- **Lee, C.\*** & Gates, K. M. (Expected May 7, 2026). Group-iterative multiple model estimation in clinical science. *Annual Review of Clinical Psychology.* [DOI](https://doi.org/10.1146/annurev-clinpsy-050524-120001)  
+- **Lee, C.\*** & Gates, K. M. (Expected May 7, 2026). Group-iterative multiple model estimation in clinical science. *Annual Review of Clinical Psychology.*
 
 #### Under Review
 - Rodebaugh, T. L., **Lee, C.**, Gates, K. M., Frumkin, M. R., …, & Piccirillo, J. Modeling psychological processes in tinnitus disorder. *Clinical Psychological Science.*  
@@ -301,8 +303,7 @@ Currently engaged in projects applying fuzzy statistics and chaos theory to mode
 <br>
 **M.S. in Applied Statistics**  University of Michigan, Ann Arbor, MI, USA  
 **M.A. in Economics**  Yonsei University, Seoul, South Korea  
-**B.S. in Biology**  Yonsei University, Seoul, South Korea
-<br><br> 
+**B.S. in Biology**  Yonsei University, Seoul, South Korea<br><br>
 
 ## Teaching {#teaching}
 ---
