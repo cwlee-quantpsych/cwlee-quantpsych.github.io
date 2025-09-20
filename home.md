@@ -30,7 +30,7 @@ permalink: /home
 
   body {
     font-family: 'Lato', system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.65;
     color: var(--unc-gray);
     background: var(--unc-sky);
@@ -217,7 +217,7 @@ From a methodological standpoint, my research aim is to create statistical innov
 **My methodological work unfolds through three core pipelines:**
 
 - Adapting deep learning techniques to enhance traditional psychological methods and big data research  
-- Drawing robust inferences on individual dynamic processes from limited samples and sparse time points
+- Drawing robust inference on individual dynamic processes from limited samples and sparse time points
 - Rethinking imprecision in psychological scales — not merely as measurement error to minimize, but as a source of information to be actively leveraged in statistical modeling
 
 ### Substantive Translation
