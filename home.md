@@ -18,6 +18,7 @@ permalink: /home
     /* Layout widths (only change this to widen/narrow the template) */
     --content-w: 1200px;
     --pill-overhang: 30vw;
+    --anchor-offset: 120px;
   }
 
   /* Kill theme header/footer completely */
@@ -52,7 +53,7 @@ permalink: /home
     padding: 0 32px;
   }
 
-  /* NEW: ensure outer wrappers don't cap the width */
+  /* Make sure outer wrappers don’t cap the width */
   .initial-content,
   .page,
   .page__content,
@@ -66,18 +67,18 @@ permalink: /home
   }
 
   p {
-  color: var(--unc-gray);
-  text-align: justify;
-  font-size: 16px;
-  line-height: 1.65;
-}
+    color: var(--unc-gray);
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.65;
+  }
 
-li {
-  color: var(--unc-gray);
-  text-align: justify;
-  font-size: 15px;   /* ⬅️ only bullet points smaller */
-  line-height: 1.65;
-}
+  li {
+    color: var(--unc-gray);
+    text-align: justify;
+    font-size: 15px;   /* only bullet points smaller */
+    line-height: 1.65;
+  }
 
   /* ===== Tabs-only sticky header ===== */
   .hero-wrap{
@@ -101,16 +102,17 @@ li {
     left: 50%;
     transform: translateX(-50%);
     width: calc(100% + var(--pill-overhang));
-    max-width: min(95vw, 1600px); /* slightly higher cap so wider content looks balanced */
+    max-width: min(95vw, 1600px);
     background: #fff;
     border: 1px solid rgba(19,41,75,.14);
     border-radius: 28px;
     box-shadow: 0 8px 14px rgba(19,41,75,.08);
     padding: 18px 36px;
-    overflow-x: auto;
+    overflow-x: auto;                /* allow horizontal scroll if needed */
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
   }
+  .tabs-card::-webkit-scrollbar{ display: none; }
 
   .tabs-list{
     display: flex;
@@ -138,47 +140,35 @@ li {
     color: #fff;
   }
 
-  :root { --anchor-offset: 120px; }
   h2[id], h3[id], section[id] { scroll-margin-top: var(--anchor-offset); }
   html { scroll-behavior: smooth; }
 
-@media (max-width: 1280px){
-  .tabs-list{ gap: 0 28px; }
-}
-
-@media (max-width: 980px){
-  /* Keep the page/template centered to the screen width */
-  .hero-grid{
-    max-width: 100vw;     /* center relative to the viewport */
-    margin: 0 auto;
-    padding: 0;
+  /* Responsive */
+  @media (max-width: 1280px){
+    .tabs-list{ gap: 0 28px; }
+  }
+  @media (max-width: 980px){
+    .hero-grid{ max-width: 100vw; margin: 0 auto; padding: 0; }
+    /* Pill stays centered, extends past both sides, and is swipeable */
+    .tabs-card{
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120vw;
+      max-width: none;
+      padding: 14px 20px;
+      overflow-x: auto;
+    }
+    .tabs-list{
+      justify-content: center;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      gap: 0 28px;
+    }
+    .tabs-list a{ font-size: .95rem; }
   }
 
-  /* Pill: still CENTERED, but wider than the viewport and scrollable */
-  .tabs-card{
-    left: 50%;
-    transform: translateX(-50%);  /* keep it centered */
-    width: 120vw;                  /* outreaches both sides */
-    max-width: none;
-    padding: 14px 20px;
-
-    overflow-x: auto;              /* horizontal scroll inside the pill */
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;         /* hide scrollbar on Firefox */
-  }
-  .tabs-card::-webkit-scrollbar{ display: none; } /* hide on WebKit */
-
-  /* Keep tabs centered; you can still scroll to left/right ends */
-  .tabs-list{
-    justify-content: center;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-    gap: 0 28px;
-  }
-
-  .tabs-list a{ font-size: .95rem; }
-}
-
+  .top-spacer{ margin-top: 14px; }
+</style>
 
 <!-- HEADER: centered wide pill -->
 <div class="hero-wrap" role="navigation" aria-label="Section navigation">
@@ -231,6 +221,7 @@ li {
 </script>
 
 <div class="top-spacer"></div>
+
 
 
 ## Research Commitments {#research}
