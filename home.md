@@ -68,7 +68,7 @@ permalink: /home
   p {
   color: var(--unc-gray);
   text-align: justify;
-  font-size: 16px;
+  font-size: 15.5px;
   line-height: 1.65;
 }
 
