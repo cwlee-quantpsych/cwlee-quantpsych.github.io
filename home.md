@@ -206,16 +206,16 @@ From a methodological standpoint, my research aim is to create statistical innov
 
 **My methodological work unfolds through three core pipelines:**
 
-- Adapting deep learning techniques to enhance traditional psychological methods and big data research;  
-- Drawing robust inferences on individual dynamic processes from limited samples and sparse time points; 
+- Adapting deep learning techniques to enhance traditional psychological methods and big data research  
+- Drawing robust inferences on individual dynamic processes from limited samples and sparse time points
 - Rethinking imprecision in psychological scales — not merely as measurement error to minimize, but as a source of information to be actively leveraged in statistical modeling
 
 ### Substantive Translation
 
 From a substantive standpoint, ***Precision psychology*** is the motivating aim behind translating my core modeling frameworks and methodological innovations into meaningful applications. This includes:
 
-- Advancement of individualized diagnosis and treatment of mental health conditions;
-- Investigation of person-specific brain–behavior dynamics;
+- Advancement of individualized diagnosis and treatment of mental health conditions
+- Investigation of person-specific brain–behavior dynamics
 - Development of adaptive interventions in clinical, cognitive, and educational contexts
 <br>
 
@@ -248,26 +248,31 @@ My present line of research has been naturally shaped by prior investigations, m
 ---
 <br>
 
-**Published**
+**Peer-Reviewed Articles**
+<u><b>Published</b></u>
 <br>
 - **Lee, C.\***, & Gates, K. M. (2025). Automated machine learning for classification and regression: A tutorial for psychologists. <em>Behavior Research Methods</em>, 57(2), 262. [DOI](https://doi.org/10.3758/s13428-025-02684-5)  
 - **Lee, C.\***, Luo, L., Kuhlmann, S. L., Plumley, R. D., Panter, A. T., Bernacki, M. L., Greene, J. A., & Gates, K. M. (2025). Interpretable predictive analytics for online learning: A Markov-based machine learning approach. <em>Journal of Learning Analytics</em>, 12(2), 259–278. [DOI](https://doi.org/10.18608/jla.2025.8375)  
 - **Lee, C.\***, Gates, K. M., Chun, J., Al Kontar, R., Kamali, M., McInnis, M. G., & Deldin, P. (2025). Suicide risk estimation in bipolar disorder using N200 and P300 event-related potentials and machine learning: A pilot study. <em>Journal of Affective Disorders Reports</em>, 20, 100875. [DOI](https://doi.org/10.1016/j.jadr.2025.100875)
 - **Lee, C.\*** (2025). <em>flex: Fuzzy least squares estimation with explicit formula</em> (Version 0.1.0) [R package]. Comprehensive R Archive Network (CRAN). [DOI](https://doi.org/10.32614/CRAN.package.flex)
-- Plumley, R. D., Bernacki, M. L., Greene, J. A., …, **Lee, C.**, Panter, A. T., & Gates, K. M. (2024). Co-designing enduring learning analytics prediction and support tools in undergraduate biology courses. <em>British Journal of Educational Technology</em>, 55(5), 1860–1883. [DOI](https://doi.org/10.1111/bjet.13472)  
+- Plumley, R. D., Bernacki, M. L., Greene, J. A., …, **Lee, C.**, Panter, A. T., & Gates, K. M. (2024). Co-designing enduring learning analytics prediction and support tools in undergraduate biology courses. <em>British Journal of Educational Technology</em>, 55(5), 1860–1883. [DOI](https://doi.org/10.1111/bjet.13472)
 - **Lee, C.\*** (2023). An integrative machine learning approach for small samples and high-dimensional imbalanced data in psychological experiment [Master’s thesis, University of North Carolina at Chapel Hill].
 
-**Accepted**  
+<u><b>Accepted</b></u> 
 - **Lee, C.\***, & Gates, K. M. (publication expected May 7, 2026). Group-iterative multiple model estimation in clinical science. <em>Annual Review of Clinical Psychology</em>.
 
-**Under Review**  
+<u><b>Under Review</b></u>  
 - Rodebaugh, T. L., **Lee, C.**, Gates, K. M., Frumkin, M. R., …, & Piccirillo, J. Modeling psychological processes in tinnitus disorder.  
 - Yoon, J. H.\*, **Lee, C.\***, Kwon, S.H., & Bae, Y. C. Nonlinear and chaotic dynamics in generalized fuzzy opinion model.  
 
-**Submission Pending**
+<u><b>Submission Pending</b></u>
 - **Lee, C.\*** No single approach fits all: Testing two generations of structural equation modeling estimation.  
 - **Lee, C.\*** Modeling imprecision in psychological data: Least squares estimation with fuzzy numbers
 - **Lee, C.\*** FLEX: An R package for fuzzy numbers and fuzzy linear regression.<br>
+
+<u><b>In Preparation</b></u>
+- Lee. C.\*** Generalizing across studies and persons: meta-learning in psychology (PhD dissertation).
+- Lee. C.\*** Meta-learning for robust structural equation modeling (PhD dissertation).
 
 ## Research Collaborations {#collaborations}
 ---
