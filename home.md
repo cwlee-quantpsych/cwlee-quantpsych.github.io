@@ -45,12 +45,10 @@ permalink: /home
     letter-spacing: -.2px;
   }
 
-  p, li {
+ p, li {
   color: var(--unc-gray);
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: left;
 }
-
   /* ===== Tabs-only sticky header ===== */
   .hero-wrap{
     position: sticky;
