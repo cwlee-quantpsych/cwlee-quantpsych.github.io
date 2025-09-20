@@ -361,7 +361,7 @@ I began playing the piano at the age of 3 and pursued professional training at Y
 
 **Former Investment Banker and Economist**<br>
 Prior to academia, I worked at Korea Investment & Securities, one of Korea’s top-tier securities firms headquartered in Yeouido, Seoul—often referred to as Korea’s Wall Street. I first served as a junior investment banker in the Equity Capital Market Department, where I worked on IPOs for KOSPI and KOSDAQ, conducting due diligence, accounting analysis, and preparing listing applications. I later transitioned to the Research Center as a junior economist, where I authored economic reports on global macro-financial trends and led forecasts for key indicators such as exchange rates, oil prices, and international policy rates. 
-[📄 View sample economy publication (PDF)]({{ '/assets/files/Economy_publication_example.pdf' | relative_url }})
+[📄 View sample economy publication (PDF)]({{ '/assets/Economy_publication_example.pdf' | relative_url }})
 
 <div class="custom-copy" style="max-width:96vw;margin:40px auto 24px;padding:16px 32px 0;text-align:center;color:var(--unc-dark);font-size:14px;opacity:.9;border-top:1px solid rgba(19,41,75,.15);">
   © 2025 Chaewon Lee. All rights reserved.
