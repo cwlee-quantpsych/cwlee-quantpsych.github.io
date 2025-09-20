@@ -68,7 +68,7 @@ permalink: /home
   p {
   color: var(--unc-gray);
   text-align: justify;
-  font-size: 15.5px;
+  font-size: 16px;
   line-height: 1.65;
 }
 
@@ -327,7 +327,7 @@ Currently engaged in projects applying fuzzy statistics and chaos theory to mode
 ## Education {#education}
 ---
 <br>
-**Ph.D.in Quantitative Psychology**  University of North Carolina, Chapel Hill, NC, USA (expected May 2026)  
+**Ph.D.in Quantitative Psychology**  University of North Carolina, Chapel Hill, NC, USA (May 2026)  
 **M.S. in Applied Statistics**  University of Michigan, Ann Arbor, MI, USA  
 **M.A. in Economics**  Yonsei University, Seoul, South Korea  
 **B.S. in Biology**  Yonsei University, Seoul, South Korea
