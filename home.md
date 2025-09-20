@@ -317,14 +317,14 @@ Currently engaged in projects applying fuzzy statistics and chaos theory to mode
 ## Teaching {#teaching}
 ---
 <br>
+
 **University of North Carolina at Chapel Hill**<br>
 ***PSYC 210: Statistical Principles of Psychological Research***
-- Instructional Assistant<br>
+- **Instructional Assistant**
     May 2025 – Present; May 2022 – May 2024<br>
-- Teaching Assistant<br>
+- **Teaching Assistant**
     Aug 2020 – Apr 2021<br>
     Awarded Departmental Undergraduate Teaching Commendation (both semesters)<br>
-<br>
 I have served as a teaching/instructional assistant for an undergraduate-level introductory statistics course in the Department of Psychology and Neuroscience, across multiple semesters since 2020. My responsibilities included leading recitation sessions, providing hands-on support with data analysis using SPSS and Jamovi, and offering individualized guidance to help students develop statistical reasoning.<br><br> 
 
 ## Preludes to the Lab {#life}
