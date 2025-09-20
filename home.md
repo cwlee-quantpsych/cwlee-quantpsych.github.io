@@ -274,7 +274,7 @@ Ultimately, this line of work seeks to bridge the gap between methodological rig
 <br>
 ***Example: Bipolar disorder***
 - **Aim**: Personalized treatment
-- **Context**: Bipolar disorder is characterized by recurrent episodes, a precision approach would aim to predict when symptoms are likely to recur so that interventions—such as medication adjustment, behavioral therapy, or sleep regulation—can be implemented at the most effective time. Equally important, pharmacological responses differ across individuals: some patients respond best to lithium, others to valproate, and side effects vary widely.
+- **Context**: Bipolar disorder is characterized by recurrent episodes. A precision approach would aim to predict when symptoms are likely to recur so that interventions, such as medication adjustment, behavioral therapy, or sleep regulation, can be implemented at the most effective time. Equally important, pharmacological responses differ across individuals: some patients respond best to lithium, others to valproate, and side effects vary widely.
 - **Data to use**: clinical records, genetic profiles, ecological momentary assessments (EMA), and passive digital data (e.g., smartphone usage patterns, actigraphy, sleep data), and self-assessment reports
 
 **Translational Neuroscience**
