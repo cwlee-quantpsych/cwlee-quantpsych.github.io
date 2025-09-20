@@ -65,12 +65,19 @@ permalink: /home
     width: 100%;
   }
 
-  p, li {
-    color: var(--unc-gray);
-    text-align: justify;   /* optional: justify alignment */
-    font-size: 15px;
-    line-height: 1.65;
-  }
+  p {
+  color: var(--unc-gray);
+  text-align: justify;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+li {
+  color: var(--unc-gray);
+  text-align: justify;
+  font-size: 15px;   /* ⬅️ only bullet points smaller */
+  line-height: 1.65;
+}
 
   /* ===== Tabs-only sticky header ===== */
   .hero-wrap{
