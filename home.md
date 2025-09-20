@@ -244,36 +244,42 @@ Ultimately, this line of work seeks to bridge the gap between methodological inn
 
 My present line of research has been naturally shaped by prior investigations, many of which are documented in the publications provided below.
 
-## Publications {#publications}
+## Publications  
+
+### Peer-Reviewed Articles  
+
+#### Published  
+- Lee, C.* & Gates, K.M. (2025). Automated machine learning for classification and regression: A tutorial for psychologists. *Behavior Research Methods, 57*, 262. [DOI]  
+- Lee, C.*, Luo, L., Kuhlmann, S. L., Plumley, R. D., Panter, A. T., Bernacki, M. L., Greene, J. A., & Gates, K. M. (2025). Interpretable predictive analytics for online learning: A Markov-based machine learning approach. *Journal of Learning Analytics, 12*(2), 259–278. [DOI]  
+- Lee, C.*, Gates, K. M., Chun, J., Al Kontar, R., Kamali, M., McInnis, M. G., & Deldin, P. (2025). Suicide risk estimation in bipolar disorder using N200 and P300 event-related potentials and machine learning: A pilot study. *Journal of Affective Disorders Reports, 20*, 100875. [DOI]  
+- Plumley, R.D., Bernacki, M.L., Greene, J.A., …, Lee, C., Panter, A.T., & Gates, K.M. (2024). Co‐designing enduring learning analytics prediction and support tools in undergraduate biology courses. *British Journal of Educational Technology, 55*(5), 1860–1883. [DOI]  
+
+#### Accepted  
+- Lee, C.* & Gates, K.M. (Expected May 7, 2026). Group-iterative multiple model estimation in clinical science. *Annual Review of Clinical Psychology.*  
+
+#### Under Review  
+- Rodebaugh, T.L., Lee, C., Gates, K.M., Frumkin, M.R., … , & Piccirillo, J. Modeling psychological processes in tinnitus disorder. *Clinical Psychological Science.*  
+- Yoon, J.H.*, Lee, C.*, Kwon, S., & Bae, Y.C. Nonlinear and chaotic dynamics in generalized fuzzy opinion model. *International Journal of Fuzzy Systems.*  
+
+#### Submission Pending  
+- Lee, C.* *No single approach fits all: Testing two generations of structural equation modeling estimation.*  
+- Lee, C.* *Modeling imprecision in psychological data: Least squares estimation with fuzzy numbers.*  
+- Lee, C.* *FLEX: An R package for fuzzy numbers and fuzzy linear regression.*  
+
+#### In Preparation  
+- Lee, C.* *Generalizing across studies and persons: meta-learning in psychology (Ph.D. dissertation).*  
+- Lee, C.* *Meta-learning for robust structural equation modeling (Ph.D. dissertation).*  
+
 ---
-<br>
 
-**Peer-Reviewed Articles**
-<br>
-<u><b>Published</b></u>
-<br>
-- **Lee, C.\***, & Gates, K. M. (2025). Automated machine learning for classification and regression: A tutorial for psychologists. <em>Behavior Research Methods</em>, 57(2), 262. [DOI](https://doi.org/10.3758/s13428-025-02684-5)  
-- **Lee, C.\***, Luo, L., Kuhlmann, S. L., Plumley, R. D., Panter, A. T., Bernacki, M. L., Greene, J. A., & Gates, K. M. (2025). Interpretable predictive analytics for online learning: A Markov-based machine learning approach. <em>Journal of Learning Analytics</em>, 12(2), 259–278. [DOI](https://doi.org/10.18608/jla.2025.8375)  
-- **Lee, C.\***, Gates, K. M., Chun, J., Al Kontar, R., Kamali, M., McInnis, M. G., & Deldin, P. (2025). Suicide risk estimation in bipolar disorder using N200 and P300 event-related potentials and machine learning: A pilot study. <em>Journal of Affective Disorders Reports</em>, 20, 100875. [DOI](https://doi.org/10.1016/j.jadr.2025.100875)
-- **Lee, C.\*** (2025). <em>flex: Fuzzy least squares estimation with explicit formula</em> (Version 0.1.0) [R package]. Comprehensive R Archive Network (CRAN). [DOI](https://doi.org/10.32614/CRAN.package.flex)
-- Plumley, R. D., Bernacki, M. L., Greene, J. A., …, **Lee, C.**, Panter, A. T., & Gates, K. M. (2024). Co-designing enduring learning analytics prediction and support tools in undergraduate biology courses. <em>British Journal of Educational Technology</em>, 55(5), 1860–1883. [DOI](https://doi.org/10.1111/bjet.13472)
-- **Lee, C.\*** (2023). An integrative machine learning approach for small samples and high-dimensional imbalanced data in psychological experiment [Master’s thesis, University of North Carolina at Chapel Hill].
+### Software Program  
+- Lee, C.* (2025). *flex: Fuzzy least squares estimation with explicit formula* (Version 0.1.0) [R package]. Comprehensive R Archive Network (CRAN). [DOI]  
 
-<u><b>Accepted</b></u> 
-- **Lee, C.\***, & Gates, K. M. (publication expected May 7, 2026). Group-iterative multiple model estimation in clinical science. <em>Annual Review of Clinical Psychology</em>.
+---
 
-<u><b>Under Review</b></u>  
-- Rodebaugh, T. L., **Lee, C.**, Gates, K. M., Frumkin, M. R., …, & Piccirillo, J. Modeling psychological processes in tinnitus disorder.  
-- Yoon, J. H.\*, **Lee, C.\***, Kwon, S.H., & Bae, Y. C. Nonlinear and chaotic dynamics in generalized fuzzy opinion model.  
-
-<u><b>Submission Pending</b></u>
-- **Lee, C.\*** No single approach fits all: Testing two generations of structural equation modeling estimation.  
-- **Lee, C.\*** Modeling imprecision in psychological data: Least squares estimation with fuzzy numbers
-- **Lee, C.\*** FLEX: An R package for fuzzy numbers and fuzzy linear regression.<br>
-
-<u><b>In Preparation</b></u>
-- Lee. C.\*** Generalizing across studies and persons: meta-learning in psychology (PhD dissertation).
-- Lee. C.\*** Meta-learning for robust structural equation modeling (PhD dissertation).
+### Theses  
+- **Master’s Thesis (2023, UNC Chapel Hill):** *An Integrative Machine Learning Approach for Small Samples and High-Dimensional Imbalanced Data in Psychological Experiment*  
+- **Master’s Thesis (2017, Yonsei University):** *Impacts of Intellectual Property Rights on the Expansion of Korean Pharmaceutical Industry*  
 
 ## Research Collaborations {#collaborations}
 ---
