@@ -68,7 +68,7 @@ permalink: /home
   p, li {
     color: var(--unc-gray);
     text-align: justify;   /* optional: justify alignment */
-    font-size: 17px;
+    font-size: 15px;
     line-height: 1.65;
   }
 
@@ -252,8 +252,9 @@ Ultimately, this line of work seeks to bridge the gap between methodological inn
 - **Context**: Students vary widely in how they progress through STEM curricula. Precision methods can forecast learning outcomes and identify at-risk students, enabling timely and individualized interventions that foster mastery and persistence in STEM fields.
 - **Data to use**: Learning management system (LMS) clickstream data, homework and test performance, response times, classroom participation logs, and longitudinal academic records
 
-My present line of research has been naturally shaped by prior investigations, many of which are documented in the publications provided below.<br>
-
+My present line of research has been naturally shaped by prior investigations, many of which are documented in the publications provided below.
+<br>
+<br>
 ## Publications
 ---
 <br>
@@ -287,9 +288,9 @@ My present line of research has been naturally shaped by prior investigations, m
 - **Master’s Thesis (2017, Yonsei University):** *Impacts of Intellectual Property Rights on the Expansion of Korean Pharmaceutical Industry*  
 
 ### Software Program
-- **Lee, C.\*** (2025). *flex: Fuzzy least squares estimation with explicit formula* (Version 0.1.0) [R package]. Comprehensive R Archive Network (CRAN). [DOI](https://doi.org/10.32614/CRAN.package.flex)<br>
-
-
+- **Lee, C.\*** (2025). *flex: Fuzzy least squares estimation with explicit formula* (Version 0.1.0) [R package]. Comprehensive R Archive Network (CRAN). [DOI](https://doi.org/10.32614/CRAN.package.flex)
+<br>
+<br>
 ## Research Collaborations {#collaborations}
 ---
 <br>
@@ -311,6 +312,7 @@ Modeled multi-subject time series of tinnitus symptoms using Group Iterative Mul
 - **Collaborations with Korean Research Teams:**  
 Currently engaged in projects applying fuzzy statistics and chaos theory to model non-linear dynamics in social opinion formation. 
 <br>
+<br>
 
 ## Education {#education}
 ---
@@ -318,6 +320,7 @@ Currently engaged in projects applying fuzzy statistics and chaos theory to mode
 **M.S. in Applied Statistics**  University of Michigan, Ann Arbor, MI, USA  
 **M.A. in Economics**  Yonsei University, Seoul, South Korea  
 **B.S. in Biology**  Yonsei University, Seoul, South Korea
+<br>
 <br>
 
 ## Teaching {#teaching}
@@ -332,6 +335,7 @@ Currently engaged in projects applying fuzzy statistics and chaos theory to mode
     Awarded Departmental Undergraduate Teaching Commendation (both semesters)
   
 I have served as a teaching/instructional assistant for an undergraduate-level introductory statistics course in the Department of Psychology and Neuroscience, across multiple semesters since 2020. My responsibilities included leading recitation sessions, providing hands-on support with data analysis using SPSS and Jamovi, and offering individualized guidance to help students develop statistical reasoning.
+<br>
 <br>
 
 ## Preludes to the Lab {#life}
