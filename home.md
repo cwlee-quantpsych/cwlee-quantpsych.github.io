@@ -147,20 +147,23 @@ li {
 }
 
 @media (max-width: 980px){
-  .hero-grid{ max-width: 100vw; padding: 0; }
+  .hero-grid{ 
+    max-width: 100vw; 
+    padding: 0; 
+  }
   .tabs-card{
-    left: 0;
+    left: 0;                 /* no longer anchored to center */
     transform: none;
-    width: 120vw;        /* 👈 still wider than the viewport */
+    width: 120vw;            /* 👈 pill is wider than viewport */
     max-width: none;
     padding: 14px 20px;
   }
   .tabs-list{
-    justify-content: flex-start;
+    justify-content: flex-start;   /* align tabs from left */
   }
   .tabs-list a{ font-size: .95rem; }
 }
-  
+
   .top-spacer{ margin-top: 14px; }
 </style>
 
