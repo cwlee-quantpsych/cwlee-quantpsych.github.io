@@ -53,8 +53,11 @@ permalink: /home
 
  p, li {
   color: var(--unc-gray);
-  text-align: left;
+  text-align: justify;   /* justify alignment */
+  font-size: 17px;
+  line-height: 1.65;
 }
+
   /* ===== Tabs-only sticky header ===== */
   .hero-wrap{
     position: sticky;
