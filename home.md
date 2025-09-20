@@ -290,10 +290,12 @@ My present line of research has been naturally shaped by prior investigations, m
 - **Lee, C.\*** Generalizing across studies and persons: Meta-learning in psychology (PhD dissertation).  
 - **Lee, C.\*** Meta-learning for robust structural equation modeling (PhD dissertation).  
 
+<br>
 ### Theses
 - **Master’s Thesis (2023, UNC Chapel Hill):** *An Integrative Machine Learning Approach for Small Samples and High-Dimensional Imbalanced Data in Psychological Experiment*  
 - **Master’s Thesis (2017, Yonsei University):** *Impacts of Intellectual Property Rights on the Expansion of Korean Pharmaceutical Industry*  
 
+<br>
 ### Software Program
 - **Lee, C.\*** (2025). *flex: Fuzzy least squares estimation with explicit formula* (Version 0.1.0) [R package]. Comprehensive R Archive Network (CRAN). [DOI](https://doi.org/10.32614/CRAN.package.flex)
 
