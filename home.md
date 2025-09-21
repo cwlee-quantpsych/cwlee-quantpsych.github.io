@@ -279,7 +279,7 @@ From a methodological standpoint, my research aim is to create statistical innov
 
 ### Substantive Translation
 
-From a substantive standpoint, ***Precision psychology*** is the motivating aim behind translating my core modeling frameworks and statistical innovations into meaningful applications, including:
+From a substantive standpoint, ***precision psychology*** is the motivating aim behind translating my core modeling frameworks and statistical innovations into meaningful applications, including:
 
 - Advancement of individualized diagnosis and treatment of mental health conditions
 - Investigation of person-specific brain–behavior dynamics
